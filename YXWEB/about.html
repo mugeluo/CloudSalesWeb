@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-language" content="zh-CN" />
+	<title>云销科技-关于</title>
+	<meta name="author" content="zuroke" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/page.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/m-nav.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gDx9WNPeuFj4EgNvullqmzhF"></script>
+</head>
+
+<body>
+<!-- 导航 -->
+<div class="site-header row">
+    <div class="container">
+        <div class="logo l"><img src="images/logo.png" alt="云销科技"/></div>
+        
+        <!--- 菜单 --->
+        <div class="menu r">
+            <div class="nav l">
+                <ul class="navbar">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="product.html">产品</a></li>
+                    <li><span><a href="about.html">关于</a></span></li>
+                </ul>
+            </div>
+            
+            <div class="login r">
+                <ul>
+                   <li class="login-lgn"><a href="http://edj.yunxiaokeji.com/Home/Login"  target="_blank">登录</a></li>
+                    <li class="login-reg"><a href="http://edj.yunxiaokeji.com/Home/Register" target="_blank">注册</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="menu-m r">
+        	<div class="m-btu">菜单</div>
+        </div>
+        
+        <!--- 菜单end --->
+    </div>
+    
+    <!--- 菜单 --->
+    <div class="m-nav row">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="product.html">产品</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+        <dl>
+            <dt><a href="http://edj.yunxiaokeji.com/Home/Login"  target="_blank">登录</a></dt>
+            <dd><a href="http://edj.yunxiaokeji.com/Home/Register" target="_blank">注册</a></dd>
+        </dl>
+    </div>
+    <!--- 菜单end --->
+</div>
+
+<!-- 介绍 -->
+<div class="main-ab">
+	<div class="about">
+        <div class="aboutwidth">
+        	<h3>关于我们</h3>
+            <p>上海云销信息科技有限公司，成立于2015年3月。云销科技是一家技术创新型企业，致力于服务营销软件行业，结合了上市公司的物流行业背景和金融行业背景，研发了“二当家”。云销科技自成立以来，一直以优质的客户体验为己任、建立营销行业新时代为目标，励志打造成为国内一流的营销行业软件平台系统。</p>
+            <p>公司产品“二当家”目前主要服务于各类生产制造类企业，并适用于直销行业领域，二当家支持平台租用和定制化两种方式，平台租用方式广泛适用与传统企业，定制化则需要根据不同客户特殊需求进行定制开发以满足业务需求，大数据的可视化给应用者带来全新的视觉体验，各类数据报表一目了然</p>
+        </div>
+    </div>
+    
+    <div class="about-con">
+    	<div class="aboutcontact row">
+        	<div class="contact">
+            	<h3>联系我们</h3>
+                <ul>
+                	<li>电话：13120611062/18221077623</li>
+                    <li>邮箱：customer@yunxiaokeji.com</li>
+                    <li>地址：上海市徐汇区龙州路975弄89号1306</li>
+                </ul>
+            </div>
+            <div class="map" id="map"></div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<!-- 页脚 -->
+<div class="site-footer row">
+
+    <div class="footer-top row">
+      <div class="footer-navinfo row">
+      	<a href="help.html">帮助</a>
+        <a href="#">反馈</a>
+        <a href="about.html">联系我们</a>
+        <a href="http://edj.yunxiaokeji.com/Home/Register" target="_blank">购买</a>
+      </div>
+      
+      <div class="footer-snsinfo row">
+        <a class="qq" href="">qq</a>
+        <a class="wx" href="">微信</a>
+        <a class="wb" href="">微博</a>
+        <a class="bd" href="">百度</a>
+      </div>
+    </div>
+      
+    <div class="footer-line row">
+      <div class="footer-bottom">
+          <div class="f-b-left row">
+            <a href="#">加入我们</a>
+            <a href="#">商务合作</a>
+            <a href="#">版权声明</a>
+            <a href="#">友情链接</a>
+          </div>
+          <div class="copyright row">&copy;2015-2016 云销科技 沪ICP备15042543号</div>
+      </div>
+    </div>
+
+</div>
+<!-- 页脚end -->
+</body>
+
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(121.427984,31.143037),17);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        { content: "上海云销信息科技有限公司", title: "上海云销信息科技有限公司", imageOffset: { width: 0, height: 3 }, position: { lat: 31.144521, lng: 121.427822 } }
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+</script>
+
+</html>
