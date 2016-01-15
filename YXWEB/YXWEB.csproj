@@ -7,14 +7,14 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>406f71c1-a0ba-4a80-9f1b-3dccbab2b047</ProjectGuid>
+    <ProjectGuid>{A03C1BBA-B927-48C1-BB36-AFD7D475A9A6}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YXWEB</RootNamespace>
     <AssemblyName>YXWEB</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -57,10 +57,239 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="css\base.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\help.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\page.css" />
+    <Content Include="help.html" />
+    <Content Include="help\help-customer-all.html" />
+    <Content Include="help\help-customer-market activity-my.html" />
+    <Content Include="help\help-customer-market activity.html" />
+    <Content Include="help\help-customer.html" />
+    <Content Include="help\help-fin bill.html" />
+    <Content Include="help\help-fin detail.html" />
+    <Content Include="help\help-fin.html" />
+    <Content Include="help\help-product ctg.html" />
+    <Content Include="help\help-product inv-out.html" />
+    <Content Include="help\help-product inv.html" />
+    <Content Include="help\help-product procurement.html" />
+    <Content Include="help\help-product.html" />
+    <Content Include="help\help-sales-all.html" />
+    <Content Include="help\help-sales-order-my.html" />
+    <Content Include="help\help-sales-order.html" />
+    <Content Include="help\help-sales.html" />
+    <Content Include="help\help-statistical-dis.html" />
+    <Content Include="help\help-statistical-funnel.html" />
+    <Content Include="help\help-statistical-or.html" />
+    <Content Include="help\help-statistical-phase.html" />
+    <Content Include="help\help-statistical-results.html" />
+    <Content Include="help\help-statistical-sales.html" />
+    <Content Include="help\help-statistical.html" />
+    <Content Include="help\help-system-info.html" />
+    <Content Include="help\help-system-role.html" />
+    <Content Include="help\help-system-structure.html" />
+    <Content Include="help\help-system.html" />
+    <Content Include="help\help-word.html" />
+    <Content Include="images\about-contact.png" />
+    <Content Include="images\about-us.png" />
+    <Content Include="images\banner.png" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\b_03.png" />
+    <Content Include="images\b_05.png" />
+    <Content Include="images\b_07.png" />
+    <Content Include="images\help-01.png" />
+    <Content Include="images\help-02.png" />
+    <Content Include="images\help-03.png" />
+    <Content Include="images\help-04.png" />
+    <Content Include="images\help-05.png" />
+    <Content Include="images\help-06.png" />
+    <Content Include="images\help-07.png" />
+    <Content Include="images\help-08.png" />
+    <Content Include="images\help-09.png" />
+    <Content Include="images\help-10.png" />
+    <Content Include="images\help-11.png" />
+    <Content Include="images\helpImg\customer-all1.png" />
+    <Content Include="images\helpImg\customer1-1.png" />
+    <Content Include="images\helpImg\customer1-2.png" />
+    <Content Include="images\helpImg\customer1-3.png" />
+    <Content Include="images\helpImg\customer1-4.png" />
+    <Content Include="images\helpImg\customer1.png" />
+    <Content Include="images\helpImg\hel-product1.png" />
+    <Content Include="images\helpImg\help-customer-market activity-my1-1.png" />
+    <Content Include="images\helpImg\help-customer-market activity-my1.png" />
+    <Content Include="images\helpImg\help-fin-bill1.png" />
+    <Content Include="images\helpImg\help-fin-bill2.png" />
+    <Content Include="images\helpImg\help-fin-bill3.png" />
+    <Content Include="images\helpImg\help-fin-bill4.png" />
+    <Content Include="images\helpImg\help-fin-bill5.png" />
+    <Content Include="images\helpImg\help-fin-bill6.png" />
+    <Content Include="images\helpImg\help-fin-bill7.png" />
+    <Content Include="images\helpImg\help-fin-bill8.png" />
+    <Content Include="images\helpImg\help-fin-detail1.png" />
+    <Content Include="images\helpImg\help-product-inv-out1.png" />
+    <Content Include="images\helpImg\help-product-inv-out10.png" />
+    <Content Include="images\helpImg\help-product-inv-out11.png" />
+    <Content Include="images\helpImg\help-product-inv-out2.png" />
+    <Content Include="images\helpImg\help-product-inv-out3.png" />
+    <Content Include="images\helpImg\help-product-inv-out4.png" />
+    <Content Include="images\helpImg\help-product-inv-out5.png" />
+    <Content Include="images\helpImg\help-product-inv-out6.png" />
+    <Content Include="images\helpImg\help-product-inv-out7.png" />
+    <Content Include="images\helpImg\help-product-inv-out8.png" />
+    <Content Include="images\helpImg\help-product-inv-out9.png" />
+    <Content Include="images\helpImg\help-product-inv1.png" />
+    <Content Include="images\helpImg\help-product-inv10.png" />
+    <Content Include="images\helpImg\help-product-inv11.png" />
+    <Content Include="images\helpImg\help-product-inv12.png" />
+    <Content Include="images\helpImg\help-product-inv2.png" />
+    <Content Include="images\helpImg\help-product-inv3.png" />
+    <Content Include="images\helpImg\help-product-inv4.png" />
+    <Content Include="images\helpImg\help-product-inv5.png" />
+    <Content Include="images\helpImg\help-product-inv6.png" />
+    <Content Include="images\helpImg\help-product-inv7.png" />
+    <Content Include="images\helpImg\help-product-inv8.png" />
+    <Content Include="images\helpImg\help-product-inv9.png" />
+    <Content Include="images\helpImg\help-product-procurement1.png" />
+    <Content Include="images\helpImg\help-product-procurement2.png" />
+    <Content Include="images\helpImg\help-product-procurement3.png" />
+    <Content Include="images\helpImg\help-product-procurement4.png" />
+    <Content Include="images\helpImg\help-product-procurement5.png" />
+    <Content Include="images\helpImg\help-product-procurement6.png" />
+    <Content Include="images\helpImg\help-product-procurement7.png" />
+    <Content Include="images\helpImg\help-product-procurement8.png" />
+    <Content Include="images\helpImg\help-product-procurement9.png" />
+    <Content Include="images\helpImg\help-product1.png" />
+    <Content Include="images\helpImg\help-product10.png" />
+    <Content Include="images\helpImg\help-product11.png" />
+    <Content Include="images\helpImg\help-product12.png" />
+    <Content Include="images\helpImg\help-product13.png" />
+    <Content Include="images\helpImg\help-product14.png" />
+    <Content Include="images\helpImg\help-product15.png" />
+    <Content Include="images\helpImg\help-product16.png" />
+    <Content Include="images\helpImg\help-product17.png" />
+    <Content Include="images\helpImg\help-product2.png" />
+    <Content Include="images\helpImg\help-product3.png" />
+    <Content Include="images\helpImg\help-product4.png" />
+    <Content Include="images\helpImg\help-product5.png" />
+    <Content Include="images\helpImg\help-product6.png" />
+    <Content Include="images\helpImg\help-product7.png" />
+    <Content Include="images\helpImg\help-product8.png" />
+    <Content Include="images\helpImg\help-product9.png" />
+    <Content Include="images\helpImg\help-statistical-phase1.png" />
+    <Content Include="images\helpImg\help-statistical-phase2.png" />
+    <Content Include="images\helpImg\help-statistical-phase3.png" />
+    <Content Include="images\helpImg\help-statistical1.png" />
+    <Content Include="images\helpImg\help-statistical2.png" />
+    <Content Include="images\helpImg\help-statistical3.png" />
+    <Content Include="images\helpImg\help-statistical4.png" />
+    <Content Include="images\helpImg\help-system1.png" />
+    <Content Include="images\helpImg\help-system2.png" />
+    <Content Include="images\helpImg\salea-all.png" />
+    <Content Include="images\helpImg\sales-order1.png" />
+    <Content Include="images\helpImg\sales-order2.png" />
+    <Content Include="images\helpImg\sales.png" />
+    <Content Include="images\helpImg\sales1.png" />
+    <Content Include="images\helpImg\sales10.png" />
+    <Content Include="images\helpImg\sales11.png" />
+    <Content Include="images\helpImg\sales12.png" />
+    <Content Include="images\helpImg\sales2.png" />
+    <Content Include="images\helpImg\sales3.png" />
+    <Content Include="images\helpImg\sales4.png" />
+    <Content Include="images\helpImg\sales5.png" />
+    <Content Include="images\helpImg\sales6.png" />
+    <Content Include="images\helpImg\sales7.png" />
+    <Content Include="images\helpImg\sales8.png" />
+    <Content Include="images\helpImg\sales9.png" />
+    <Content Include="images\helpImg\statistical-dis1.png" />
+    <Content Include="images\helpImg\statistical-dis2.png" />
+    <Content Include="images\helpImg\statistical-dis3.png" />
+    <Content Include="images\helpImg\statistical-funnel1.png" />
+    <Content Include="images\helpImg\statistical-or1.png" />
+    <Content Include="images\helpImg\statistical-or2.png" />
+    <Content Include="images\helpImg\statistical-results1.png" />
+    <Content Include="images\helpImg\statistical-results2.png" />
+    <Content Include="images\helpImg\statistical-sales1.png" />
+    <Content Include="images\helpImg\statistical-sales2.png" />
+    <Content Include="images\helpImg\system-info1.png" />
+    <Content Include="images\helpImg\system-info10.png" />
+    <Content Include="images\helpImg\system-info11.png" />
+    <Content Include="images\helpImg\system-info12.png" />
+    <Content Include="images\helpImg\system-info13.png" />
+    <Content Include="images\helpImg\system-info14.png" />
+    <Content Include="images\helpImg\system-info2.png" />
+    <Content Include="images\helpImg\system-info3.png" />
+    <Content Include="images\helpImg\system-info4.png" />
+    <Content Include="images\helpImg\system-info5.png" />
+    <Content Include="images\helpImg\system-info6.png" />
+    <Content Include="images\helpImg\system-info7.png" />
+    <Content Include="images\helpImg\system-info8.png" />
+    <Content Include="images\helpImg\system-info9.png" />
+    <Content Include="images\helpImg\system-role1.png" />
+    <Content Include="images\helpImg\system-role2.png" />
+    <Content Include="images\helpImg\system-role3.png" />
+    <Content Include="images\helpImg\system-role4.png" />
+    <Content Include="images\helpImg\system-structure1.png" />
+    <Content Include="images\ind-phone.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\pic1.png" />
+    <Content Include="images\pic2.png" />
+    <Content Include="images\pic3.png" />
+    <Content Include="images\pro-bn.png" />
+    <Content Include="images\product_cw1.png" />
+    <Content Include="images\product_cw2.png" />
+    <Content Include="images\product_dls.png" />
+    <Content Include="images\product_dz.png" />
+    <Content Include="images\product_kc1.png" />
+    <Content Include="images\product_kc2.png" />
+    <Content Include="images\product_kc3.png" />
+    <Content Include="images\product_kf.png" />
+    <Content Include="images\product_kh1.png" />
+    <Content Include="images\product_kh2.png" />
+    <Content Include="images\product_kh3.png" />
+    <Content Include="images\product_line.png" />
+    <Content Include="images\product_px.png" />
+    <Content Include="images\product_title.png" />
+    <Content Include="images\product_tj1.png" />
+    <Content Include="images\product_tj2.png" />
+    <Content Include="images\product_tj3.png" />
+    <Content Include="images\product_xs1.png" />
+    <Content Include="images\product_xs2.png" />
+    <Content Include="images\product_xs3.png" />
+    <Content Include="images\product_xt1.png" />
+    <Content Include="images\product_xt2.png" />
+    <Content Include="images\sns1.png" />
+    <Content Include="images\sns2.png" />
+    <Content Include="images\sns3.png" />
+    <Content Include="images\sns4.png" />
+    <Content Include="images\work.png" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery-in.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery_001.js" />
+    <Content Include="js\jquery_002.js" />
+    <Content Include="js\m-nav.js" />
+    <Content Include="js\plugin.js" />
+    <Content Include="js\product.js" />
+    <Content Include="js\scroll.js" />
+    <Content Include="product.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="jquerylb\" />
+    <Folder Include="jqueryplugin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -73,12 +302,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost:11267/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
