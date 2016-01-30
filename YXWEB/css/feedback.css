@@ -1,0 +1,24 @@
+@charset"utf-8";
+.f-main{width:100%;padding:100px 0 0;background:-moz-linear-gradient(top,#eee,#fff);background:-webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#fff));}
+.feedback{max-width:1200px;margin:0 auto;}.f-bg{background:url(../images/feedback-bg.png) no-repeat 0 0;}
+.f-title{float:right;width:300px;margin:50px 0 150px;color:#666;}
+.f-title h1{margin:0 0 20px;font-size:2.4em;}.f-title p{font-size:.9em;}.f-title span{font-size:1.2em;color:#4a98e7;}
+.feedback-box{margin:20px 0;}
+.feedback-list{width:30%;padding:5px 0 0;text-align:right;}.feedback-from{width:60%;}.feedback-list,.feedback-from{line-height:40px;}
+select{width:91%;height:40px;margin:5px 0 6px 10px;font-size:.9em;color:#888;border:1px solid #ccc;outline:0 none;box-shadow:inset 0px 1px 4px #ececec;-moz-box-shadow:inset 0px 1px 4px #ececec;-webkit-box-shadow:inset 0px 1px 4px #ececec;}
+.feedback-question-box{width:90%;height:300px;padding:0 0 0 5px;margin:5px 0 6px 10px;font-size:.9em;line-height:40px;color:#666;border:1px solid #ccc;}
+.feedback-question-box:focus{border:1px solid #4a98e7;}
+.feedback-from a{cursor:pointer;}
+.feedback-buttton{position:relative;display:inline-block;width:150px;height:40px;padding:0 0 0 5px;margin:5px 0 6px 10px;text-align:center;color:#000;border-radius:3px;background:#ccc;-webkit-border-radius:3px;-moz-border-radius:3px;}.feedback-buttton:hover{color:#fff;background:#4a98e7;}
+.feedback-buttton input{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;cursor:pointer;}
+.feedback-from span{margin-left:20px;font-size:.9em;line-height:40px;color:#666;}
+.feedback-text{width:90%;height:40px;padding:0 0 0 5px;margin:5px 0 6px 10px;font-size:.9em;line-height:40px;color:#666;border:1px solid #ccc;}
+.feedback-text:focus{border:1px solid #4a98e7;}
+.f-else{width:100%;background:#eee;}
+.else-feedback{max-width:1200px;padding:50px 0 100px;margin:0 auto;}.else-feedback h2{font-size:1.4em;text-align:center;color:#666;}
+.else-box{display:-webkit-box;display:-moz-box;display:box;width:100%;-webkit-box-orient:horizontal;-moz-box-orient:horizontal;box-orient:horizontal}
+.else-box div{display:block;margin:50px 20px 0;text-align:center;line-height:60px;color:#fff;-webkit-box-flex:1;-moz-box-flex:1;}
+.else-box p{width:70%;margin:0 auto;font-size:.8em;text-indent:40px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;}
+.else-box-tel p{background:#ccc url(../images/help-10.png) no-repeat 10px center;}
+.else-box-email p{background:#ccc url(../images/f-mail.png) no-repeat 10px center;}
+.else-box-qq p{background:#ccc url(../images/f-qq.png) no-repeat 10px center;}
