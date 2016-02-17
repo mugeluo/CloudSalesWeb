@@ -1,6 +1,6 @@
-﻿@charset"utf-8";
+@charset"utf-8";
 /*导航*/
-.site-header{position:fixed;top:0;z-index:100;width:100%;min-width:300px;background:rgba(255,255,255,0.9);cursor:pointer;}
+.site-header{position:fixed;top:0;z-index:100;width:100%;min-width:300px;background:rgba(255,255,255,0.9);}
 .container{height:50px;line-height:50px;padding:15px 20px;}
 .menu-m,.m-nav{display:none;}
 .nav{margin-right:20px;}
@@ -22,7 +22,7 @@
 .footer-snsinfo .wb{background:url(../images/sns3.png) no-repeat 0 0;}
 .footer-snsinfo .bd{background:url(../images/sns4.png) no-repeat 0 0;}
 .footer-line{border-top:1px solid #7c7c7c;}
-.footer-bottom{padding:5px 0 80px;font-size:.8em;color:#aaa;line-height:32px;}
+.footer-bottom{padding:5px 0 50px;font-size:.8em;color:#aaa;line-height:32px;}
 .footer-top a{color:#dddddd;}
 .footer-top a:hover{color:#fff;}
 .f-b-left a{color:#aaa;}

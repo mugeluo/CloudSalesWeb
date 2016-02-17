@@ -51,10 +51,6 @@ $(function(){
 	$(".m-nav a").bind("click",function(){
         $(this).parents(".m-nav").hide();
         $(".m-btu").removeClass('on');
-	})
-
-	$(".site-header").click(function () {
-	    $('body,html').animate({ scrollTop: 0 }, 1000);
-	});
+    })
 	
 });
