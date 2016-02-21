@@ -61,8 +61,8 @@ div.flicking_con a.on{background:#ccc;border:solid 1px #ccc;}
 .about-con{height:600px;background:url(../images/about-contact.png) no-repeat 0 0;background-size:100% 100%;}
 .aboutcontact{max-width:1200px;min-width:300px;margin:0 auto;}.contact{float:left;width:40%;padding:150px 0 0;}
 .map{float:right;width:50%;}#map{width:700px;height:400px;margin:100px 0 0;}
-.contact h3{font-size:1.8em;margin:0 0 50px;}.contact li{font-size:1.1em;line-height:40px;}
-
+.contact h3{font-size:1.8em;margin:0 0 50px;}.contact li{font-size:1em;line-height:40px;}
+.contact a{color:#000;}.contact a:hover{text-decoration:underline;}
 @media only screen and (max-width: 1200px) {
 .aboutwidth{padding:200px 20px 0;}
 div.flicking_con{top:420px;}
