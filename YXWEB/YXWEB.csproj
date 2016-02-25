@@ -80,6 +80,8 @@
     <Content Include="help\help-product inv.html" />
     <Content Include="help\help-product procurement.html" />
     <Content Include="help\help-product.html" />
+    <Content Include="help\help-read-cost.html" />
+    <Content Include="help\help-read.html" />
     <Content Include="help\help-sales-all.html" />
     <Content Include="help\help-sales-order-my.html" />
     <Content Include="help\help-sales-order.html" />
