@@ -95,7 +95,6 @@
     <Content Include="help\help-system-role.html" />
     <Content Include="help\help-system-structure.html" />
     <Content Include="help\help-system.html" />
-    <Content Include="help\help-word.html" />
     <Content Include="images\about-contact.png" />
     <Content Include="images\about-us.png" />
     <Content Include="images\banner.png" />
