@@ -58,8 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
-    <Content Include="api\api-customer-add.html" />
-    <Content Include="css\api.css" />
     <Content Include="css\base.css" />
     <Content Include="css\common.css" />
     <Content Include="css\feedback.css" />
