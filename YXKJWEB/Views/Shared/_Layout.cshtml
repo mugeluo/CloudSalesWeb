@@ -3,12 +3,43 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>关于</title>
+    <link href="/modules/css/base.css" rel="stylesheet" />
+    <link href="/modules/css/layout.css" rel="stylesheet" />
+
+    <script src="/Scripts/sea.js"></script>
+    <script src="/Scripts/sea-config.js"></script>
+    <script src="/Scripts/jquery-1.11.1.js"></script>    
+    <script type="text/javascript">
+        seajs.use(["scripts/layout"], function (layout) {
+            layout.init();
+        });
+
+    </script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
+    <header>
+        <div class="site-header">
+            <ul class="left nav">
+                <li><img src="/modules/images/logo_login.png" /></li>
+                <li>产品</li>
+                <li>服务</li>
+                <li>案例</li>
+                <li class="hover">关于</li>
+            </ul>
+            <div class="right mTop15">
+                <a href="http://edj.yunxiaokeji.com/Home/Login">登录</a>
+                <a class="hover" href="http://edj.yunxiaokeji.com/Home/Register">注册</a>
+            </div>   
+        </div>
+    </header>
+
+    <div class="main-content">
+        @RenderBody()
+    </div>
+    
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
