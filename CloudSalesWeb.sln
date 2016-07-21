@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YXWEB", "YXWEB\YXWEB.csproj", "{A03C1BBA-B927-48C1-BB36-AFD7D475A9A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YXKJWEB", "YXKJWEB\YXKJWEB.csproj", "{5B587848-5356-4F9E-96BB-8C908FA0790D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{A03C1BBA-B927-48C1-BB36-AFD7D475A9A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A03C1BBA-B927-48C1-BB36-AFD7D475A9A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A03C1BBA-B927-48C1-BB36-AFD7D475A9A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B587848-5356-4F9E-96BB-8C908FA0790D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B587848-5356-4F9E-96BB-8C908FA0790D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B587848-5356-4F9E-96BB-8C908FA0790D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B587848-5356-4F9E-96BB-8C908FA0790D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
