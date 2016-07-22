@@ -1,0 +1,149 @@
+﻿@{
+    ViewBag.Title = "云销科技 | 关于";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="/modules/css/about/about.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gDx9WNPeuFj4EgNvullqmzhF"></script>    
+</head>
+
+<div class="" style="margin-top:300px;">
+
+</div>
+
+@* 发展历程 *@
+<div class="development">
+    <span class="block font24 center">发展历程</span>
+    <div class="timeline">
+        <div class="left select mRight5"><</div>
+        <ul class="left timeline-details">
+            <li data-id="0">
+                <div class="status-line"></div>       
+                <div class="txt-details">15年3月</div>                         
+            </li>
+            <li data-id="0">
+                <div class="status-bg"></div>
+            </li>
+            <li data-id="1">
+                <div class="status-line"></div>       
+                <div class="txt-details">15年3月</div>                         
+            </li>
+            <li data-id="1">
+                <div class="status-bg"></div>
+            </li>
+            <li data-id="2">
+                <div class="status-line"></div>       
+                <div class="txt-details">15年3月</div>                         
+            </li>
+            <li data-id="2">
+                <div class="status-bg"></div>
+            </li>
+        </ul>
+        <div class="right select">></div>
+    </div>
+    <div class="development-details">
+        <div>公司成立</div>
+        <div class="mBottom20">-2015.03.15</div>
+        <div>
+            成立初中我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.
+        </div>
+    </div>
+</div>
+
+@* 加入我们--合作伙伴 *@
+<div class="join-teamwork">
+    <div class="join">
+        <div class="title-join-teamwork">加入我们</div>
+        <div>
+            <img />
+        </div>
+        <div class="txt-join-teamwork">我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.</div>
+        <div class="txt-join-teamwork mTop20">经历一家注定要走远路的公司难能可贵的初创期,我们一起,为这个世界做点什么.</div>
+    </div>
+    <div class="teamwork">
+        <div class="title-join-teamwork">加入我们</div>
+        <div>
+            <img />
+        </div>
+        <div class="txt-join-teamwork">我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.</div>
+        <div class="txt-join-teamwork mTop20">经历一家注定要走远路的公司难能可贵的初创期,我们一起,为这个世界做点什么.</div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+@* 加入我们 *@
+<div class="contant-us">
+    <span class="font24 center block" style="color:#000D35;">联系我们</span>
+    <div class="information">
+        <div>合作：18221077623</div>
+        <div>邮箱：customer@yunxiaokeji.com</div>
+        <div>地址：上海市长宁区中山西路 1279弄6号国峰科技大厦 6楼</div>
+        <div>邮编：200050</div>
+    </div>
+    <div>
+        <img />
+    </div>
+</div>
+<div class="map" id="map"></div>
+
+<script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap() {
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMapOverlay();//向地图添加覆盖物
+        }
+        function createMap() {
+            map = new BMap.Map("map");
+            map.centerAndZoom(new BMap.Point(121.426032, 31.197214), 18);
+        }
+        function setMapEvent() {
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+        }
+        function addClickHandler(target, window) {
+            target.addEventListener("click", function () {
+                target.openInfoWindow(window);
+            });
+        }
+        function addMapOverlay() {
+            var markers = [
+              { content: "我的备注", title: "上海云销信息科技有限公司", imageOffset: { width: 0, height: 3 }, position: { lat: 31.198422, lng: 121.42751 } }
+            ];
+            for (var index = 0; index < markers.length; index++) {
+                var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+                var marker = new BMap.Marker(point, {
+                    icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                        imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                    })
+                });
+                var label = new BMap.Label(markers[index].title, { offset: new BMap.Size(25, 5) });
+                var opts = {
+                    width: 200,
+                    title: markers[index].title,
+                    enableMessage: false
+                };
+                var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+                marker.setLabel(label);
+                addClickHandler(marker, infoWindow);
+                map.addOverlay(marker);
+            };
+        }
+        //向地图添加控件
+        function addMapControl() {
+            var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+            scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+            map.addControl(scaleControl);
+            var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+            map.addControl(navControl);
+            var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true });
+            map.addControl(overviewControl);
+        }
+        var map;
+        initMap();
+</script>

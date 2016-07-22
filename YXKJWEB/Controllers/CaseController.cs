@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace YXKJWEB.Controllers
 {
-    public class AboutController : Controller
+    public class CaseController : Controller
     {
         //
-        // GET: /About/
+        // GET: /Case/
 
-        public ActionResult About()
+        public ActionResult Case()
         {
             return View();
         }

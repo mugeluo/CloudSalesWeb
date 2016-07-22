@@ -15,11 +15,7 @@ define(function (require, exports, module) {
     //绑定事件
     LayoutObject.bindEvent = function () {
         var _self = this;
-        //调整浏览器窗体
-        $(window).resize(function () {
-            LayoutObject.bindStyle();
-        });
-        
+              
         //窗体滚动 置顶头部
         $(window).scroll(function(){  
             if ($(window).scrollTop()>50){  
@@ -54,7 +50,7 @@ define(function (require, exports, module) {
             return false;
         });
 
-        $(".nav li").click(function () {
+        $(".nav li:gt(0)").click(function () {
             var _this = $(this);
             if (!_this.hasClass("hover")) {
                 _this.addClass("hover").siblings().removeClass("hover");

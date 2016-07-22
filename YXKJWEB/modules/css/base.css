@@ -9,6 +9,7 @@
 .center { text-align:center; }
 .tRight { text-align:right !important;}
 .hide { display:none;}
+.block { display:block;}
 .nolimits { display: none !important; }
 .relative {position:relative;}
 .bold {font-weight:bold}
@@ -51,7 +52,7 @@
 .color666 { color:#666 !important; }
 .color999 { color:#999 !important; }
 .colorccc { color:#ccc !important; }
-.colorfff { color:#fff !important;}
+.colorfff { color:#938D88 !important;}
 .head {background-color:#ddd !important;}
 
 .lineHeight15 { height:15px; line-height:15px;}
@@ -109,6 +110,7 @@
 .mTop30 {margin-top:30px;}
 .mTop40 {margin-top:40px !important;}
 .mTop50 {margin-top:50px;}
+.mTop150 {margin-top:150px;}
 
 .mLeft1 {margin-left:1px;}
 .mLeft2 {margin-left:2px;}
@@ -124,6 +126,7 @@
 .mLeft65 {margin-left:65px;}
 .mLeft80 {margin-left:80px;}
 .mLeft100 {margin-left:100px;}
+.mLeft150 {margin-left:150px;}
 .mLeft155 {margin-left:155px;}
 .mLeft160 {margin-left:160px;}
 .mLeft230 {margin-left:230px;}
@@ -141,6 +144,7 @@
 .mRight25 {margin-right:25px;}
 .mRight30 {margin-right:30px;}
 .mRight50 {margin-right:50px !important;}
+.mRight150 {margin-right:150px}
 
 .mBottom1 {margin-bottom:1px;}
 .mBottom2 {margin-bottom:2px;}

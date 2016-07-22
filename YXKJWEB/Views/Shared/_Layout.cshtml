@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>关于</title>
+    <title>案例</title>
     <link href="/modules/css/base.css" rel="stylesheet" />
     <link href="/modules/css/layout.css" rel="stylesheet" />
 
@@ -16,8 +16,7 @@
         });
 
     </script>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("css", false)   
 </head>
 <body>
     <header>
@@ -43,5 +42,77 @@
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+    <footer class="site-footer">
+        <div class="left">
+            <ul class="menu-footer">
+                <li>产品</li>
+                <li>功能特点</li>
+                <li>CRM</li>
+                <li>进销存</li>
+                <li>代理商</li>
+                <li>个性化</li>
+                <li>更新日志</li>
+            </ul>
+            <ul class="menu-footer">
+                <li>案例</li>
+                <li>行业案例</li>
+                <li>企业</li>                
+            </ul>
+            <ul class="menu-footer">
+                <li>报价</li>
+                <li>价格表</li>
+                <li>定制化服务</li>               
+            </ul>
+            <ul class="menu-footer">
+                <li>帮助</li>
+                <li>帮助中心</li>
+                <li>用户反馈</li>
+                <li>操作手册</li>               
+            </ul>
+            <ul class="menu-footer">
+                <li>开发者</li>
+                <li>开发平台</li>
+                <li>平台对接</li>               
+            </ul>
+            <ul class="menu-footer">
+                <li>关于</li>
+                <li>公司介绍</li>
+                <li>合作伙伴</li>               
+                <li>招聘</li>               
+                <li>商务合作</li>               
+            </ul>
+        </div>
+        <div class="party-footer">
+            <ul class="icon-party">
+                <li>
+                    <a href="#"><img src="/modules/images/sns1.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/modules/images/sns2.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/modules/images/sns3.png" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/modules/images/sns4.png" /></a>
+                </li>
+            </ul>
+            <div class="address-footer">
+                <span>公司地址:</span>
+                <a target="_blank" href="http://j.map.baidu.com/FvBYv" title="跳转到地图">上海市长宁区中山西路 1279弄6号国峰科技大厦 6楼</a>
+                <div class="mTop10">市场合作:&nbsp;customer@yunxiaokeji.com</div>
+            </div>
+        </div>
+        <div class="statement">
+            <span class="colorfff left">©2016云销科技 沪ICP备 1999888 号</span>
+            <div>服务条款</div>   
+            <div class="line"></div>         
+            <div>隐私服务</div>
+            <div class="line"></div>   
+            <div>版权声明</div>
+            <div class="line"></div>  
+            <div>网站地图</div>
+        </div>
+    </footer>
 </body>
 </html>

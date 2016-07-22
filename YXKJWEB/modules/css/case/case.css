@@ -1,0 +1,17 @@
+﻿.main-content { background-color:#fff;}
+.case-industry { color:#0C090D;font-size:22px;margin-bottom:20px;padding-top:30px;}
+.line-case { border-bottom:1px solid #D8D5CF;margin-bottom:5px;width:200px;margin-left:575px;}
+.industry { margin-bottom:75px;margin-left:440px;margin-top:20px;}
+.industry li{float:left;margin-right:70px;font-size:16px;cursor:pointer;padding:6px 17px; }
+.industry li.hover{color:#fff;background-color:#008AE1;}
+.example .example-img { background-color:#F3F2F0;height:360px;position:relative;}
+.example .example-img img:first-child{margin-right:-5px; }
+.example .example-img img{height:360px;}
+.example .example-img  .layer{position:absolute;background:rgba(109, 95, 95, 0.6);
+                              height:360px;width:540px;top:0;left:135px;display:none;}
+.example .example-img  .layer-two{position:absolute;background:rgba(109, 95, 95, 0.6);
+                              height:360px;width:540px;top:0;left:675px;display:none}
+.example-img .layer div { color:#fff;margin-left:50px;margin-right:50px;font-size:16px;}
+.example-img .layer-two div { color:#fff;margin-left:50px;margin-right:50px;font-size:16px;}
+.example .details-example { width:50%;margin-left:150px;line-height:1.8}
+.fontcolor { color:#73736F;}
