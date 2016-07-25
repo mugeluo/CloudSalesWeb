@@ -148,7 +148,13 @@
             
             var mon=$(".user-time").val(),dis=$(".user-discount").val();
             var count = ObjectJS.estimateCost(val, mon, dis);
-            alert(count);
+            if ($(".cost .check-box:first").hasClass("hover")) {
+                count += 1000;
+            }
+            if ($(".cost .check-box:last").hasClass("hover")) {
+                count += 4000;
+            }
+            $(".cost .count span").html(count.toFixed(2));
         });
         $(".user-discount").change(function () {
             var _this = $(this), val = _this.val();
@@ -166,6 +172,16 @@
                 _this.parent().find(".use-line div:first").css("width", val*10 + "%");
                 _this.parent().find(".use-line div:last").css("margin-left", (Number(val)*10 - 2) + "%");
             }
+
+            var mon = $(".user-time").val(), dis = $(".user-numb").val();
+            var count = ObjectJS.estimateCost(dis, mon, val);
+            if ($(".cost .check-box:first").hasClass("hover")) {
+                count += 1000;
+            }
+            if ($(".cost .check-box:last").hasClass("hover")) {
+                count += 4000;
+            }
+            $(".cost .count span").html(count.toFixed(2));
         });
         $(".user-time").change(function () {
             var _this = $(this), val = _this.val();
@@ -183,21 +199,40 @@
                 _this.parent().find(".use-line div:first").css("width", val / 36*100 + "%");
                 _this.parent().find(".use-line div:last").css("margin-left", (Number(val) / 36 * 100 - 2) + "%");
             }
+
+            var dis = $(".user-discount").val(), mon = $(".user-numb").val();
+            var count = ObjectJS.estimateCost(mon, val, dis);
+            if ($(".cost .check-box:first").hasClass("hover")) {
+                count += 1000;
+            }
+            if ($(".cost .check-box:last").hasClass("hover")) {
+                count += 4000;
+            }
+            $(".cost .count span").html(count.toFixed(2));
         });
 
-        $(".check-box").click(function () {
+        $(".cost .check-box").click(function () {
             var _this = $(this);
             if (!_this.hasClass("hover")) {
-                _this.addClass("hover").siblings().removeClass("hover");
+                _this.addClass("hover")
             } else {
                 _this.removeClass("hover");
             }
-        });
+            
+            var val = $(".user-numb").val(), dis = $(".user-discount").val(), mon = $(".user-numb").val();
+            var count = ObjectJS.estimateCost(val, mon, dis);
+            if ($(".cost .check-box:first").hasClass("hover")) {
+                count += 1000;
+            }
+            if ($(".cost .check-box:last").hasClass("hover")) {
+                count += 4000;
+            }
+            $(".cost .count span").html(count.toFixed(2));
+        });       
 
     };    
 
-    ObjectJS.estimateCost = function (number, month, discount) {
-        debugger
+    ObjectJS.estimateCost = function (number, month, discount) {        
         var money = "";
         if (number =="") {
             alert("请输入人数");
@@ -214,39 +249,39 @@
         if (year<=1) {
             if (5>= number) {
                 money = 1200;
-            } else if (10>=number>5) {
+            } else if (10>=number) {
                 money = 2400;
-            } else if (20>=number>10) {
+            } else if (20>=number) {
                 money = 4600;
-            } else if (50 >=number>20) {
+            } else if (50 >=number) {
                 money = 10800;
-            } else if(100>=number>50){
+            } else if(100>=number){
                 money = 19800;
             }
-        } else if (1<year<=2) {
-            //if (5 >= number) {
-            //    money = 1200;
-            //} else if (10 >= number > 5) {
-            //    money = 2400;
-            //} else if (20 >= number > 10) {
-            //    money = 4600;
-            //} else if (50 >= number > 20) {
-            //    money = 10800;
-            //} else {
-            //    money = 19800;
-            //}
+        } else if (2>=year) {
+            if (5 >= number) {
+                money = 2400;
+            } else if (10 >= number) {
+                money = 4200;
+            } else if (20 >= number) {
+                money = 8200;
+            } else if (50 >= number) {
+                money = 19200;
+            } else if (100 >= number) {
+                money = 35600;
+            }
         } else {
-            //if (5 >= number) {
-            //    money = 1200;
-            //} else if (10 >= number > 5) {
-            //    money = 2400;
-            //} else if (20 >= number > 10) {
-            //    money = 4600;
-            //} else if (50 >= number > 20) {
-            //    money = 10800;
-            //} else {
-            //    money = 19800;
-            //}
+            if (5 >= number) {
+                money = 3600;
+            } else if (10 >= number) {
+                money = 5600;
+            } else if (20 >= number) {
+                money = 10800;
+            } else if (50 >= number) {
+                money = 25600;
+            } else if (100 >= number) {
+                money = 46800;
+            }
         }
         var countMoney = money * discount / 10;
         return countMoney;

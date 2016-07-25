@@ -41,6 +41,7 @@
 .cost div span { font-size:17px;}
 .estimate-price .cost .count { border: 0;border-top: 3px solid #ccc;width: 300px;color: #0689E0;
                                padding-top: 10px;font-size: 18px;}
+.cost .count span { color:#0689E0;}
 /*技术支持*/
 .technical-support { height:500px;background-color:#F3F2F0;}
 .technical-support .details{width:900px;margin-left:275px;}
