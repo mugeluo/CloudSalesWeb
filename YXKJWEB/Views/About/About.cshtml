@@ -6,51 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewBag.Title</title>
     <link href="/modules/css/about/about.css" rel="stylesheet" />
+    <link href="/modules/plug/jquery-horizon-line-switch/css/default.css" rel="stylesheet" />
+    <link href="/modules/plug/jquery-horizon-line-switch/css/style.css" rel="stylesheet" />
+    <link href="/modules/plug/jquery-horizon-line-switch/css/reset.css" rel="stylesheet" />
+
+    <script src="/modules/plug/jquery-horizon-line-switch/js/modernizr.js"></script>
+    <script src="/modules/plug/jquery-horizon-line-switch/js/main.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gDx9WNPeuFj4EgNvullqmzhF"></script>    
 </head>
 
-<div class="" style="margin-top:300px;">
-
-</div>
 
 @* 发展历程 *@
-<div class="development">
-    <span class="block font24 center">发展历程</span>
-    <div class="timeline">
-        <div class="left select mRight5"><</div>
-        <ul class="left timeline-details">
-            <li data-id="0">
-                <div class="status-line"></div>       
-                <div class="txt-details">15年3月</div>                         
-            </li>
-            <li data-id="0">
-                <div class="status-bg"></div>
-            </li>
-            <li data-id="1">
-                <div class="status-line"></div>       
-                <div class="txt-details">15年3月</div>                         
-            </li>
-            <li data-id="1">
-                <div class="status-bg"></div>
-            </li>
-            <li data-id="2">
-                <div class="status-line"></div>       
-                <div class="txt-details">15年3月</div>                         
-            </li>
-            <li data-id="2">
-                <div class="status-bg"></div>
-            </li>
-        </ul>
-        <div class="right select">></div>
-    </div>
-    <div class="development-details">
-        <div>公司成立</div>
-        <div class="mBottom20">-2015.03.15</div>
-        <div>
-            成立初中我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.
-        </div>
-    </div>
-</div>
+<section class="cd-horizontal-timeline">
+<div class="timeline">
+<div class="events-wrapper">
+	<div class="events">
+		<ol>
+			<li><a href="#0" data-date="16/01/2014" class="selected">15年3月</a></li>
+			<li><a href="#0" data-date="28/02/2014">15年12月</a></li>
+			<li><a href="#0" data-date="20/04/2014">16年1月</a></li>
+			<li><a href="#0" data-date="20/05/2014">16年3月</a></li>
+			<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+			<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+			<li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+			<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+			<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+			<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+			<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+		</ol>
+
+		<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="16/01/2014">
+				<h2>公司成立</h2>
+				<em>2015.03.15</em>
+				<p>	
+					成立初衷致力打造国内先进的企业供应链平台，提供CRM、进销存和分销管理一站式服务。基于这个理念，经过核心团队历时一年的研发，诞生了一款名为“二当家”的SaaS类平台产品
+				</p>
+                <img src="/modules/images/about/about_02.png"/>
+			</li>
+
+			<li data-date="28/02/2014">
+				<h2>Event title here</h2>
+				<em>February 28th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/aa%20-%20副本%20(6).png" />
+			</li>
+
+			<li data-date="20/04/2014">
+				<h2>Event title here</h2>
+				<em>March 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/about/about_02.png"/>
+			</li>
+
+			<li data-date="20/05/2014">
+				<h2>Event title here</h2>
+				<em>May 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/aa%20-%20副本%20(6).png" />
+			</li>
+
+			<li data-date="09/07/2014">
+				<h2>Event title here</h2>
+				<em>July 9th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/about/about_02.png"/>
+			</li>
+
+			<li data-date="30/08/2014">
+				<h2>Event title here</h2>
+				<em>August 30th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/aa%20-%20副本%20(6).png" />
+			</li>
+
+			<li data-date="15/09/2014">
+				<h2>Event title here</h2>
+				<em>September 15th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/about/about_02.png"/>
+			</li>
+
+			<li data-date="01/11/2014">
+				<h2>Event title here</h2>
+				<em>November 1st, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/aa%20-%20副本%20(6).png" />
+			</li>
+
+			<li data-date="10/12/2014">
+				<h2>Event title here</h2>
+				<em>December 10th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/about/about_02.png"/>
+			</li>
+
+			<li data-date="19/01/2015">
+				<h2>Event title here</h2>
+				<em>January 19th, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/aa%20-%20副本%20(6).png" />
+			</li>
+
+			<li data-date="03/03/2015">
+				<h2>Event title here</h2>
+				<em>March 3rd, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+                <img src="/modules/images/about/about_02.png"/>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
+</section>
 
 @* 加入我们--合作伙伴 *@
 <div class="join-teamwork">
@@ -73,7 +170,7 @@
     <div class="clear"></div>
 </div>
 
-@* 加入我们 *@
+@* 地址 *@
 <div class="contant-us">
     <span class="font24 center block" style="color:#000D35;">联系我们</span>
     <div class="information">
@@ -92,7 +189,7 @@
         //创建和初始化地图函数：
         function initMap() {
             createMap();//创建地图
-            setMapEvent();//设置地图事件
+            //setMapEvent();//设置地图事件
             addMapControl();//向地图添加控件
             addMapOverlay();//向地图添加覆盖物
         }
@@ -100,12 +197,12 @@
             map = new BMap.Map("map");
             map.centerAndZoom(new BMap.Point(121.426032, 31.197214), 18);
         }
-        function setMapEvent() {
-            map.enableScrollWheelZoom();
-            map.enableKeyboard();
-            map.enableDragging();
-            map.enableDoubleClickZoom()
-        }
+        //function setMapEvent() {
+        //    map.enableScrollWheelZoom();
+        //    map.enableKeyboard();
+        //    map.enableDragging();
+        //    map.enableDoubleClickZoom()
+        //}
         function addClickHandler(target, window) {
             target.addEventListener("click", function () {
                 target.openInfoWindow(window);

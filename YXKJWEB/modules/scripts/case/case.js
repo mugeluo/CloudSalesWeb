@@ -14,17 +14,7 @@
             $("#" + id).show().siblings().hide();
             $(".layer").hide();
             $(".layer-two").hide();
-        });
-        
-        $(".example-img img").hover(            
-            function () {                
-                var className = $(this).data("id");
-                $("." + className).stop().slideDown();               
-            },function () {
-                var className = $(this).data("id");
-                $("." + className).stop().slideUp();
-            }
-        )
+        });   
     };
 
     module.exports = ObjectJS;

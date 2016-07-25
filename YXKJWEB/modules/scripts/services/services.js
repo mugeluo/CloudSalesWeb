@@ -25,7 +25,10 @@
             }
             _this.find("div:first").css("width", position + "%");
             _this.find("div:last").css("margin-left", (Number(position) - 2) + "%");
-            _this.next().val(position);            
+            _this.next().val(position);
+            var mon = $(".user-time").val(), dis = $(".user-discount").val();
+            ObjectJS.estimateCost(position, mon, dis);
+
         });
         $(".discount").click(function (e) {
             e.preventDefault();
@@ -40,6 +43,8 @@
             _this.find("div:first").css("width", position*10 + "%");
             _this.find("div:last").css("margin-left", (Number(position)*10 - 2) + "%");
             _this.next().val(position);
+            var mon = $(".user-time").val(), dis = $(".user-numb").val();
+            ObjectJS.estimateCost(dis, mon, position);
         });
         $(".use-time").click(function (e) {            
             e.preventDefault();
@@ -54,6 +59,8 @@
             _this.find("div:first").css("width", position/36 * 100 + "%");
             _this.find("div:last").css("margin-left", (Number(position)/36 * 100 - 2) + "%");
             _this.next().val(position);
+            var dis = $(".user-discount").val(), mon = $(".user-numb").val();
+            ObjectJS.estimateCost(mon, position, dis);
         });
 
         $(".use-number-txt").mousedown(function (e) {
@@ -73,9 +80,11 @@
                     _this.find("div:first").css("width", position + "%");
                     _this.find("div:last").css("margin-left", position-2 + "%");
                     _this.next().val(position);
+                    var mon = $(".user-time").val(), dis = $(".user-discount").val();
+                    ObjectJS.estimateCost(position, mon, dis);
                 }
             });
-            _this.mouseup(function () {
+            $(document).mouseup(function () {
                 e.preventDefault();
                 ObjectJS.controller = false;
             });   
@@ -97,9 +106,11 @@
                     _this.find("div:first").css("width", position*10 + "%");
                     _this.find("div:last").css("margin-left", position*10-2 + "%");
                     _this.next().val(position);
+                    var mon = $(".user-time").val(), dis = $(".user-numb").val();
+                    ObjectJS.estimateCost(dis, mon, position);
                 }
             });
-            _this.mouseup(function () {
+            $(document).mouseup(function () {
                 e.preventDefault();
                 ObjectJS.controller = false;
             });
@@ -121,9 +132,11 @@
                     _this.find("div:first").css("width", position/36 * 100 + "%");
                     _this.find("div:last").css("margin-left", position/36 * 100-2 + "%");
                     _this.next().val(position);
+                    var dis = $(".user-discount").val(), mon = $(".user-numb").val();
+                    ObjectJS.estimateCost(mon, position, dis);
                 }
             });
-            _this.mouseup(function () {
+            $(document).mouseup(function () {
                 e.preventDefault();
                 ObjectJS.controller = false;
             });
@@ -131,7 +144,7 @@
 
         $(".user-numb").change(function () {
             var _this = $(this), val = _this.val();
-            if (val >= 100) {                
+            if (val > 100) {                
                 alert("您的人数已超过100人，请联系我们，为您定制专业版");
                 _this.parent().find(".use-line div:first").css("width", "100%");
                 _this.parent().find(".use-line div:last").css("margin-left", "98%");
@@ -147,18 +160,11 @@
             }
             
             var mon=$(".user-time").val(),dis=$(".user-discount").val();
-            var count = ObjectJS.estimateCost(val, mon, dis);
-            if ($(".cost .check-box:first").hasClass("hover")) {
-                count += 1000;
-            }
-            if ($(".cost .check-box:last").hasClass("hover")) {
-                count += 4000;
-            }
-            $(".cost .count span").html(count.toFixed(2));
+            ObjectJS.estimateCost(val, mon, dis);            
         });
         $(".user-discount").change(function () {
             var _this = $(this), val = _this.val();
-            if (val >= 10) {
+            if (val > 10) {
                 alert("最低10折");
                 _this.parent().find(".use-line div:first").css("width", "100%");
                 _this.parent().find(".use-line div:last").css("margin-left", "98%");
@@ -174,18 +180,11 @@
             }
 
             var mon = $(".user-time").val(), dis = $(".user-numb").val();
-            var count = ObjectJS.estimateCost(dis, mon, val);
-            if ($(".cost .check-box:first").hasClass("hover")) {
-                count += 1000;
-            }
-            if ($(".cost .check-box:last").hasClass("hover")) {
-                count += 4000;
-            }
-            $(".cost .count span").html(count.toFixed(2));
+            ObjectJS.estimateCost(dis, mon, val);            
         });
         $(".user-time").change(function () {
             var _this = $(this), val = _this.val();
-            if (val >= 36) {
+            if (val > 36) {
                 alert("最高3年");
                 _this.parent().find(".use-line div:first").css("width", "100%");
                 _this.parent().find(".use-line div:last").css("margin-left", "98%");
@@ -201,14 +200,7 @@
             }
 
             var dis = $(".user-discount").val(), mon = $(".user-numb").val();
-            var count = ObjectJS.estimateCost(mon, val, dis);
-            if ($(".cost .check-box:first").hasClass("hover")) {
-                count += 1000;
-            }
-            if ($(".cost .check-box:last").hasClass("hover")) {
-                count += 4000;
-            }
-            $(".cost .count span").html(count.toFixed(2));
+            ObjectJS.estimateCost(mon, val, dis);            
         });
 
         $(".cost .check-box").click(function () {
@@ -220,30 +212,35 @@
             }
             
             var val = $(".user-numb").val(), dis = $(".user-discount").val(), mon = $(".user-numb").val();
-            var count = ObjectJS.estimateCost(val, mon, dis);
-            if ($(".cost .check-box:first").hasClass("hover")) {
-                count += 1000;
-            }
-            if ($(".cost .check-box:last").hasClass("hover")) {
-                count += 4000;
-            }
-            $(".cost .count span").html(count.toFixed(2));
-        });       
-
+            ObjectJS.estimateCost(val, mon, dis);
+        });  
     };    
 
     ObjectJS.estimateCost = function (number, month, discount) {        
         var money = "";
         if (number =="") {
             alert("请输入人数");
-            return;
+            var countMoney = 0;
+            return countMoney;
         }
         if (month=="") {
             month = 12;
         }
-        if (discount=="") {
+        if (discount==""||discount=="0") {
             discount = 10;
         }
+        //if (!number.isInt() || !number.isDouble()) {
+        //    alert("人数格式不正确");
+        //    return;
+        //}
+        //if (!month.isInt() || !month.isDouble()) {
+        //    alert("月份格式不正确");
+        //    return;
+        //}
+        //if (!discount.isMoneyNumber()) {
+        //    alert("折扣格式不正确");
+        //    return;
+        //}
         var year = Number(month / 12).toFixed(2);        
         var number = Number(number);    
         if (year<=1) {
@@ -257,6 +254,8 @@
                 money = 10800;
             } else if(100>=number){
                 money = 19800;
+            } else {
+                money = 19800;
             }
         } else if (2>=year) {
             if (5 >= number) {
@@ -268,6 +267,8 @@
             } else if (50 >= number) {
                 money = 19200;
             } else if (100 >= number) {
+                money = 35600;
+            } else {
                 money = 35600;
             }
         } else {
@@ -281,10 +282,18 @@
                 money = 25600;
             } else if (100 >= number) {
                 money = 46800;
+            } else {
+                money = 46800;
             }
         }
         var countMoney = money * discount / 10;
-        return countMoney;
+        if ($(".cost .check-box:first").hasClass("hover")) {
+            countMoney += 1000;
+        }
+        if ($(".cost .check-box:last").hasClass("hover")) {
+            countMoney += 4000;
+        }
+        $(".cost .count span").html(countMoney.toFixed(2));
     }
 
     module.exports = ObjectJS;
