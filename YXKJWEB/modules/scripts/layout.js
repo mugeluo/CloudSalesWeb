@@ -53,9 +53,10 @@ define(function (require, exports, module) {
         $(".nav li:gt(0)").click(function () {
             var _this = $(this);
             if (!_this.hasClass("hover")) {
-                _this.addClass("hover").siblings().removeClass("hover");
-            }
+                _this.addClass("hover").siblings().removeClass("hover");                
+            }            
         });
+      
     }
 
     // 判断浏览器是否支持 placeholder

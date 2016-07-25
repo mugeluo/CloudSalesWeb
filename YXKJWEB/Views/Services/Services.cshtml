@@ -1,0 +1,180 @@
+﻿@{
+    ViewBag.Title = "服务";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section css{
+    <link href="/modules/css/seivices/services.css" rel="stylesheet" />
+}
+@section scripts{
+    <script type="text/javascript">
+        seajs.use(["scripts/services/services"], function (ObjectJS) {
+            ObjectJS.init();
+        });
+    </script>
+}
+@* 产品定价 *@
+<div class="service-pricing">
+    <div class="center font22 clocr-title pTop30">产品定价</div>
+    <div class="pricing-details">
+        <ul class="mRight25">
+            <li>免费版</li>
+            <li class="font22 mBottom10">￥0</li>
+            <li class="color-pricing ">适用于个人或微型团队</li>
+            <li class="btn-click btn-click-login"><a href="http://edj.yunxiaokeji.com/Home/Register">立即注册</a></li>
+            <li class="line-pricing"></li>
+            <li class="details-function">每个项目最多<a>10</a>位成员</li>
+            <li class="details-function">任务,文件,日程,分享应用</li>
+            <li class="details-function"><a>Markdown</a>插件</li>
+            <li class="details-function">单个文件最大支持<a>200M</a>容量</li>
+        </ul>
+        <ul class="mRight25">
+            <li>专业版</li>
+            <li class="font22 mBottom10">￥1200</li>
+            <li class="color-pricing ">适用于小型团队</li>
+            <li class="btn-click login-trial">免费试用</li>
+            <li class="line-pricing"></li>
+            <li class="details-function">"免费版"所有功能</li>
+            <li class="details-function">每个项目最多<a>10</a>位成员</li>
+            <li class="details-function">文件总容量无限</li>            
+            <li class="details-function">单个文件最大支持<a>1G</a>容量</li>
+            <li class="details-function">可使用所有应用与插件</li>
+            <li class="details-function">权限配置增加管理员角色</li>
+        </ul>
+        <ul>
+            <li>定制版</li>
+            <li class="font22 mBottom10">￥？？？</li>
+            <li class="color-pricing ">适用于各规模团队与企业</li>
+            <li class="btn-click login-trial">联系我们</li>
+            <li class="line-pricing"></li>
+            <li class="details-function">"专业版"所有功能</li>
+            <li class="details-function">项目所有权归属企业</li>
+            <li class="details-function">企业组织架构管理</li>
+            <li class="details-function">自定义的权限及角色配置</li>
+            <li class="details-function">企业数据统计</li>
+            <li class="details-function">自动化的企业报告</li>
+            <li class="details-function">企业专属顾问</li>
+        </ul>
+    </div>
+</div>
+@* 价格表 *@
+<div class="price-list">
+    <div class="center font22 clocr-title pTop30 mBottom40">价格表</div>
+    <table>
+        <tr class="bgcolor-title">
+            <td></td>
+            <td class="no-border-left font14">1年价格(元)</td>
+            <td class="no-border-left font14">2年价格(元)</td>
+            <td class="no-border-left font14">3年价格(元)</td>
+        </tr>
+        <tr class="bgcolor-price">
+            <td><div class="use-number">5用户</div></td>
+            <td>1,200.00</td>
+            <td>2,400.00</td>
+            <td>3,600.00</td>
+        </tr>
+        <tr>
+            <td><div class="use-number">10用户</div></td>
+            <td>2,400.00</td>
+            <td>4,200.00</td>
+            <td>5,600.00</td>
+        </tr>
+        <tr class="bgcolor-price">
+            <td><div class="use-number">20用户</div></td>
+            <td>4,600.00</td>
+            <td>8,200.00</td>
+            <td>10,800.00</td>
+        </tr>
+        <tr>
+            <td><div class="use-number">50用户</div></td>
+            <td>10,800.00</td>
+            <td>19,200.00</td>
+            <td>25,600.00</td>
+        </tr>
+        <tr class="bgcolor-price">
+            <td><div class="use-number">100用户</div></td>
+            <td>19,800.00</td>
+            <td>35,600.00</td>
+            <td>46,800.00</td>
+        </tr>
+    </table>
+    <div class="mLeft275">此价格仅供参考,具体收费以实际为准</div>
+    <div class="price-line"></div>
+</div>
+@* 费用估算 *@
+<div class="estimate">
+    <div class="center font22 clocr-title pTop30 mBottom40">费用估算</div>
+    <div class="estimate-price">
+        <ul class="left mRight50">
+            <li>
+                <div>使用人数</div>
+                <div class="use-line use-number-txt">
+                    <div style="width:0%"></div>
+                    <div class="btn-number" style="margin-left:0%"></div>
+                </div>
+                <input class="user-numb" type="text" />/人
+            </li>
+            <li>
+                <div>时间</div>
+                <div class="use-line use-time">  
+                    <div style="width:0%"></div>       
+                    <div class="btn-number" style="margin-left:0%"></div>                               
+                </div>
+                <input class="user-time" type="text" />/月
+            </li>
+            <li>
+                <div>折扣</div>
+                <div class="use-line discount">
+                    <div style="width:0%"></div>
+                    <div class="btn-number" style="margin-left:0%"></div>
+                </div>
+                <input class="user-discount" type="text" />/折
+            </li>
+        </ul>
+        <div class="cost">
+            <div>服务费用</div>
+            <div class="check-box iconfont">&#xe626;</div>
+            <div>                
+                部署服务：<span>￥1000</span>/次
+            </div>
+            <div class="check-box iconfont">&#xe626;</div>
+            <div>                
+                制度培训：<span>￥4000</span>/小时
+            </div>
+            <div class="count">
+                总计价格：￥22,999.00元
+            </div>
+        </div>
+    </div>
+</div>
+@* 技术支持 *@
+<div class="technical-support">
+    <div class="hight100"></div>
+    <div class="details">        
+        <ul>
+            <li><img /></li>
+            <li class="font16">定制化服务</li>
+            <li>对于有个性化需求的客户，我们提供针对性的定制功能开发，基于二当家平台做各种拓展功能</li>
+            <li>了解详情&nbsp;></li>
+        </ul>
+        <ul>
+            <li><img /></li>
+            <li class="font16">技术化支持</li>
+            <li>针对新用户，我们会提供免费的培训指导，帮助您和您的团队更快捷有效的使用二当家</li>
+            <li>了解详情&nbsp;></li>
+        </ul>
+        <ul>
+            <li><img /></li>
+            <li class="font16">销售咨询</li>
+            <li>销售经理为您解答专业版报价,二当家部署实施方案的各种问题</li>
+            <li>了解详情&nbsp;></li>
+        </ul>
+    </div>    
+</div>
+
+<div class="MD-teamwork">
+    <img src="/modules/images/aa - 副本 (6).png" />
+    <div class="MD-teamwork-mask">
+        <div>明道与智能工厂用户，首次购买二当家享5折优惠</div>
+        <div>终身续费8.8折</div>
+    </div>
+</div>

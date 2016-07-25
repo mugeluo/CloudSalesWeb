@@ -19,10 +19,10 @@
         $(".example-img img").hover(            
             function () {                
                 var className = $(this).data("id");
-                $("." + className).slideDown();               
+                $("." + className).stop().slideDown();               
             },function () {
                 var className = $(this).data("id");
-                $("." + className).slideUp();                
+                $("." + className).stop().slideUp();
             }
         )
     };

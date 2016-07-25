@@ -124,6 +124,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -198,6 +201,8 @@
     <Content Include="modules\css\iconfont\iconfont.css" />
     <Content Include="modules\css\iconfont\iconfont.svg" />
     <Content Include="modules\css\layout.css" />
+    <Content Include="modules\css\seivices\services.css" />
+    <Content Include="modules\images\aa - 副本 %286%29.png" />
     <Content Include="modules\images\case\anlile-1.png" />
     <Content Include="modules\images\case\anlile-2.png" />
     <Content Include="modules\images\case\anlile-3.png" />
@@ -214,6 +219,7 @@
     <Content Include="modules\scripts\case\case.js" />
     <Content Include="modules\scripts\global.js" />
     <Content Include="modules\scripts\layout.js" />
+    <Content Include="modules\scripts\services\services.js" />
     <Content Include="Scripts\jquery-1.11.1.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -245,6 +251,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Case\Case.cshtml" />
     <Content Include="Views\About\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Product\Product.cshtml" />
+    <Content Include="Views\Services\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
