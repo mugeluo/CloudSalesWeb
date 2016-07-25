@@ -13,7 +13,7 @@
             window.location = "http://edj.yunxiaokeji.com/Home/Login";
         })
 
-        $(".use-number-txt").click(function (e) {
+        $(".use-number-txt").click(function (e) {            
             e.preventDefault();
             var _this = $(this), offset = _this.offset(), containerWidth = _this.outerWidth(),
                 handleWidth = _this.find("div:last").outerWidth();
@@ -30,11 +30,11 @@
             ObjectJS.estimateCost(position, mon, dis);
 
         });
-        $(".discount").click(function (e) {
+        $(".discount").click(function (e) {            
             e.preventDefault();
             var _this = $(this), offset = _this.offset(), containerWidth = _this.outerWidth(),
                 handleWidth = _this.find("div:last").outerWidth()
-            position = Math.round(((e.pageX - offset.left + handleWidth / 2) / containerWidth) * 10);
+            position = (((e.pageX - offset.left + handleWidth / 2) / containerWidth) * 10).toFixed(1);
             if (position <= 0.1) {
                 position = 0.1;
             } else if (position >= 10) {
@@ -96,7 +96,7 @@
             ObjectJS.controller = true;
             _this.mousemove(function (e) {
                 e.preventDefault();
-                position = Math.round(((e.pageX - offset.left + handleWidth / 2) / containerWidth) * 10);
+                position = (((e.pageX - offset.left + handleWidth / 2) / containerWidth) * 10).toFixed(1);
                 if (position <= 0.1) {
                     position = 0.1;
                 } else if (position >= 10) {
