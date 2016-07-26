@@ -11,9 +11,7 @@
                 _this.addClass("hover").siblings().removeClass("hover");
             }
             var id = _this.data("industry");
-            $("#" + id).show().siblings().hide();
-            $(".layer").hide();
-            $(".layer-two").hide();
+            $("#" + id).show().siblings().hide();           
         });   
     };
 

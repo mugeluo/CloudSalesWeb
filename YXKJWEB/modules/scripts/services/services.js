@@ -10,7 +10,7 @@
     ObjectJS.bindEvent = function () {
 
         $(".login-trial").click(function () {
-            window.location = "http://edj.yunxiaokeji.com/Home/Login";
+            window.location = "http://edj.yunxiaokeji.com/Home/Register";
         })
 
         $(".use-number-txt").click(function (e) {            

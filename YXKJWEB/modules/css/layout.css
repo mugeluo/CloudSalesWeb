@@ -46,10 +46,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner{padding:0;border:non
 .site-footer .menu-footer li:not(first-child){color:#938D88;font-size:14px;margin-top:10px;cursor:pointer;}
 .party-footer .icon-party { height:120px}
 .party-footer .icon-party li { float:left;margin-right:30px;margin-top:30px;}
-.party-footer .address-footer { float:left;margin-left:-50px;}
+.party-footer .address-footer { float:left;}
 .party-footer .address-footer span,a,div {color:#938D88;font-size:14px; }
 .party-footer .address-footer a:hover {color:#4a98e7; }
 .site-footer .statement{margin-top:135px;border-top:1px solid #938D88;padding-top:15px;}
 .site-footer .statement span{margin-left:13%;margin-right:50px;}
 .site-footer .statement div{color:#938D88;margin-right:10px;float:left;font-size:12px;}
-.site-footer .statement .line{background-color:#938D88;width:2px;height:13px;margin-top:4px;}
+.site-footer .statement .line{background-color:#938D88;width:2px;height:13px;}
