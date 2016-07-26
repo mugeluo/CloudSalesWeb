@@ -60,23 +60,38 @@
 }
 
 @media only screen and (max-width:860px) {
-    .pricing-details ul { width:25%;margin-left:5%;}
+    .estimate .estimate-price { width:100%;}
+    .pricing-details { width:100%}
+    .pricing-details ul { width:150px;margin-left:5%;}
     .price-list table { width:90%}
     .price-list .reminder { max-width:600px;}
     .technical-support ul { width:23%;}
     .price-list .price-line { width:80%;}
-    .technical-support .details { width:80%;}
+    .technical-support .details { width:80%;}    
 }
 
 @media only screen and (max-width:620px) {
-    .estimate .estimate-price { width:500px;}
     .pricing-details ul .details-function { margin:10px 0 0 10px}
-    .pricing-details ul { width:18%;margin-left:3%;}
+    .pricing-details ul { width:25%;margin-left:3%;}
     .pricing-details ul .line-pricing{width: 70%;}
     .price-list table { width:80%}
     .price-list .reminder { max-width:400px;}
     .estimate-price .cost { margin:auto;width:400px;}
-    .estimate-price ul { float:none;width:650px;margin:auto;}
+    .estimate-price ul { float:none;width:500px;margin:auto;}
+    .estimate-price .cost div { margin-bottom:20px;}
+    .technical-support { height:1400px;margin-top:100px;}
+    .technical-support .details { width:80%;height:1400px;}
+    .technical-support ul { width:55%;margin-left:20%;}
+}
+@media only screen and (max-width:480px) {
+    .pricing-details ul .details-function { margin:10px 0 0 10px}
+    .pricing-details ul { width:25%;margin-left:3%;}
+    .pricing-details ul .line-pricing{width: 70%;}
+    .price-list table { width:80%}
+    .price-list .reminder { max-width:300px;}
+    .estimate-price .cost { margin:auto;width:300px;}
+    .estimate-price ul { float:none;width:400px;margin:auto;margin-left:20px;}
+    .estimate-price ul li{width:400px;}
     .estimate-price .cost div { margin-bottom:20px;}
     .technical-support { height:1400px;margin-top:100px;}
     .technical-support .details { width:80%;height:1400px;}
