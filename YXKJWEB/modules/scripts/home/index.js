@@ -13,7 +13,7 @@
         });
         $(".agent-details li").click(function () {
             ObjectJS.clickBind(this);
-        });
+        });        
     }
 
     ObjectJS.clickBind = function (thisclick) {        

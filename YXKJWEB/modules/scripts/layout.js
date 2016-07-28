@@ -20,17 +20,16 @@ define(function (require, exports, module) {
         var name = arr[arr.length - 1];        
         if(name !="Index") {
             $("."+name).addClass("hover").find("a").css("color", "#fff").siblings().removeClass("hover");
-        }
+        }      
+       
+        //窗体滚动 置顶头部
         $(window).scroll(function () {
-            if (document.body.scrollTop > 0) {
+            if (document.body.scrollTop > 0) {                
                 $(".header-menu").css("background", "rgba(55,55,55,0.4)");
             } else {
                 $(".header-menu").css("background", "none");
             }
-        });
-       
-        //窗体滚动 置顶头部
-        $(window).scroll(function(){  
+
             if ($(window).scrollTop()>50){  
                 $(".back-top").fadeIn(500);
             }  
@@ -62,14 +61,7 @@ define(function (require, exports, module) {
             $('body,html').animate({ scrollTop: 0 }, 300);
             return false;
         });
-
-        //$(".nav li:gt(0)").click(function () {
-        //    var _this = $(this);
-        //    if (!_this.hasClass("hover")) {
-        //        _this.addClass("hover").siblings().removeClass("hover");                
-        //    }            
-        //});
-      
+                     
     }
 
     // 判断浏览器是否支持 placeholder

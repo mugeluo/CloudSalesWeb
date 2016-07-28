@@ -232,6 +232,8 @@
     <Content Include="modules\plug\jquery-horizon-line-switch\js\jquery.mobile.custom.min.js" />
     <Content Include="modules\plug\jquery-horizon-line-switch\js\main.js" />
     <Content Include="modules\plug\jquery-horizon-line-switch\js\modernizr.js" />
+    <Content Include="modules\plug\js-img-switching\index-img-switching.css" />
+    <Content Include="modules\plug\js-img-switching\index-img-switching.js" />
     <Content Include="modules\scripts\case\case.js" />
     <Content Include="modules\scripts\global.js" />
     <Content Include="modules\scripts\home\index.js" />

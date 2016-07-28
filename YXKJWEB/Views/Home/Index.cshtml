@@ -4,16 +4,43 @@
 }
 @section css{
     <link href="/modules/css/home/index.css" rel="stylesheet" />
+    <link href="/modules/plug/js-img-switching/index-img-switching.css" rel="stylesheet" />
 }
-@section scripts{
+@section scripts{    
     <script type="text/javascript">
         seajs.use(["scripts/home/index"], function (ObjectJS) {
             ObjectJS.init();
-        });
+        })        
     </script>
+    <script src="/modules/plug/js-img-switching/index-img-switching.js"></script>    
 }
-<div class="img-head">
-    <img style="width:100%" src="/modules/images/aa - 副本 (6).png" />
+
+<div id="cont" style="height:670px;">
+    <div class="lii"></div>
+    <div class="btn" id="btn">
+	    <ul>
+		    <li class="on">1</li>
+		    <li>2</li>
+		    <li>3</li>
+		    <li>4</li>
+		    <li>5</li>		    
+	    </ul>
+        <div class="clear"></div>
+    </div>
+    <div class="imm" id="imm">
+	    <a> <img src="/modules/images/customer.png" alt="第一章">
+	    <a> <img src="/modules/images/aa%20-%20副本%20(6).png" alt="第二章"></a>
+	    <a> <img src="/modules/images/customer.png" alt="第三章"></a>
+	    <a> <img src="/modules/images/aa%20-%20副本%20(6).png" alt="第四章"></a>
+	    <a> <img src="/modules/images/customer.png" alt="第五章"></a>
+    </div>
+    <div id="jiao">
+	    <a class="hand" id="left">&lt;</a>
+	    <a class="hand" id="right">&gt;</a>
+    </div>
+</div>
+
+<div class="img-head" id="img-head">    
     <div class="floating">
         <div class="font22 mTop200">二当家</div>
         <div class="font22">帮助您的企业和品牌,更高效的运作和管理</div>
