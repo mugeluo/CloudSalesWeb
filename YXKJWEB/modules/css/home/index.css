@@ -1,0 +1,99 @@
+﻿.title-main {width:100px;margin:auto;font-size:24px;padding-top:50px; }
+.title-descripition { width:250px;margin: 20px auto;font-size:14px;}
+
+.img-head { position:relative;}
+.img-head .floating{position:absolute;top:0;left:0;z-index:222;background:rgba(30,139,208,0.6);width:100%;height:100%;}
+.img-head .floating div{color:#F0F5FC;text-align:center;}
+.img-head .floating .colortxt {color:#8EC2EA !important; }
+.img-head .floating .register{width:100px;margin:auto;margin-top:100px;}
+.floating .register a { color:#F3F5F6;padding:5px 12px;border:1px solid #8EC2EA;border-radius:3px;}
+.title { width:180px;margin:auto;color:#3DA3E3;border:1px solid #3DA3E3;border-radius:2px;margin-top:50px;margin-bottom:50px;
+         padding:10px 15px;text-align:center;cursor:pointer;}
+.title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;}
+/*客户*/
+.customer { height:550px;background-color:#008DDD;position:relative;}
+.customer img{width:48%;margin: auto 350px;}
+.customer .customer-details{width:900px;margin:auto;margin-top:50px;height:100px;}
+.customer .customer-details li{float:left;width:220px;margin-left:30px;padding:5px 15px;cursor:pointer;}
+.customer .customer-details li:hover div{color:#f1f1f1;}
+.customer .customer-details li.hover { border:1px solid #95CAF2;border-radius:2px;padding:4px 14px;
+     /*背景渐变*/
+    background: -moz-linear-gradient(top, #5FADE9 0%, #70B6EA 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5FADE9), color-stop(100%,#70B6EA));
+    background: -webkit-linear-gradient(top, #5FADE9 0%,#70B6EA 100%);
+    background: -o-linear-gradient(top, #5FADE9 0%,#70B6EA 100%);
+    background: -ms-linear-gradient(top, #5FADE9 0%,#70B6EA 100%);
+    background: linear-gradient(to bottom, #5FADE9 0%,#70B6EA 100%);}
+.customer-details li div { color:#fff;margin-bottom:5px;}
+.customer-bevel {position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;right:0;border-bottom: 50px solid #F0EFEE;
+                 border-left: 680px solid #008DDD; }
+/*库存*/
+.repertory { height:580px;background-color:#F0EFEE;position:relative;}
+.repertory .repertory-details{float:left;margin-left:150px;}
+.repertory .repertory-details li{margin-top:50px;width:220px;padding:5px 40px;cursor:pointer;}
+.repertory .repertory-details li:hover div{color:#938d88;}
+.repertory .repertory-details li.hover { border:1px solid #E5E4E0;border-radius:2px;padding:4px 39px;  
+    /*背景渐变*/
+    background: -moz-linear-gradient(top, #EEEEEE 0%, #DDDDDD 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEEEEE), color-stop(100%,#DDDDDD));
+    background: -webkit-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
+    background: -o-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
+    background: -ms-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
+    background: linear-gradient(to bottom, #EEEEEE 0%,#DDDDDD 100%);}
+.repertory-details li div{margin-bottom:5px;}
+.repertory img{width:50%;}
+.repertory-bevel {position:absolute;z-index:111;background-color:#F0EFEE;top:0;left:0;border-top: 50px solid #008DDD;
+                 border-right: 670px solid #F0EFEE; }
+.repertory-bevel-down { position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;left:0;border-bottom: 50px solid #fff;
+                 border-right: 670px solid #F0EFEE;}
+/*代理商*/
+.agent { height:500px;position:relative;}
+.agent .agent-img{ float:right;width:50%;}
+.agent .agent-img img{width:100%;}
+.agent .agent-details{float:right;width:450px;margin-left:50px;}
+.agent .agent-details li{cursor:pointer;width:220px;margin-top:50px;padding:5px 40px;}
+.agent .agent-details li:hover div{color:#70b6ea;}
+.agent .agent-details li.hover {border:1px solid #1B95DF;border-radius:2px;padding:4px 39px;
+/*背景渐变*/
+    background: -moz-linear-gradient(top, #DFE9F2 0%, #BBDAF4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DFE9F2), color-stop(100%,#BBDAF4));
+    background: -webkit-linear-gradient(top, #DFE9F2 0%,#BBDAF4 100%);
+    background: -o-linear-gradient(top, #DFE9F2 0%,#BBDAF4 100%);
+    background: -ms-linear-gradient(top, #DFE9F2 0%,#BBDAF4 100%);
+    background: linear-gradient(to bottom, #DFE9F2 0%,#BBDAF4 100%);}
+.agent-details li div{margin-bottom:5px;color:#1B95DF;}
+.agent-bevel {position:absolute;z-index:111;background-color:#F0EFEE;top:0;right:0;border-bottom: 50px solid #fff;
+                 border-right: 670px solid #F0EFEE; }
+.look { width:120px;margin:auto;font-size:18px;border:1px solid #0094ff;text-align:center;color:#0094ff;border-radius:3px;
+        padding:10px 30px;cursor:pointer;margin-top:100px;}
+.instructions { height:200px;margin-top:100px;margin-left:300px;}
+.instructions-txt div:first-child{margin-bottom:40px;color:#000; }
+.instructions-txt div:last-child { width:280px;color:#ABAAA4;line-height:1.6;}
+.applicable-industry {height:300px; }
+.applicable-industry div:first-child{width:200px;margin:auto;font-size:18px;color:#110F11;}
+/*试用*/
+.probation { height:400px;background-color:#E2E0DB;}
+.probation img{width:40%;float:left;margin:auto 150px;padding-top:50px;}
+.probation .probation-txt{padding-top:120px;}
+.probation .probation-txt div{line-height:2.5;color:#7F807B;}
+.probation .probation-txt a{border:1px solid #949590;padding:10px 45px;border-radius:3px;color:#7F807B;}
+
+@media only screen and (max-width:1200px) {
+    .customer div:first-child img { width:40%;}
+    .customer-bevel {border-left: 600px solid #008DDD;}
+    .repertory-bevel {border-right: 570px solid #F0EFEE; }
+    .repertory-bevel-down { border-right: 570px solid #F0EFEE;}
+    .agent-bevel { border-right: 600px solid #F0EFEE;}
+}
+@media only screen and (max-width:1024px) {
+    .customer { height: 350px; }
+    .customer div:first-child img { width: 30%; }
+    .customer-bevel { border-left: 500px solid #008DDD; }
+    .repertory { height:480px;}
+    .repertory-bevel { border-right: 505px solid #F0EFEE; }
+    .repertory-bevel-down { border-right: 505px solid #F0EFEE; }
+    .repertory .repertory-details li { margin-top:20px;}
+    .agent .agent-details li { margin-top:20px;}
+    .agent-bevel { border-right: 500px solid #F0EFEE;}
+}
+

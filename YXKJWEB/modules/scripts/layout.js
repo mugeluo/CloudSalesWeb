@@ -15,7 +15,20 @@ define(function (require, exports, module) {
     //绑定事件
     LayoutObject.bindEvent = function () {
         var _self = this;
-              
+         
+        var arr = window.location.href.split("/");
+        var name = arr[arr.length - 1];        
+        if(name !="Index") {
+            $("."+name).addClass("hover").find("a").css("color", "#fff").siblings().removeClass("hover");
+        }
+        $(window).scroll(function () {
+            if (document.body.scrollTop > 0) {
+                $(".header-menu").css("background", "rgba(55,55,55,0.4)");
+            } else {
+                $(".header-menu").css("background", "none");
+            }
+        });
+       
         //窗体滚动 置顶头部
         $(window).scroll(function(){  
             if ($(window).scrollTop()>50){  
@@ -50,12 +63,12 @@ define(function (require, exports, module) {
             return false;
         });
 
-        $(".nav li:gt(0)").click(function () {
-            var _this = $(this);
-            if (!_this.hasClass("hover")) {
-                _this.addClass("hover").siblings().removeClass("hover");                
-            }            
-        });
+        //$(".nav li:gt(0)").click(function () {
+        //    var _this = $(this);
+        //    if (!_this.hasClass("hover")) {
+        //        _this.addClass("hover").siblings().removeClass("hover");                
+        //    }            
+        //});
       
     }
 

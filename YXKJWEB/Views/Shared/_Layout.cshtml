@@ -14,23 +14,23 @@
         seajs.use(["scripts/layout"], function (layout) {
             layout.init();
         });
-
     </script>
     @RenderSection("css", false)   
 </head>
 <body>
-    <header>
+    <header class="header-menu">
         <div class="site-header">
-            <ul class="left nav">
-                <li><a href="/Home/Index"><img src="/modules/images/logo_login.png" /></a></li>
-                <li><a href="/Product/Product">产品</a></li>
-                <li><a href="/Services/Services">服务</a></li>
-                <li><a href="/Case/Case">案例</a></li>
-                <li><a href="/About/About">关于</a></li>
+            <ul class="left nav">                
+                <li><a href="/Home/Index"><img src="/modules/images/ico-home.png" /></a></li>
+                <li class="Product"><a href="/Product/Product">产品</a></li>
+                <li class="Services"><a href="/Services/Services">服务</a></li>
+                <li class="Case"><a href="/Case/Case">案例</a></li>
+                <li class="About"><a href="/About/About">关于</a></li>
             </ul>
             <div class="right mTop15">
                 <a href="http://edj.yunxiaokeji.com/Home/Login">登录</a>
-                <a href="http://edj.yunxiaokeji.com/Home/Register">注册</a>
+                <a href="http://edj.yunxiaokeji.com/Home/Register">注册</a> 
+                <div class="clear"></div>               
             </div>   
         </div>
     </header>

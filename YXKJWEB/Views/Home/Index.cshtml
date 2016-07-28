@@ -2,5 +2,111 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Index</h2>
+@section css{
+    <link href="/modules/css/home/index.css" rel="stylesheet" />
+}
+@section scripts{
+    <script type="text/javascript">
+        seajs.use(["scripts/home/index"], function (ObjectJS) {
+            ObjectJS.init();
+        });
+    </script>
+}
+<div class="img-head">
+    <img style="width:100%" src="/modules/images/aa - 副本 (6).png" />
+    <div class="floating">
+        <div class="font22 mTop200">二当家</div>
+        <div class="font22">帮助您的企业和品牌,更高效的运作和管理</div>
+        <div class="mTop50 colortxt">实时掌握企业运行状态</div>
+        <div class="colortxt">管理问题从此再也不会是您业务增长的拦路虎</div>
+        <div class="register font16"><a href="http://edj.yunxiaokeji.com/Home/Register">免费注册</a></div>
+    </div>
+</div>
+<div class="title">二当家&nbsp;能为企业解决什么！</div>
+<div class="title-line"></div>
+<div class="title-main">CRM</div>
+<div class="title-descripition">客户跟进分析管理,就是这么便捷,有效</div>
+<div class="customer">
+    <div>
+        <img src="/modules/images/customer.png" />
+    </div>
+    <ul class="customer-details">
+        <li class="mRight40 hover">
+            <div>自定义标签功能</div>
+            <div>客户标签自定义,让你客户信息更自由方便的管理</div>
+        </li>
+        <li class="mRight40">
+            <div>信息灵活对接</div>
+            <div>支持客户信息导入导出,方便快捷的对接你的数据</div>
+        </li>
+        <li>
+            <div>阶段配置</div>
+            <div>客户阶段自定义配置,极大地满足了企业的使用场景</div>
+        </li>
+    </ul>
+    <div class="customer-bevel"></div>
+</div>
+<div class="repertory">
+    <div class="title-main">进销存</div>
+    <div class="title-descripition">规模化的流程管理,管理库存不在繁琐</div>
+    <ul class="repertory-details">
+        <li class="mRight50 hover">
+            <div>自定义标签功能</div>
+            <div>客户标签自定义,让你客户信息更自由方便的管理</div>
+        </li>
+        <li class="mRight50">
+            <div>信息灵活对接</div>
+            <div>支持客户信息导入导出,方便快捷的对接你的数据</div>
+        </li>
+        <li>
+            <div>阶段配置</div>
+            <div>客户阶段自定义配置,极大地满足了企业的使用场景</div>
+        </li>
+    </ul>
+    <div>
+        <img src="/modules/images/customer.png" />
+    </div>
+    <div class="repertory-bevel"></div>
+    <div class="repertory-bevel-down"></div>
+</div>
+<div class="agent">
+    <div class="title-main">代理商</div>
+    <div class="title-descripition">规模化的流程管理,管理库存不在繁琐</div>
+    <ul class="agent-details">
+        <li class="mRight50 hover">
+            <div>自定义标签功能</div>
+            <div>客户标签自定义,让你客户信息更自由方便的管理</div>
+        </li>
+        <li class="mRight50">
+            <div>信息灵活对接</div>
+            <div>支持客户信息导入导出,方便快捷的对接你的数据</div>
+        </li>
+        <li>
+            <div>阶段配置</div>
+            <div>客户阶段自定义配置,极大地满足了企业的使用场景</div>
+        </li>
+    </ul>
+    <div class="agent-img">
+        <img src="/modules/images/customer.png" />
+    </div>  
+    <div class="agent-bevel"></div>
+</div>
+<div class="look">查看更多</div>
+<div class="instructions">
+    <div class="instructions-txt">
+        <div class="font18">一切解决<a class="font18" style="border-bottom:1px solid #000;padding-bottom:3px;color:#000;">在云端</a></div>
+        <div>您所需要的，就是把问题交给它，【二当家】会精心打理您的业务，让您有精力去处理更重要的事，而且一切在云端完成，国内一流SaaS平台服务，为您的业务保驾护航，与您一同乘风破浪</div>
+    </div>
+</div>
+<div class="applicable-industry">
+    <div>适用于绝大多数行业</div>
+    <div></div>
+</div>
+<div class="probation">
+    <img src="/modules/images/aa%20-%20副本%20(6).png" />
+    <div class="probation-txt">
+        <div>让工作变得简单，从现在开始使用</div>
+        <div class="mBottom40">现在注册，可享受60天免费试用</div>
+        <a href="http://edj.yunxiaokeji.com/Home/Register">立即免费试用</a>
+    </div>
+</div>
