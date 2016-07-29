@@ -1,7 +1,8 @@
-﻿.head-information { position:relative;}
+﻿.header-menu { background:rgba(55,55,55,0.5)}
+.head-information { position:relative;}
 .information {position:absolute;top:0;left:0;z-index:111;text-align:center;background:rgba(0,87,154,0.6);
               width:100%;height:100%; }
-.information div{color:#FEFEFF;margin-bottom:40px;line-height:1.6;}
+.information div{color:#FEFEFF;margin-bottom:40px;line-height:1.6;text-shadow:2px 2px 3px #333;}
 .main-content { background-color:#fff;}
 .anli {background-color:#F3F2F0;height:150px; }
 .case-industry { color:#0C090D;font-size:22px;margin-bottom:20px;padding-top:30px;}
@@ -24,7 +25,7 @@
 .example .seaced-state .details-txt{margin-right:150px;}
 .example .seaced-state img{float:left;}
 .example .end-txt { width:1050px;line-height:1.8;margin:auto;}
-.fontcolor { color:#73736F;font-size:14px;}
+.fontcolor { color:#73736F;font-size:14px;line-height:30px;}
 
 @media only screen and (max-width:1024px){
     .example .example-img { height:723px;}

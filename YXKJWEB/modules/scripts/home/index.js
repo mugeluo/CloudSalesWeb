@@ -5,11 +5,7 @@
     }
 
     ObjectJS.bindEvent = function () {
-        $('#featured-area ul').roundabout({
-            easing: 'easeOutInCirc',
-            duration: 600
-        });
-
+       
         $(".img-interchange li").click(function () {
             var _this = $(this);
             _this.css({ "left": "40px", "top": "40px", "z-index": "502" });
@@ -25,14 +21,14 @@
             }
         });
 
-        $("#featured-area ul li").click(function () {
-            var _self = $(this);
-            ObjectJS.clickBind( $(".customer-details li").eq(_self.attr("data-index")) );
+        $(".dg-wrapper .outbound").click(function () {
+            var _this = $(this);
+            ObjectJS.clickBind($(".customer-details li").eq(_this.data("index")));
         });
 
         $(".customer-details li").click(function () {
             var _self = $(this);
-            $("#featured-area ul li").eq(_self.attr("data-index")).click();
+            $(".dg-wrapper .outbound").eq(_self.data("index")).click();
             ObjectJS.clickBind(this);
         });
 

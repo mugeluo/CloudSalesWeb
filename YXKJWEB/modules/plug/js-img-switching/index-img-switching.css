@@ -4,7 +4,7 @@
 		position: absolute;
 		z-index: 10001;
 		top:630px;
-		right: 48%;
+		right: 45.3%;
 
 	}
 .btn ul li{
@@ -21,7 +21,7 @@
 		cursor: pointer;
 	}
 .btn ul li.on{
-		background-color: aquamarine;
+		background-color: #fff;
 	}
 .diin{
 		width: 100%;

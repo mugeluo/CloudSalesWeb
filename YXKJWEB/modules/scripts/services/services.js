@@ -22,12 +22,12 @@
                 position = 1;
             }else if(position >= 100){
                 position = 100;
-            }
+            }            
             _this.find("div:first").css("width", position + "%");
             _this.find("div:last").css("margin-left", (Number(position) - 2) + "%");
             _this.next().val(position);
-            var mon = $(".user-time").val(), dis = $(".user-discount").val();
-            ObjectJS.estimateCost(position, mon, dis);
+            var year = $(".estimate-price .hover").data("year"), dis = $(".user-discount").val();
+            ObjectJS.estimateCost(position, year, dis);
 
         });
         $(".discount").click(function (e) {            
@@ -43,8 +43,8 @@
             _this.find("div:first").css("width", position*10 + "%");
             _this.find("div:last").css("margin-left", (Number(position)*10 - 2) + "%");
             _this.next().val(position);
-            var mon = $(".user-time").val(), dis = $(".user-numb").val();
-            ObjectJS.estimateCost(dis, mon, position);
+            var year = $(".estimate-price .hover").data("year"), dis = $(".user-numb").val();
+            ObjectJS.estimateCost(dis, year, position);
         });        
 
         $(".use-number-txt").mousedown(function (e) {
@@ -64,8 +64,8 @@
                     _this.find("div:first").css("width", position + "%");
                     _this.find("div:last").css("margin-left", position-2 + "%");
                     _this.next().val(position);
-                    var mon = $(".user-time").val(), dis = $(".user-discount").val();
-                    ObjectJS.estimateCost(position, mon, dis);
+                    var year = $(".estimate-price .hover").data("year"), dis = $(".user-discount").val();
+                    ObjectJS.estimateCost(position, year, dis);
                 }
             });
             $(document).mouseup(function () {
@@ -90,8 +90,8 @@
                     _this.find("div:first").css("width", position*10 + "%");
                     _this.find("div:last").css("margin-left", position*10-2 + "%");
                     _this.next().val(position);
-                    var mon = $(".user-time").val(), dis = $(".user-numb").val();
-                    ObjectJS.estimateCost(dis, mon, position);
+                    var year = $(".estimate-price .hover").data("year"), dis = $(".user-numb").val();
+                    ObjectJS.estimateCost(dis, year, position);
                 }
             });
             $(document).mouseup(function () {
@@ -102,43 +102,43 @@
 
         $(".user-numb").change(function () {
             var _this = $(this), val = _this.val();
-            if (val > 100) {                
-                alert("您的人数已超过100人，请联系我们，为您定制专业版");
+            if (val > 100) {    
                 _this.parent().find(".use-line div:first").css("width", "100%");
                 _this.parent().find(".use-line div:last").css("margin-left", "98%");
-                _this.val(100);
-            } else if (val < 1) {
-                alert("最少1人");
+                _this.val(100), val = 100;
+                alert("购买人数已超过100人，请联系我们，为您专业定制");
+            } else if (val < 1) {                
                 _this.parent().find(".use-line div:first").css("width", "1%");
                 _this.parent().find(".use-line div:last").css("margin-left", "1%");
-                _this.val(1);
+                _this.val(1), val = 1;
+                alert("最少1人");
             } else {                
                 _this.parent().find(".use-line div:first").css("width", val + "%");
                 _this.parent().find(".use-line div:last").css("margin-left", (Number(val)-2) + "%");
             }
             
-            var mon=$(".user-time").val(),dis=$(".user-discount").val();
-            ObjectJS.estimateCost(val, mon, dis);            
+            var year = $(".estimate-price .hover").data("year"), dis = $(".user-discount").val();
+            ObjectJS.estimateCost(val, year, dis);            
         });
-        $(".user-discount").change(function () {
+        $(".user-discount").change(function () {            
             var _this = $(this), val = _this.val();
-            if (val > 10) {
-                alert("最低10折");
+            if (val > 10) {                
                 _this.parent().find(".use-line div:first").css("width", "100%");
                 _this.parent().find(".use-line div:last").css("margin-left", "98%");
-                _this.val(10);
-            } else if (val < 0.1) {
-                alert("最少0.1折");
+                _this.val(10), val = 10;
+                alert("最低10折");
+            } else if (val < 0.1) {                
                 _this.parent().find(".use-line div:first").css("width", "1%");
                 _this.parent().find(".use-line div:last").css("margin-left", "1%");
-                _this.val(0.1);
+                _this.val(0.1), val = 0.1;
+                alert("最少0.1折");
             } else {
                 _this.parent().find(".use-line div:first").css("width", val*10 + "%");
                 _this.parent().find(".use-line div:last").css("margin-left", (Number(val)*10 - 2) + "%");
             }
 
-            var mon = $(".user-time").val(), dis = $(".user-numb").val();
-            ObjectJS.estimateCost(dis, mon, val);            
+            var year = $(".estimate-price .hover").data("year"); dis = $(".user-numb").val();
+            ObjectJS.estimateCost(dis, year, val);            
         });        
 
         $(".cost .check-box").click(function () {
@@ -149,21 +149,29 @@
                 _this.removeClass("hover");
             }
             
-            var val = $(".user-numb").val(), dis = $(".user-discount").val(), mon = $(".user-numb").val();
-            ObjectJS.estimateCost(val, mon, dis);
-        });  
+            var val = $(".user-numb").val(), dis = $(".user-discount").val(), year = $(".estimate-price .hover").data("year");
+            ObjectJS.estimateCost(val, year, dis);
+        });
+
+        $(".round").click(function () {
+            var _this = $(this);
+            if (!_this.hasClass("hover")) {
+                $(".round").removeClass("hover");
+                _this.addClass("hover");
+            }
+            var val = $(".user-numb").val(), dis = $(".user-discount").val();
+            ObjectJS.estimateCost(val,_this.data("year"),dis)
+        });
     };    
 
-    ObjectJS.estimateCost = function (number, month, discount) {        
+    ObjectJS.estimateCost = function (number, years, discount) {        
         var money = "";
         if (number =="") {
             alert("请输入人数");
             var countMoney = 0;
-            return countMoney;
+            return ;
         }
-        if (month=="") {
-            month = 12;
-        }
+        
         if (discount==""||discount=="0") {
             discount = 10;
         }
@@ -179,9 +187,10 @@
         //    alert("折扣格式不正确");
         //    return;
         //}
-        var year = Number(month / 12).toFixed(2);        
-        var number = Number(number);    
-        if (year<=1) {
+        var year = Number(years);        
+        var number = Number(number);
+        
+        if (1>=year) {
             if (5>= number) {
                 money = 1200;
             } else if (10>=number) {
@@ -224,6 +233,16 @@
                 money = 46800;
             }
         }
+        $(".price-list table td").find("span").remove();
+        $(".price-list table td").each(function () {            
+            var val = $(this).data("number");
+            if (val == money) {
+                if ($(this).data("time")==year) {
+                    $(this).append('<span class="iconfont">&#xe613;</span>');
+                }                
+            }
+        });
+        
         var countMoney = money * discount / 10;
         if ($(".cost .check-box:first").hasClass("hover")) {
             countMoney += 1000;

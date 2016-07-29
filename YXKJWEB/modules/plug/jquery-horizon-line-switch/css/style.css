@@ -30,7 +30,7 @@ Main Components
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 2em auto;
+  
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -117,7 +117,7 @@ Main Components
   bottom: 0;
   z-index: 2;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 12px;
   padding-bottom: 15px;
   color: #383838;
   /* fix bug on Safari - text flickering while timeline translates */
@@ -303,28 +303,26 @@ Main Components
   max-width: 800px;
   margin: 0 auto;
   margin-bottom:50px;
+  color:#555;
 }
 .cd-horizontal-timeline .events-content h2 {
-  font-weight: bold;
-  font-size: 2.6rem;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
-  font-weight: 700;
   line-height: 1.2;
 }
 .cd-horizontal-timeline .events-content em {
   display: block;
-  font-style: italic;
   margin: 10px auto;
 }
 .cd-horizontal-timeline .events-content em::before {
   content: '- ';
 }
 .cd-horizontal-timeline .events-content p {
-  font-size: 1.4rem;
+  font-size: 12px;
   color: #959595;
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
-  line-height: 1.6;
+  line-height: 24px;
 }
 @media only screen and (max-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {

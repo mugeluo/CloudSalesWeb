@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "服务";
+    ViewBag.Title = "云销科技 | 服务";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section css{
@@ -76,33 +76,33 @@
         </tr>
         <tr class="bgcolor-price">
             <td><div class="use-number">5用户</div></td>
-            <td>1,200.00</td>
-            <td>2,400.00</td>
-            <td>3,600.00</td>
+            <td data-number="1200.00" data-time="1">1,200.00</td>
+            <td data-number="2400.00" data-time="2">2,400.00</td>
+            <td data-number="3600.00" data-time="3">3,600.00</td>
         </tr>
         <tr>
             <td><div class="use-number">10用户</div></td>
-            <td>2,400.00</td>
-            <td>4,200.00</td>
-            <td>5,600.00</td>
+            <td data-number="2400.00" data-time="1">2,400.00</td>
+            <td data-number="4200.00" data-time="2">4,200.00</td>
+            <td data-number="5600.00" data-time="3">5,600.00</td>
         </tr>
         <tr class="bgcolor-price">
             <td><div class="use-number">20用户</div></td>
-            <td>4,600.00</td>
-            <td>8,200.00</td>
-            <td>10,800.00</td>
+            <td data-number="4600.00" data-time="1">4,600.00</td>
+            <td data-number="8200.00" data-time="2">8,200.00</td>
+            <td data-number="10800.00" data-time="3">10,800.00</td>
         </tr>
         <tr>
             <td><div class="use-number">50用户</div></td>
-            <td>10,800.00</td>
-            <td>19,200.00</td>
-            <td>25,600.00</td>
+            <td data-number="10800.00" data-time="1">10,800.00</td>
+            <td data-number="19200.00" data-time="2">19,200.00</td>
+            <td data-number="25600.00" data-time="3">25,600.00</td>
         </tr>
         <tr class="bgcolor-price">
             <td><div class="use-number">100用户</div></td>
-            <td>19,800.00</td>
-            <td>35,600.00</td>
-            <td>46,800.00</td>
+            <td data-number="19800.00" data-time="1">19,800.00</td>
+            <td data-number="35600.00" data-time="2">35,600.00</td>
+            <td data-number="46800.00" data-time="3">46,800.00</td>
         </tr>
     </table>
     <div class="reminder">此价格仅供参考,具体收费以实际为准</div>
@@ -124,13 +124,22 @@
             <li>
                 <div>时间</div>
                 <div class="left mRight20">
-                    <input class="user-time" type="checkbox" checked="checked" />1/年
+                    <i class="round hover" data-year="1">
+                        <span style="display: inline-block;"></span>
+                    </i>
+                    <span style="padding: 3px; font-size: 16px;">1/年</span>
                 </div>
                 <div class="left mRight20">
-                    <input class="user-time" type="checkbox" />2/年
+                    <i class="round" data-year="2">
+                        <span style="display: inline-block;"></span>
+                    </i>
+                    <span style="padding: 3px; font-size: 16px;">2/年</span>
                 </div>
                 <div>
-                    <input class="user-time" type="checkbox" />3/年
+                    <i class="round" data-year="3">
+                        <span style="display: inline-block;"></span>
+                    </i>
+                    <span style="padding: 3px; font-size: 16px;">3/年</span>
                 </div>    
             </li>
             <li>
@@ -153,7 +162,7 @@
                 制度培训：<span>￥4000</span>/小时
             </div>
             <div class="count">
-                总计价格：￥<span>1,200.00</span>元
+                总计价格：￥<span>1200.00</span>元
             </div>
         </div>
     </div>
