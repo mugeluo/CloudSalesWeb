@@ -75,7 +75,7 @@
 .look { width:120px;margin:auto;font-size:18px;border:1px solid #0094ff;text-align:center;color:#0094ff;border-radius:3px;
         padding:10px 30px;cursor:pointer;margin-top:100px;}
 .instructions { height:500px;margin-top:100px;margin-left:150px;background:url(/modules/images/home/index-3.png)no-repeat;}
-.instructions .instructions-txt {width:300px; }
+.instructions .instructions-txt {width:300px; margin-left: 100px; padding-top: 100px; }
 .instructions-txt div:first-child{margin-bottom:40px;color:#000; }
 .instructions-txt div:last-child { width:280px;color:#ABAAA4;line-height:1.6;}
 .applicable-industry {height:300px; }
