@@ -3,7 +3,7 @@ var tt = null;
 var kkk;
 var n = 0;
 var timer = 0;
-window.onload = function () {
+window.onload = function () {    
     var li = document.getElementById("btn").getElementsByTagName("li");
     kkk = document.getElementById("imm").getElementsByTagName("a");
     for (var i = 0; i < kkk.length; i++) {
@@ -15,7 +15,7 @@ window.onload = function () {
         li[j].onmouseover = function () {
             var that = this;
             tt = setTimeout(function () {
-                var index = that.innerHTML - 1;
+                var index = that.getAttribute("data-id") - 1;
                 n = index;
                 if (index < kkk.length) {
                     for (var o = 0; o < li.length; o++) {
@@ -68,6 +68,7 @@ window.onload = function () {
 }
 
 function leftf(start, end, ele) {
+    
     var tt = setInterval(function () {
         start += 10;
         ele.style.left = start + "px";

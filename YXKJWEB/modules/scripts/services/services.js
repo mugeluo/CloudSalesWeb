@@ -45,23 +45,7 @@
             _this.next().val(position);
             var mon = $(".user-time").val(), dis = $(".user-numb").val();
             ObjectJS.estimateCost(dis, mon, position);
-        });
-        $(".use-time").click(function (e) {            
-            e.preventDefault();
-            var _this = $(this), offset = _this.offset(), containerWidth = _this.outerWidth(),
-                handleWidth = _this.find("div:last").outerWidth()
-            position = Math.round(((e.pageX - offset.left + handleWidth / 2) / containerWidth)*36);
-            if (position <= 1) {
-                position = 1;
-            } else if (position >= 36) {
-                position = 36;
-            }
-            _this.find("div:first").css("width", position/36 * 100 + "%");
-            _this.find("div:last").css("margin-left", (Number(position)/36 * 100 - 2) + "%");
-            _this.next().val(position);
-            var dis = $(".user-discount").val(), mon = $(".user-numb").val();
-            ObjectJS.estimateCost(mon, position, dis);
-        });
+        });        
 
         $(".use-number-txt").mousedown(function (e) {
             e.preventDefault();            
@@ -114,33 +98,7 @@
                 e.preventDefault();
                 ObjectJS.controller = false;
             });
-        });
-        $(".use-time").mousedown(function (e) {
-            e.preventDefault();
-            var _this = $(this), offset = _this.offset(), containerWidth = _this.outerWidth(),
-                handleWidth = _this.find("div:last").outerWidth()
-            ObjectJS.controller = true;
-            _this.mousemove(function (e) {
-                e.preventDefault();
-                position = Math.round(((e.pageX - offset.left + handleWidth / 2) / containerWidth) * 36);
-                if (position <= 1) {
-                    position = 1;
-                } else if (position >=36) {
-                    position = 36;
-                }
-                if (ObjectJS.controller) {
-                    _this.find("div:first").css("width", position/36 * 100 + "%");
-                    _this.find("div:last").css("margin-left", position/36 * 100-2 + "%");
-                    _this.next().val(position);
-                    var dis = $(".user-discount").val(), mon = $(".user-numb").val();
-                    ObjectJS.estimateCost(mon, position, dis);
-                }
-            });
-            $(document).mouseup(function () {
-                e.preventDefault();
-                ObjectJS.controller = false;
-            });
-        });
+        });        
 
         $(".user-numb").change(function () {
             var _this = $(this), val = _this.val();
@@ -181,27 +139,7 @@
 
             var mon = $(".user-time").val(), dis = $(".user-numb").val();
             ObjectJS.estimateCost(dis, mon, val);            
-        });
-        $(".user-time").change(function () {
-            var _this = $(this), val = _this.val();
-            if (val > 36) {
-                alert("最高3年");
-                _this.parent().find(".use-line div:first").css("width", "100%");
-                _this.parent().find(".use-line div:last").css("margin-left", "98%");
-                _this.val(36);
-            } else if (val < 0.1) {
-                alert("最底1个月");
-                _this.parent().find(".use-line div:first").css("width", "1%");
-                _this.parent().find(".use-line div:last").css("margin-left", "1%");
-                _this.val(1);
-            } else {
-                _this.parent().find(".use-line div:first").css("width", val / 36*100 + "%");
-                _this.parent().find(".use-line div:last").css("margin-left", (Number(val) / 36 * 100 - 2) + "%");
-            }
-
-            var dis = $(".user-discount").val(), mon = $(".user-numb").val();
-            ObjectJS.estimateCost(mon, val, dis);            
-        });
+        });        
 
         $(".cost .check-box").click(function () {
             var _this = $(this);

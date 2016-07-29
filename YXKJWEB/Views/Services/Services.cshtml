@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section css{
-    <link href="/modules/css/seivices/services.css" rel="stylesheet" />
+    <link href="/modules/css/services.css" rel="stylesheet" />
 }
 @section scripts{
     <script type="text/javascript">
@@ -123,11 +123,15 @@
             </li>
             <li>
                 <div>时间</div>
-                <div class="use-line use-time">  
-                    <div style="width:33.3%"></div>       
-                    <div class="btn-number" style="margin-left:31.3%"></div>                               
+                <div class="left mRight20">
+                    <input class="user-time" type="checkbox" checked="checked" />1/年
                 </div>
-                <input class="user-time" type="text" value="12" />/月
+                <div class="left mRight20">
+                    <input class="user-time" type="checkbox" />2/年
+                </div>
+                <div>
+                    <input class="user-time" type="checkbox" />3/年
+                </div>    
             </li>
             <li>
                 <div>折扣</div>

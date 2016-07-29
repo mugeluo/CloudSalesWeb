@@ -33,22 +33,24 @@ input[type="file"] > input[type="button"]::-moz-focus-inner{padding:0;border:non
 .header-menu {height:50px;position:fixed;z-index:11111;width:100%; top:0;left:0;}
 .site-header {width:80%;margin-left:10%;}
 .site-header .nav li {float:left;margin-right:35px;margin-top:15px;cursor:pointer;}
-.site-header .nav li a{ font-size:14px;color:#B0D1EF;}
+.site-header .nav li a{ font-size:14px;color:#fff;Opacity:0.7}
 .nav li img { height:30px;width:30px;margin-top:-5px;}
 .nav li.hover {border-bottom:2px solid #fff;padding-bottom:3px; }
-.nav li a:hover{color:#fff;}
+.nav li a:hover{Opacity:1;border-bottom:2px solid #fff;padding-bottom:1px;}
 .nav li:nth-of-type(1) a:hover{border-bottom:0;}
-.site-header div a{ padding: 4px 15px; margin-right: 10px; font-size: 14px; cursor: pointer; color:#B0D1EF;}
-
-.site-header div a:hover{padding: 3px 14px;border:1px solid #88C0EB;border-radius:2px;}
-
+.site-header div a:first-child{ padding: 4px 15px; margin-right: 20px; font-size: 14px; cursor: pointer;border-radius:3px;color:#fff;}
+.site-header div a:hover:first-child{background-color:#ccc;border:1px solid #ccc;}
+.site-header div .register{color:#fff;padding: 4px 15px;  font-size: 14px; cursor: pointer;
+                                border:1px solid #fff;border-radius:3px;}
+.site-header div .register:hover{background-color:#66aaf0;border:1px solid #66aaf0;}
+.main-content { background-color:#fff;}
 /*footer样式*/
 .site-footer { height:350px;width:100%;bottom:0;left:0;background-color:#434443;}
 .site-footer div:first-child{width:55%;margin-top:20px;margin-left:5%;}
 .site-footer .menu-footer{margin-left:5%;float:left;}
 .site-footer .menu-footer li:first-child{color:#CCCAC4;font-size:16px;cursor:inherit;}
 .site-footer .menu-footer li:not(first-child){color:#938D88;font-size:12px;margin-top:10px;cursor:pointer;}
-.party-footer .icon-party { height:120px;}
+.party-footer .icon-party { height:120px;margin-left:950px;}
 .party-footer .icon-party li { float:left;margin-right:30px;margin-top:30px;}
 .party-footer .address-footer { float:left;}
 .party-footer .address-footer span {color:#938D88 !important;font-size:12px; }

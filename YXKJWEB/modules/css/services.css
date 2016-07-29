@@ -7,7 +7,7 @@
 .head-information { position:relative;}
 .information {position:absolute;top:0;left:0;z-index:111;text-align:center;background:rgba(0,87,154,0.6);
               width:100%;height:100%; }
-.information div{color:#FEFEFF;margin-bottom:40px;line-height:1.6;}
+.information div{color:#FEFEFF;margin-bottom:30px;line-height:1.6;}
 .information div:last-child{font-size:16px;border:1px dashed #fff;width:300px;margin:auto;margin-top:20px;padding:5px 10px;}
 /*产品定价*/
 .service-pricing { height:650px;background-color:#F3F2F0;}
@@ -41,6 +41,7 @@
 .estimate-price ul { float:left}
 .estimate-price ul input{width:30px;height:15px;line-height:17px;}
 .estimate-price li div:first-child { color:#0A0B0A;margin-bottom:10px;}
+.user-time { }
 .estimate-price .cost { margin-left:450px;width:300px;}
 .estimate-price .cost div{font-size:18px;margin-bottom:30px;line-height:22px;}
 .cost .check-box { width:20px;height:20px;border:1px solid #ccc;float:left;margin-right:20px;color:#fff;cursor:pointer}
@@ -58,7 +59,7 @@
 .MD-teamwork { position:relative;height:400px;}
 .MD-teamwork img{height:400px;width:100%; }
 .MD-teamwork .MD-teamwork-mask{position:absolute;top:0;left:0;background:rgba(93,92,87,0.6);width:100%;height:400px;}
-.MD-teamwork .MD-teamwork-mask div:first-child{color:#fff;text-align:center;margin-top:180px;font-size:16px;}
+.MD-teamwork .MD-teamwork-mask div:first-child{color:#fff;text-align:center;margin-top:180px;font-size:20px;}
 .MD-teamwork .MD-teamwork-mask div:last-child{text-align:center;margin-top:20px;font-size:18px;color:#94BBDC;}
 @media only screen and (max-width:1200px) {
     .technical-support ul { width:25%;}

@@ -3,8 +3,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section css{
-    <link href="/modules/css/home/index.css" rel="stylesheet" />
+    <link href="/modules/css/index.css" rel="stylesheet" />
     <link href="/modules/plug/js-img-switching/index-img-switching.css" rel="stylesheet" />
+    <link href="/modules/plug/carousel/css/97zzw_com.css" rel="stylesheet" />
 }
 @section scripts{    
     <script type="text/javascript">
@@ -12,18 +13,22 @@
             ObjectJS.init();
         })        
     </script>
-    <script src="/modules/plug/js-img-switching/index-img-switching.js"></script>    
+    <script src="/modules/plug/js-img-switching/index-img-switching.js"></script> 
+    @* 旋转木马 *@   
+    <script src="/modules/plug/carousel/js/jquery.min.js"></script>
+    <script src="/modules/plug/carousel/js/jquery.roundabout-1.0.min.js"></script>
+    <script src="/modules/plug/carousel/js/jquery.easing.1.3.js"></script>    
 }
 
 <div id="cont" style="height:670px;">
     <div class="lii"></div>
     <div class="btn" id="btn">
 	    <ul>
-		    <li class="on">1</li>
-		    <li>2</li>
-		    <li>3</li>
-		    <li>4</li>
-		    <li>5</li>		    
+		    <li class="on" data-id="1"></li>
+		    <li data-id="2"></li>
+		    <li data-id="3"></li>
+		    <li data-id="4"></li>
+		    <li data-id="5"></li>		    
 	    </ul>
         <div class="clear"></div>
     </div>
@@ -39,7 +44,6 @@
 	    <a class="hand" id="right">&gt;</a>
     </div>
 </div>
-
 <div class="img-head" id="img-head">    
     <div class="floating">
         <div class="font22 mTop200">二当家</div>
@@ -54,19 +58,23 @@
 <div class="title-main">CRM</div>
 <div class="title-descripition">客户跟进分析管理,就是这么便捷,有效</div>
 <div class="customer">
-    <div>
-        <img src="/modules/images/customer.png" />
+    <div id="featured-area"> 
+        <ul style="margin-top:-100px;"> 
+            <li data-index="0"><img src="/modules/plug/carousel/img/fnfast.jpg" /></li>
+            <li data-index="1"><img src="/modules/plug/carousel/img/photoshop_plus.jpg" /></li>  
+            <li data-index="2"><img src="/modules/plug/carousel/img/fnfast.jpg" /></li>  
+        </ul> 
     </div>
     <ul class="customer-details">
-        <li class="mRight40 hover">
+        <li class="mRight40 hover one" data-index="0">
             <div>自定义标签功能</div>
             <div>客户标签自定义,让你客户信息更自由方便的管理</div>
         </li>
-        <li class="mRight40">
+        <li class="mRight40 two" data-index="1">
             <div>信息灵活对接</div>
             <div>支持客户信息导入导出,方便快捷的对接你的数据</div>
         </li>
-        <li>
+        <li class="three" data-index="2">
             <div>阶段配置</div>
             <div>客户阶段自定义配置,极大地满足了企业的使用场景</div>
         </li>
@@ -90,8 +98,18 @@
             <div>客户阶段自定义配置,极大地满足了企业的使用场景</div>
         </li>
     </ul>
-    <div>
-        <img src="/modules/images/customer.png" />
+    <div style="margin: auto;width: 800px;float: right;">
+        <ul class="img-interchange">
+            <li class="img-moveable-item" style="position:absolute;left:0;top:0;z-index:500">
+                <img src="/modules/images/aa%20-%20副本%20(6).png" />
+            </li>                        
+            <li class="img-moveable-item" style="position:absolute;left:20px;top:20px;z-index:501">
+                <img src="/modules/images/customer.png" />
+            </li>
+            <li class="img-moveable-item" style="position:absolute;left:40px;top:40px;z-index:502">
+                <img src="/modules/images/aa%20-%20副本%20(6).png" />
+            </li> 
+        </ul>        
     </div>
     <div class="repertory-bevel"></div>
     <div class="repertory-bevel-down"></div>
