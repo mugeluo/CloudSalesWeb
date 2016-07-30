@@ -11,10 +11,12 @@
 .title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;}
 .solve { height:600px;}
 .solve img{float:left;margin-left:150px;margin-top:50px;width:35%;}
-.solve .ask-answer{margin-top: 100px;margin-left: 50%;}
+.solve .ask-answer{margin-top: 100px;margin-left: 50%;position:relative;}
 .solve .ask-answer .ask{margin-bottom: 50px;margin-left: 30px;border: 1px solid #ccc;width: 230px;padding: 10px 15px;border-radius: 7px;}
+.solve .ask-answer .ask-pointer{}
 .solve .ask-answer .answer{margin-bottom: 50px;margin-left: 30px;border: 1px solid #ccc;width: 270px;padding: 10px 15px;
                            border-radius: 7px;line-height:20px;background-color:#4a98e7;color:#fff;}
+.solve .ask-answer .answer-pointer{}
 /*客户*/
 .customer { height:560px;background-color:#008DDD;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
@@ -75,14 +77,18 @@
 .look { width:120px;margin:auto;font-size:18px;border:1px solid #0094ff;text-align:center;color:#0094ff;border-radius:3px;
         padding:10px 30px;cursor:pointer;margin-top:100px;}
 .instructions { height:500px;margin-top:100px;margin-left:150px;background:url(/modules/images/home/index-3.png)no-repeat;}
-.instructions .instructions-txt {width:300px; margin-left: 100px; padding-top: 100px; }
+.instructions .instructions-txt {width:300px; margin-left: 100px; padding-top: 80px;float:left; }
+.instructions img{width: 25%;margin-left: 200px;margin-top: 80px;}
 .instructions-txt div:first-child{margin-bottom:40px;color:#000; }
-.instructions-txt div:last-child { width:280px;color:#ABAAA4;line-height:1.6;}
-.applicable-industry {height:300px; }
-.applicable-industry div:first-child{width:200px;margin:auto;font-size:18px;color:#110F11;}
+.instructions-txt div:last-child { width:300px;color:#ABAAA4;line-height:1.6;font-size:14px;}
+.applicable-industry {height:474px;margin-top:30px; }
+.applicable-industry div:first-child{width:200px;margin:auto;font-size:18px;color:#110F11;margin-bottom:50px;}
+.applicable-industry .img{ width:800px;margin:auto;position:relative;}
+.applicable-industry .img .education{position: absolute;bottom: 10px;left: 10px;color: #fff;}
+.applicable-industry .img .garment{position: absolute;bottom: 10px;left: 410px;color: #fff;}
 /*试用*/
 .probation { height:400px;background-color:#E2E0DB;}
-.probation img{width:40%;float:left;margin:auto 150px;padding-top:50px;}
+.probation img{width:25%;float:left;margin:auto 250px;padding-top:50px;}
 .probation .probation-txt{padding-top:120px;}
 .probation .probation-txt div{line-height:2.5;color:#555;font-size:14px;}
 .probation .probation-txt a{border:1px solid #555;padding:10px 45px;border-radius:3px;color:#666;}
