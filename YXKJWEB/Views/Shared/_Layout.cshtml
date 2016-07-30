@@ -39,11 +39,9 @@
         @RenderBody()
     </div>
     
-
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+    @RenderSection("scripts",false)
     <footer class="site-footer">
-        <div class="left">
+        <div class="left links">
             @*<ul class="menu-footer">
                 <li>产品</li>
                 <li>功能特点</li>
@@ -81,9 +79,10 @@
                 <li>招聘</li>               
                 <li>商务合作</li>*@               
             </ul>
+            <div class="clear"></div>
         </div>
-        <div class="party-footer">
-            <ul class="icon-party">
+        <div class="party-footer right">
+            <ul class="icon-party right">
                 @*<li>
                     <a href="#"><img src="/modules/images/sns1.png" /></a>
                 </li>*@
@@ -97,12 +96,14 @@
                     <a href="#"><img src="/modules/images/sns4.png" /></a>
                 </li>*@
             </ul>
+            <div class="clear"></div>
             <div class="address-footer">
                 <span>公司地址:</span>
                 <a target="_blank" href="http://j.map.baidu.com/FvBYv" title="跳转到地图">上海市长宁区中山西路 1279弄6号国峰科技大厦 6楼</a>
                 <div class="mTop10">市场合作:&nbsp;customer@yunxiaokeji.com</div>
             </div>
         </div>
+        <div class="clear"></div>
         <div class="statement">
             <span class="colorfff left">©2016云销科技 沪ICP备 1999888 号</span>
             <div>服务条款</div>   
@@ -112,7 +113,9 @@
             <div>版权声明</div>
             <div class="line"></div>  
             <div>网站地图</div>
+            <div class="clear"></div>
         </div>
+        <div class="clear"></div>
     </footer>
 </body>
 </html>
