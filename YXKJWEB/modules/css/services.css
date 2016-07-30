@@ -58,7 +58,7 @@ table td span{position:absolute;color: #1eb452;right:20px;}
 .technical-support { height:500px;background-color:#F3F2F0;}
 .technical-support .details{width:850px;margin:auto;height:400px;}
 .technical-support ul{width:250px;background-color:#008AE1;height:300px;margin:auto;float:left;margin-top:100px;}
-.technical-support ul li{color:#FBFBFC;text-align:center;margin:0 20px 30px 20px;}
+.technical-support ul li{color:#FBFBFC;text-align:center;margin:20px 20px 30px 20px;}
 /*合作伙伴优惠*/
 .MD-teamwork { position:relative;height:400px;}
 .MD-teamwork img{height:400px;width:100%; }

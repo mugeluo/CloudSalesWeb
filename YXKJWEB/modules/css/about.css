@@ -10,9 +10,9 @@
 .host-timeline {text-align:center;margin-bottom:40px;margin-top:30px;font-size:24px;color:#000; }
 
 /*加入--合作*/
-.join-teamwork { height:600px;margin-top:-35px;}
-.join-teamwork .join{ width:50%;background-color:#008AE1;height:600px;float:left}
-.join-teamwork .teamwork{ width:50%;background-color:#72B3E5;height:600px;float:right;}
+.join-teamwork { height:500px;margin-top:-35px;}
+.join-teamwork .join{ width:50%;background-color:#008AE1;height:500px;float:left}
+.join-teamwork .teamwork{ width:50%;background-color:#72B3E5;height:500px;float:right;}
 .join-teamwork .title-join-teamwork{color:#FFFEFD;font-size:24px;text-align:center;margin-top:30px;}
 .join-teamwork .txt-join-teamwork{color:#fff;max-width:350px;margin:10px auto;line-height:24px;}
 /*联系我们*/
