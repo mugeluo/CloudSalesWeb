@@ -14,9 +14,13 @@
         });
 
         $(window).scroll(function () {
-            if (document.body.scrollTop > 0) {
-                $(".header-menu").css("background", "rgba(55,55,55,0.4)");
+            if (document.body.scrollTop > 50) {
+                if ($(".header-menu").data("isbg") == 0) {
+                    $(".header-menu").data("isbg", 1);
+                    $(".header-menu").css("background", "rgba(55,55,55,0.4)");
+                }
             } else {
+                $(".header-menu").data("isbg",0);
                 $(".header-menu").css("background", "none");
             }
         });
