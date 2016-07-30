@@ -220,6 +220,7 @@
     <Content Include="modules\images\home\index-jxc0.png" />
     <Content Include="modules\images\home\index-kh0.png" />
     <Content Include="modules\images\ico-home.png" />
+    <Content Include="modules\images\services\service-br.png" />
     <Content Include="modules\images\services\service-bt.png" />
     <Content Include="modules\images\services\service-ico1.png" />
     <Content Include="modules\images\services\service-ico2.png" />
