@@ -87,7 +87,7 @@
 .probation .probation-txt div{line-height:2.5;color:#555;font-size:14px;}
 .probation .probation-txt a{border:1px solid #555;padding:10px 45px;border-radius:3px;color:#666;}
 
-@media only screen and (max-width:1200px) {
+/*@media only screen and (max-width:1200px) {
     .customer div:first-child img { width:40%;}
     .customer-bevel {border-left: 600px solid #008DDD;}
     .repertory-bevel {border-right: 570px solid #F0EFEE; }
@@ -106,5 +106,5 @@
     .agent .agent-details li { margin-top:20px;}
     .agent-bevel { border-right: 500px solid #F0EFEE;}
     .party-footer .icon-party { margin-left:750px;}
-}
+}*/
 
