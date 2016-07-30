@@ -2,15 +2,15 @@
 .title-descripition { text-align:center;margin: 40px auto;font-size:16px;}
 
 .img-head .floating{position:absolute;top:0;left:0;z-index:10000;background:rgba(30,139,208,0.1);width:100%;height:670px;}
-.img-head .floating div{color:#F0F5FC;text-align:center;text-shadow: 2px 3px 2px #333;}
-.img-head .floating .colortxt {color:#ddd !important; font-size:14px;}
+.img-head .floating div{color:#F0F5FC;text-align:center;}
+.img-head .floating .colortxt {color:#ccc !important; font-size:14px;}
 .img-head .floating .register{width:100px;margin:auto;margin-top:100px;}
 .floating .register a { color:#F3F5F6;padding:5px 12px;border:1px solid #ddd;border-radius:3px;font-size:14px;}
-.title { width:180px;margin:auto;color:#3DA3E3;border:1px solid #3DA3E3;border-radius:2px;margin-top:50px;margin-bottom:50px;
+.title { width:180px;margin:auto;color:#3DA3E3;border:1px solid #3DA3E3;border-radius:2px;margin-top:40px;margin-bottom:30px;
          padding:10px 15px;text-align:center;cursor:pointer;font-size:14px;}
-.title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;}
-.solve { height:600px;}
-.solve img{float:left;margin-left:150px;margin-top:50px;width:35%;}
+.title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;margin-bottom: -20px;}
+.solve { height:500px;}
+.solve img{float:left;margin-left:200px;margin-top:50px;width:30%;}
 .solve .ask-answer{margin-top: 100px;margin-left: 50%;position:relative;}
 .solve .ask-answer .ask{margin-bottom: 50px;margin-left: 30px;border: 1px solid #ccc;width: 230px;padding: 10px 15px;border-radius: 7px;}
 .solve .ask-answer .ask-pointer{}
@@ -78,14 +78,15 @@
         padding:10px 30px;cursor:pointer;margin-top:100px;}
 .instructions { height:500px;margin-top:100px;margin-left:150px;background:url(/modules/images/home/index-3.png)no-repeat;}
 .instructions .instructions-txt {width:300px; margin-left: 100px; padding-top: 80px;float:left; }
-.instructions img{width: 25%;margin-left: 200px;margin-top: 80px;}
+.instructions img{width: 25%;margin-right: 250px;margin-top: 80px;float:right;}
 .instructions-txt div:first-child{margin-bottom:40px;color:#000; }
 .instructions-txt div:last-child { width:300px;color:#ABAAA4;line-height:1.6;font-size:14px;}
-.applicable-industry {height:474px;margin-top:30px; }
+.applicable-industry {height:374px;margin-top:30px; }
 .applicable-industry div:first-child{width:200px;margin:auto;font-size:18px;color:#110F11;margin-bottom:50px;}
-.applicable-industry .img{ width:800px;margin:auto;position:relative;}
+.applicable-industry .img{position:relative;width:50%}
+.applicable-industry .img2{position:relative;width:50%;float:right;}
 .applicable-industry .img .education{position: absolute;bottom: 10px;left: 10px;color: #fff;}
-.applicable-industry .img .garment{position: absolute;bottom: 10px;left: 410px;color: #fff;}
+.applicable-industry .img2 .garment{position: absolute;bottom: 10px;left: 10px;color: #fff;}
 /*试用*/
 .probation { height:400px;background-color:#E2E0DB;}
 .probation img{width:25%;float:left;margin:auto 250px;padding-top:50px;}
