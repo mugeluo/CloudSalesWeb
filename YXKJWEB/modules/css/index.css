@@ -48,9 +48,9 @@
     background: -ms-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
     background: linear-gradient(to bottom, #EEEEEE 0%,#DDDDDD 100%);}
 .repertory-details li div{margin-bottom:5px;}
-.repertory .img-interchange {position:relative; }
+/*.repertory .img-interchange {position:relative; }
 .repertory .img-interchange .img-moveable-item{ cursor: pointer;padding: 5px;border: 1px solid #aaaaaa;background: #f9f9f9;
-                                                 -webkit-border-radius: 5px;-moz-border-radius: 5px;width:600px;height:300px;}
+                                                 -webkit-border-radius: 5px;-moz-border-radius: 5px;width:600px;height:300px;}*/
 .repertory img{width:600px;height:300px;}
 .repertory-bevel {position:absolute;z-index:111;background-color:#F0EFEE;top:0;left:0;border-top: 50px solid #008DDD;
                  border-right: 670px solid #F0EFEE; }

@@ -31,14 +31,21 @@
 
         $(".repertory-details li").hover(function () {            
             var _this = $(this), url = _this.data("url");
-            $(".img-moveable-item img").attr("src",url);
+            if ($(".jxc-img img").attr("src") != url) {
+                $(".jxc-img img").fadeOut(function () {
+                    $(this).fadeIn().attr("src", url);
+                })
+            }            
             ObjectJS.clickBind(this);
-
         });
 
         $(".agent-details li").hover(function () {
             var _this = $(this), url = _this.data("url");
-            $(".agent-img img").attr("src",url);
+            if ($(".agent-img img").attr("src")!=url) {
+                $(".agent-img img").fadeOut(function () {
+                    $(this).fadeIn().attr("src", url);
+                })
+            }            
             ObjectJS.clickBind(this);
         });
     }
