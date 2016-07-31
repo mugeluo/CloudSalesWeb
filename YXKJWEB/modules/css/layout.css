@@ -30,7 +30,7 @@ input[type="submit"]::-moz-focus-inner,
 input[type="file"] > input[type="button"]::-moz-focus-inner{padding:0;border:none;}
 
 /*header样式*/
-.header-menu {height:50px;position:fixed;z-index:11111;width:100%; top:0;left:0;background:none;}
+.header-menu {height:50px;position:fixed;z-index:11111;width:100%; top:0;left:0;background:rgba(55,55,55,0.4)}
 .site-header {width:80%;margin-left:10%;}
 .site-header .nav li {float:left;margin-right:35px;margin-top:15px;cursor:pointer;}
 .site-header .nav li a{ font-size:14px;color:#fff;Opacity:0.7}

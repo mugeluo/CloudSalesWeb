@@ -6,17 +6,17 @@
 
     ObjectJS.bindEvent = function () {   
 
-        $(window).scroll(function () {
-            if (document.body.scrollTop > 50) {
-                if ($(".header-menu").data("isbg") == 0) {
-                    $(".header-menu").data("isbg", 1);
-                    $(".header-menu").css("background", "rgba(55,55,55,0.4)");
-                }
-            } else {
-                $(".header-menu").data("isbg",0);
-                $(".header-menu").css("background", "none");
-            }
-        });
+        //$(window).scroll(function () {
+        //    if (document.body.scrollTop > 50) {
+        //        if ($(".header-menu").data("isbg") == 0) {
+        //            $(".header-menu").data("isbg", 1);
+        //            $(".header-menu").css("background", "rgba(55,55,55,0.4)");
+        //        }
+        //    } else {
+        //        $(".header-menu").data("isbg",0);
+        //        $(".header-menu").css("background", "none");
+        //    }
+        //});
 
         $(".dg-wrapper .outbound").click(function () {
             var _this = $(this);
