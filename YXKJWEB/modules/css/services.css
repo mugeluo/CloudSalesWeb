@@ -62,7 +62,7 @@ table td span{position:absolute;color: #1eb452;right:20px;}
 /*合作伙伴优惠*/
 .MD-teamwork { position:relative;height:400px;}
 .MD-teamwork img{height:400px;width:100%; }
-.MD-teamwork .MD-teamwork-mask{position:absolute;top:0;left:0;background:rgba(93,92,87,0.6);width:100%;height:400px;}
+.MD-teamwork .MD-teamwork-mask{position:absolute;top:0;left:0;width:100%;height:400px;}
 .MD-teamwork .MD-teamwork-mask div:first-child{color:#fff;text-align:center;margin-top:180px;font-size:20px;}
 .MD-teamwork .MD-teamwork-mask div:last-child{text-align:center;margin-top:20px;font-size:18px;color:#94BBDC;}
 @media only screen and (max-width:1200px) {

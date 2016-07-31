@@ -7,16 +7,16 @@
 .cloud-pin {height:520px; background:url(/modules/images/about/about_03.png) no-repeat bottom center #f8f8f8;}
 .cloud-pin div{max-width:800px;margin:20px auto;font-size:14px; line-height:24px;color:#555;}
 /*发展历程*/
-.host-timeline {text-align:center;margin-bottom:40px;margin-top:30px;font-size:24px;color:#000; }
+.host-timeline {text-align:center;margin-bottom:40px;padding-top:30px;font-size:24px;color:#000; }
 
 /*加入--合作*/
-.join-teamwork { height:500px;margin-top:-35px;}
+.join-teamwork { height:500px;margin-top:-2px;}
 .join-teamwork .join{ width:50%;background-color:#008AE1;height:500px;float:left}
 .join-teamwork .teamwork{ width:50%;background-color:#72B3E5;height:500px;float:right;}
 .join-teamwork .title-join-teamwork{color:#FFFEFD;font-size:24px;text-align:center;margin-top:30px;}
 .join-teamwork .txt-join-teamwork{color:#fff;max-width:350px;margin:10px auto;line-height:24px;}
 /*联系我们*/
-.contant-us {height:300px;background:url(/modules/images/about/about_08.png)no-repeat right #fff;margin-right:100px;}
+.contant-us {height:250px;background:url(/modules/images/about/about_08.png)no-repeat right #fff;margin-right:100px;}
 .contant-us .information{margin-left:10%;margin-top:50px;margin-bottom:50px;}
 .contant-us .information div{margin-bottom:10px;color:#555;}
 .map{width:100%;height:400px;}

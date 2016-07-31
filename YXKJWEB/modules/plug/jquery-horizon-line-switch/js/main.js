@@ -169,7 +169,8 @@ jQuery(document).ready(function($){
 	}
 
 	function updateOlderEvents(event) {
-		event.parent('li').prevAll('li').children('a').addClass('older-event').end().end().nextAll('li').children('a').removeClass('older-event');
+	    event.parent('li').prevAll('li').children('a').addClass('older-event').end().end().nextAll('li').children('a').removeClass('older-event');
+	    $(".time-img img").attr("src",event.data("img"));
 	}
 
 	function getTranslateValue(timeline) {

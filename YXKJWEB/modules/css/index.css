@@ -10,7 +10,7 @@
          padding:10px 15px;text-align:center;cursor:pointer;font-size:14px;}
 .title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;margin-bottom: -20px;}
 .solve { height:500px;}
-.solve img{float:left;margin-left:200px;margin-top:50px;width:30%;}
+.solve img{float:left;margin-left:200px;margin-top:30px;width:30%;}
 .solve .ask-answer{margin-top: 100px;margin-left: 50%;position:relative;}
 .solve .ask-answer .ask{margin-bottom: 50px;margin-left: 30px;border: 1px solid #ccc;width: 230px;padding: 10px 15px;border-radius: 7px;}
 .solve .ask-answer .ask-pointer{}
@@ -22,7 +22,7 @@
 .customer img{width:48%;margin: auto 350px;}
 .customer .customer-details{width:900px;margin:auto;height:100px;}
 .customer .customer-details li{float:left;width:220px;margin-left:30px;padding:5px 15px;cursor:pointer;}
-.customer .customer-details li:hover div{color:#f1f1f1;}
+/*.customer .customer-details li:hover div{color:#f1f1f1;}*/
 .customer .customer-details li.hover { border:1px solid #95CAF2;border-radius:2px;padding:4px 14px;
      /*背景渐变*/
     background: -moz-linear-gradient(top, #5FADE9 0%, #70B6EA 100%);
@@ -38,7 +38,7 @@
 .repertory { height:650px;background-color:#F0EFEE;position:relative;}
 .repertory .repertory-details{float:left;margin-left:150px;}
 .repertory .repertory-details li{margin-top:30px;width:220px;padding:5px 40px;cursor:pointer;}
-.repertory .repertory-details li:hover div{color:#938d88;}
+/*.repertory .repertory-details li:hover div{color:#938d88;}*/
 .repertory .repertory-details li.hover { border:1px solid #E5E4E0;border-radius:2px;padding:4px 39px;  
     /*背景渐变*/
     background: -moz-linear-gradient(top, #EEEEEE 0%, #DDDDDD 100%);
@@ -62,7 +62,7 @@
 .agent .agent-img img{width:100%;}
 .agent .agent-details{float:right;width:450px;margin-left:50px;}
 .agent .agent-details li{cursor:pointer;width:220px;margin-top:30px;padding:5px 40px;}
-.agent .agent-details li:hover div{color:#70b6ea;}
+/*.agent .agent-details li:hover div{color:#70b6ea;}*/
 .agent .agent-details li.hover {border:1px solid #1B95DF;border-radius:2px;padding:4px 39px;
 /*背景渐变*/
     background: -moz-linear-gradient(top, #DFE9F2 0%, #BBDAF4 100%);
