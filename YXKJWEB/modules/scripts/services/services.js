@@ -8,11 +8,7 @@
     };
 
     ObjectJS.bindEvent = function () {
-
-        $(".login-trial").click(function () {
-            window.location = "http://edj.yunxiaokeji.com/Home/Register";
-        })
-
+       
         $(".use-number-txt").click(function (e) {            
             e.preventDefault();
             var _this = $(this), offset = _this.offset(), containerWidth = _this.outerWidth(),

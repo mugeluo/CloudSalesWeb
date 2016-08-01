@@ -15,7 +15,17 @@ window.onload = function () {
         li[j].onmouseover = function () {
             var that = this;
             tt = setTimeout(function () {
-                var index = that.getAttribute("data-id") - 1;
+                var index = that.getAttribute("data-id") - 1,
+
+                    title = that.getAttribute("data-title"),
+                    title2 = that.getAttribute("data-title2"),
+                    txt = that.getAttribute("data-txt"),
+                    txt2 = that.getAttribute("data-txt2");
+                $(".title1").html(title);
+                $(".title2").html(title2);
+                $(".txt").html(txt);
+                $(".txt2").html(txt2);
+
                 n = index;
                 if (index < kkk.length) {
                     for (var o = 0; o < li.length; o++) {

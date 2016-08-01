@@ -6,17 +6,21 @@
 
     ObjectJS.bindEvent = function () {   
 
-        //$(window).scroll(function () {
-        //    if (document.body.scrollTop > 50) {
-        //        if ($(".header-menu").data("isbg") == 0) {
-        //            $(".header-menu").data("isbg", 1);
-        //            $(".header-menu").css("background", "rgba(55,55,55,0.4)");
-        //        }
-        //    } else {
-        //        $(".header-menu").data("isbg",0);
-        //        $(".header-menu").css("background", "none");
-        //    }
-        //});
+        $(window).scroll(function () {
+           if (document.body.scrollTop > 50) {
+               $(".getback").show();
+           }
+       });
+
+        $(".sove-img div").click(function () {
+            var _this = $(this), ask = _this.data("ask"), answer = _this.data("answer");
+            if (!_this.hasClass("hover")) {
+                $(".sove-img div").removeClass("hover");
+                _this.addClass("hover");
+            };
+            $(".ask-answer .ask").html(ask);
+            $(".ask-answer .answer").html(answer);
+        });
 
         $(".dg-wrapper .outbound").click(function () {
             var _this = $(this);
@@ -48,6 +52,25 @@
             }            
             ObjectJS.clickBind(this);
         });
+
+        $(".applicable-industry img").hover(
+            function () {
+                var _this = $(this).parent();
+                t = setInterval(function () {
+                    _this.find("div:first").hide();
+                    _this.find("div:last").parent().slideDown();
+                },300);            
+            }, function () {
+                clearInterval(t);
+                var _this = $(this).parent();
+                _this.find("div:first").show();
+                _this.find("div:last").parent().slideUp();
+            }
+        );             
+
+        $(".getback").click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        })
     }
 
     ObjectJS.clickBind = function (thisclick) {        
