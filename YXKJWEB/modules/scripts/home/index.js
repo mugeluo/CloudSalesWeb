@@ -73,7 +73,7 @@
     ObjectJS.getHeight = function () {
         $("#cont").height($(window).height());
         $(".imm img").height($(window).height());
-        $(".floating").height($(window).height());
+        $(".floating").height($(window).height()*0.75);
         
         $(".customer-bevel").css("border-left", ""+$(window).width()+"px solid #008DDD");
         $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");

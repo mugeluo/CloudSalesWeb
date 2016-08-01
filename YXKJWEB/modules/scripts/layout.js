@@ -24,14 +24,13 @@ define(function (require, exports, module) {
        
         //窗体滚动 置顶头部
         $(window).scroll(function () {
-            if ($(window).scrollTop()>50){  
-                $(".back-top").fadeIn(500);
-                $(".getback-FH").show();
+            if ($(window).scrollTop()>50){ 
+                $(".getback-FH").fadeIn(500);
+                $(".header-menu").css("background", "rgba(55,55,55,0.4)");
             }  
-            else  
-            {  
-                $(".back-top").fadeOut(1000);
-                $(".getback-FH").hide();
+            else {                  
+                $(".getback-FH").fadeOut(1000);
+                $(".header-menu").css("background", "0");
             }  
         });         
              

@@ -43,6 +43,7 @@ Main Components
 .cd-horizontal-timeline.loaded {
   /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
+  background-color:#fdfdfd;
 }
 .cd-horizontal-timeline .timeline {
   position: relative;
