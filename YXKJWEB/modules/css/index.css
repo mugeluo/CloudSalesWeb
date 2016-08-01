@@ -1,4 +1,5 @@
 ﻿.title-main {width:100px;margin:auto;font-size:24px;padding-top:50px; }
+.title-repertory-agent {width:100px;margin:auto;font-size:24px;}
 .title-descripition { text-align:center;margin: 40px auto;font-size:16px;}
 
 .img-head .floating{position:absolute;top:0;left:0;z-index:10000;width:100%;height:670px;}
@@ -18,7 +19,7 @@
                            border-radius: 7px;line-height:20px;background-color:#4a98e7;color:#fff;}
 .solve .ask-answer .answer-pointer{}
 /*客户*/
-.customer { height:560px;background-color:#008DDD;position:relative;}
+.customer { height:600px;background-color:#008DDD;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
 .customer .customer-details{width:900px;margin:auto;height:100px;}
 .customer .customer-details li{float:left;width:220px;margin-left:30px;padding:5px 15px;cursor:pointer;}
@@ -32,8 +33,8 @@
     background: -ms-linear-gradient(top, #5FADE9 0%,#70B6EA 100%);
     background: linear-gradient(to bottom, #5FADE9 0%,#70B6EA 100%);}
 .customer-details li div { color:#fff;margin-bottom:5px;}
-.customer-bevel {position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;right:0;border-bottom: 50px solid #F0EFEE;
-                 border-left: 680px solid #008DDD; }
+.customer-bevel {position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;right:0;border-bottom:100px solid #F0EFEE;
+                 border-left: 1349px solid #008DDD; }
 /*库存*/
 .repertory { height:650px;background-color:#F0EFEE;position:relative;}
 .repertory .repertory-details{float:left;margin-left:150px;}
@@ -52,10 +53,10 @@
 .repertory .img-interchange .img-moveable-item{ cursor: pointer;padding: 5px;border: 1px solid #aaaaaa;background: #f9f9f9;
                                                  -webkit-border-radius: 5px;-moz-border-radius: 5px;width:600px;height:300px;}*/
 .repertory img{width:600px;height:300px;}
-.repertory-bevel {position:absolute;z-index:111;background-color:#F0EFEE;top:0;left:0;border-top: 50px solid #008DDD;
-                 border-right: 670px solid #F0EFEE; }
-.repertory-bevel-down { position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;left:0;border-bottom: 50px solid #fff;
-                 border-right: 670px solid #F0EFEE;}
+/*.repertory-bevel {position:absolute;z-index:111;background-color:#F0EFEE;top:0;left:0;border-top: 50px solid #008DDD;
+                 border-right: 670px solid #F0EFEE; }*/
+.repertory-bevel-down { position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;left:0;border-bottom:100px solid #fff;
+                 border-right: 1349px solid #F0EFEE;}
 /*代理商*/
 .agent { height:510px;position:relative;background-color:#fff;}
 .agent .agent-img{ float:right;width:50%;}
@@ -72,8 +73,8 @@
     background: -ms-linear-gradient(top, #DFE9F2 0%,#BBDAF4 100%);
     background: linear-gradient(to bottom, #DFE9F2 0%,#BBDAF4 100%);}
 .agent-details li div{margin-bottom:5px;color:#1B95DF;}
-.agent-bevel {position:absolute;z-index:111;background-color:#F0EFEE;top:0;right:0;border-bottom: 50px solid #fff;
-                 border-right: 680px solid #F0EFEE; }
+/*.agent-bevel {position:absolute;z-index:111;background-color:#F0EFEE;top:0;right:0;border-bottom: 50px solid #fff;
+                 border-right: 680px solid #F0EFEE; }*/
 .look { width:120px;margin:auto;font-size:18px;border:1px solid #0094ff;text-align:center;color:#0094ff;border-radius:3px;
         padding:10px 30px;cursor:pointer;margin-top:100px;}
 .instructions { height:500px;margin-top:100px;margin-left:150px;background:url(/modules/images/home/index-3.png)no-repeat;}
