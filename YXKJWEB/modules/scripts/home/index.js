@@ -4,13 +4,12 @@
         ObjectJS.bindEvent();        
     }
 
-    ObjectJS.bindEvent = function () {   
-
-        $(window).scroll(function () {
-           if (document.body.scrollTop > 50) {
-               $(".getback").show();
-           }
-       });
+    ObjectJS.bindEvent = function () {
+        $(window).resize(function(){
+            $("#cont").height($(window).height());
+            $(".imm img").height($(window).height());
+            $(".floating").height($(window).height());
+        });
 
         $(".sove-img div").click(function () {
             var _this = $(this), ask = _this.data("ask"), answer = _this.data("answer");
@@ -52,24 +51,16 @@
             }            
             ObjectJS.clickBind(this);
         });
+        
+        $(".applicable-industry img").hover(function () {
+            var _this = $(this).parent();            
+            _this.find("div:first").hide();
+            _this.find("div:last").parent().slideDown();                          
+        });
 
-        $(".applicable-industry img").hover(
-            function () {
-                var _this = $(this).parent();
-                t = setInterval(function () {
-                    _this.find("div:first").hide();
-                    _this.find("div:last").parent().slideDown();
-                },300);            
-            }, function () {
-                clearInterval(t);
-                var _this = $(this).parent();
-                _this.find("div:first").show();
-                _this.find("div:last").parent().slideUp();
-            }
-        );             
-
-        $(".getback").click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        $(".education-floating,.garment-floating").mouseleave(function () {
+            $(".education,.garment").show();
+            $(".education-floating,.garment-floating").slideUp();
         })
     }
 

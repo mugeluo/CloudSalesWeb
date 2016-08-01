@@ -91,7 +91,8 @@
 .pAll10 {padding:10px;}
 .pAll15 {padding:10px;}
 .pAll20 {padding:20px;}
-/*margin*/ 
+/*margin*/
+.margin { margin:0;}
 .mTop1 {margin-top:1px;}
 .mTop2 {margin-top:2px;}
 .mTop3 {margin-top:3px;}

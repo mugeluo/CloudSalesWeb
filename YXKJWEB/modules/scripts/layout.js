@@ -26,12 +26,13 @@ define(function (require, exports, module) {
         $(window).scroll(function () {
             if ($(window).scrollTop()>50){  
                 $(".back-top").fadeIn(500);
+                $(".getback").show();
             }  
             else  
             {  
                 $(".back-top").fadeOut(1000);
              }  
-        });  
+        });         
 
         $(document).click(function (e) {
 
@@ -45,10 +46,9 @@ define(function (require, exports, module) {
         });   
 
         //返回顶部
-        $(".back-top").click(function () {
-             $('body,html').animate({scrollTop:0},300);  
-            return false;  
-        });
+        $(".getback").click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        })
 
         //头部双击 返回顶部
         $("header").dblclick(function () {

@@ -146,7 +146,7 @@ jQuery(document).ready(function($){
 		return totalWidth;
 	}
 
-	function updateVisibleContent(event, eventsContent) {
+	function updateVisibleContent(event, eventsContent) {       
 		var eventDate = event.data('date'),
 			visibleContent = eventsContent.find('.selected'),
 			selectedContent = eventsContent.find('[data-date="'+ eventDate +'"]'),
