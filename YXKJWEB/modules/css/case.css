@@ -6,7 +6,7 @@
 .anli {background-color:#F3F2F0;height:150px; }
 .case-industry { color:#0C090D;font-size:22px;margin-bottom:20px;padding-top:30px;margin-top:-3px;}
 .line-case { border-bottom:1px solid #D8D5CF;margin-bottom:5px;width:200px;margin:auto;}
-.industry {margin:20px auto 75px auto;max-width:600px;}
+.industry {margin:20px auto 75px auto;max-width:300px;}
 .industry li{float:left;margin-right:30px;margin-left:50px;font-size:16px;cursor:pointer;padding:6px 17px; }
 .industry li.hover{color:#fff;background-color:#008AE1;}
 .example .example-img { background-color:#F3F2F0;height:360px;position:relative;}

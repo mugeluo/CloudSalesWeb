@@ -26,27 +26,18 @@ define(function (require, exports, module) {
         $(window).scroll(function () {
             if ($(window).scrollTop()>50){  
                 $(".back-top").fadeIn(500);
-                $(".getback").show();
+                $(".getback-FH").show();
             }  
             else  
             {  
                 $(".back-top").fadeOut(1000);
-             }  
+                $(".getback-FH").hide();
+            }  
         });         
-
-        $(document).click(function (e) {
-
-            if (!$(e.target).parents().hasClass("currentuser") && !$(e.target).hasClass("currentuser")) {
-                $(".dropdown-userinfo").fadeOut("1000");
-            }
-
-            if (!$(e.target).parents().hasClass("companyname") && !$(e.target).hasClass("companyname")) {
-                $(".dropdown-companyinfo").fadeOut("1000");
-            }
-        });   
-
+             
         //返回顶部
-        $(".getback").click(function () {
+        $(".getback-FH").click(function () {
+            
             $('html, body').animate({ scrollTop: 0 }, 'slow');
         })
 

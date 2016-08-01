@@ -5,10 +5,10 @@
     }
 
     ObjectJS.bindEvent = function () {
+        ObjectJS.getHeight();
+
         $(window).resize(function(){
-            $("#cont").height($(window).height());
-            $(".imm img").height($(window).height());
-            $(".floating").height($(window).height());
+            ObjectJS.getHeight();
         });
 
         $(".sove-img div").click(function () {
@@ -68,6 +68,15 @@
         if (!$(thisclick).hasClass("hover")) {
             $(thisclick).addClass("hover").siblings().removeClass("hover");
         }                
+    }
+
+    ObjectJS.getHeight = function () {
+        $("#cont").height($(window).height());
+        $(".imm img").height($(window).height());
+        $(".floating").height($(window).height());
+        
+        $(".customer-bevel").css("border-left", ""+$(window).width()+"px solid #008DDD");
+        $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");
     }
 
     module.exports = ObjectJS;
