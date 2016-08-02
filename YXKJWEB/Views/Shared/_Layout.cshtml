@@ -10,11 +10,7 @@
     <script src="/Scripts/sea.js"></script>
     <script src="/Scripts/sea-config.js"></script>
     <script src="/Scripts/jquery-1.11.1.js"></script>    
-    <script type="text/javascript">
-        seajs.use(["scripts/layout"], function (layout) {
-            layout.init();
-        });
-    </script>
+    
     @RenderSection("css", false)   
 </head>
 <body>
@@ -53,12 +49,12 @@
             </ul>*@
             <ul class="menu-footer">
                 <li>案例</li>
-                <li>行业案例</li>
+                <li><a href="/Case/Case">行业案例</a></li>
                 @*<li>企业</li>*@                
             </ul>
             <ul class="menu-footer">
                 <li>报价</li>
-                <li>价格表</li>
+                <li><a href="/Services/Services">价格表</a></li>
                 @*<li>定制化服务</li>*@               
             </ul>
             @*<ul class="menu-footer">
@@ -74,7 +70,7 @@
             </ul>*@
             <ul class="menu-footer">
                 <li>关于</li>
-                <li>公司介绍</li>
+                <li><a href="/About/About">公司介绍</a></li>
                 @*<li>合作伙伴</li>               
                 <li>招聘</li>               
                 <li>商务合作</li>*@               
@@ -82,12 +78,13 @@
             <div class="clear"></div>
         </div>
         <div class="party-footer right">
+            <img class="wx-public" src="/modules/images/qrcode_for_gh_4dda5c475611_344.jpg" />
             <ul class="icon-party right">
                 @*<li>
                     <a href="#"><img src="/modules/images/sns1.png" /></a>
                 </li>*@
                 <li>
-                    <a href="#"><img src="/modules/images/sns2.png" /></a>
+                    <img id="wx-photo" src="/modules/images/sns2.png" />
                 </li>
                @* <li>
                     <a href="#"><img src="/modules/images/sns3.png" /></a>
@@ -120,5 +117,10 @@
     @*<div class="getback-FH">
         <div title="返回顶部" class="iconfont-back iconfont">&#xe643;</div>
     </div>*@
+    <script type="text/javascript">
+        seajs.use(["scripts/layout"], function (layout) {
+            layout.init();
+        });
+    </script>
 </body>
 </html>

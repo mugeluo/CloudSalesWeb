@@ -1,17 +1,17 @@
-﻿.title-main {width:100px;margin:auto;font-size:24px;padding-top:50px; }
-.title-repertory-agent {width:100px;margin:auto;font-size:24px;}
+﻿.title-main {text-align:center;font-size:24px;padding-top:50px; }
+.title-repertory-agent {text-align:center;font-size:24px;}
 .title-descripition { text-align:center;margin: 40px auto;font-size:16px;}
 
 .img-head .floating{position:absolute;top:20%;left:0;z-index:10000;width:100%;}
-.img-head .floating div{color:#F0F5FC;text-align:center;}
-.img-head .floating .colortxt {color:#ccc !important; font-size:14px;}
-.img-head .floating .register{margin-top:3%;}
+.img-head .floating div{color:#F0F5FC;width:900px;margin:auto}
+.img-head .floating .colortxt {color:#ccc !important; font-size:14px;margin-top:20px;}
+.img-head .floating .register{margin-top:5%;}
 .floating .register a { color:#F3F5F6;padding:5px 12px;border:1px solid #ddd;border-radius:3px;font-size:14px;margin:auto;}
 .title { width:180px;margin:auto;color:#3DA3E3;border:1px solid #3DA3E3;border-radius:3px;margin-bottom:30px;
          padding:10px 15px;text-align:center;cursor:pointer;font-size:14px;}
 .title:hover{color:#fff;background-color:#4a98e7;}
 .title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;margin-bottom: -20px;}
-.solve { height:500px;}
+.solve { height:480px;}
 .solve .sove-img{position:relative;margin-left:250px;}
 .solve img{float:left;margin-top:30px;width:340px;}
 .solve .solve-top{ position: absolute; width: 71px;height: 71px;top: 30px;left: 153px;border-radius: 50%;cursor:pointer;}
@@ -21,19 +21,20 @@
 .solve .sove-img div:hover{border:2px solid #ccc;}
 .solve .sove-img div.hover{border:2px solid #ccc;}
 .solve .ask-answer{margin-top: 100px;margin-left: 50%;position:relative;}
-.solve .ask-answer .ask{margin-bottom: 50px;margin-left: 30px;border: 1px solid #ccc;width: 230px;padding: 10px 15px;
+.solve .ask-answer .ask{margin-bottom: 50px;margin-left: 50px;border: 1px solid #ccc;width: 230px;padding: 10px 15px;
                         border-radius: 7px;position:relative;z-index:22;background-color:#fff;}
 .ask-answer .ask .ask-line {position:absolute;border-right:1px solid #fff;height: 16px;top: 11px;left: -1px; }
-.solve .ask-answer .ask-pointer{position: absolute;top: 10px;left: 10px;  border-style: solid;  
+.solve .ask-answer .ask-pointer{position: absolute;top: 10px;left: 30px;  border-style: solid;  
                                 border-width: 0 9.5px 19px 21px;border-color: transparent transparent #ccc transparent;}
 .solve .ask-answer .ask-pointer::before{position: absolute;top: -1px;left: -19px;  border-style: solid;content: '';  
                                         border-width: 0 9.5px 19px 21px;border-color: transparent transparent #ffffff transparent;}
-.solve .ask-answer .answer{margin-bottom: 50px;margin-left: 30px;border: 1px solid #4a98e7;width: 270px;padding: 10px 15px;
-                           border-radius: 7px;line-height:20px;background-color:#4a98e7;color:#fff;}
+.solve .ask-answer .answer{margin-bottom: 50px;margin-left: 30px;border: 1px solid #4a98e7;width: 370px;padding: 10px 15px;
+                           border-radius: 7px;line-height:20px;background-color:#4a98e7;}
+.solve .ask-answer .answer div{color:#fff;}
 .solve .ask-answer .answer-pointer{position: absolute;bottom: 30px;left: 5px; border-right: 25px solid #4a98e7;
                                    border-bottom: 25px solid #fff;}
 /*客户*/
-.customer { height:600px;background-color:#008DDD;position:relative;}
+.customer { height:640px;background-color:#008DDD;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
 .customer .customer-details{margin:auto 150px;height:100px;}
 .customer .customer-details li{float:left;width:280px;margin-left:30px;padding:5px 10px;cursor:pointer;height:58px;
@@ -72,7 +73,7 @@
 .agent .agent-img{ float:right;width:50%;}
 .agent .agent-img img{width:100%;}
 .agent .agent-details{float:right;width:450px;margin-left:50px;}
-.agent .agent-details li{cursor:pointer;width:220px;margin-top:30px;padding:5px 40px;height:58px;border:1px solid #fff;}
+.agent .agent-details li{cursor:pointer;width:220px;margin-top:70px;padding:5px 40px;height:58px;border:1px solid #fff;}
 .agent .agent-details li.hover {border:1px solid #1B95DF;border-radius:2px;
 /*背景渐变*/
     background: -moz-linear-gradient(top, #DFE9F2 0%, #BBDAF4 100%);
@@ -103,10 +104,10 @@
 .img2 .garment-floating div {color: #fff;text-align:center;margin-top:100px; }
 /*试用*/
 .probation { height:400px;background-color:#E2E0DB;}
-.probation img{width:25%;float:left;margin:auto 250px;padding-top:50px;}
+.probation img{width:25%;float:left;margin:auto 250px;padding-top:30px;}
 .probation .probation-txt{padding-top:120px;}
 .probation .probation-txt div{line-height:2.5;color:#555;font-size:14px;}
-.probation .probation-txt a{border:1px solid #555;padding:10px 45px;border-radius:3px;color:#666;}
+.probation .probation-txt a{border:1px solid #555;padding:10px 45px;border-radius:3px;color:#666;font-size:16px;}
 
 /*@media only screen and (max-width:1200px) {
     .customer div:first-child img { width:40%;}

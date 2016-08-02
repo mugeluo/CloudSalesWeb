@@ -210,6 +210,7 @@
     <Content Include="modules\images\home\br-4.png" />
     <Content Include="modules\images\home\index-10.png" />
     <Content Include="modules\images\home\index-11.png" />
+    <Content Include="modules\images\home\index-12.png" />
     <Content Include="modules\images\home\index-2.png" />
     <Content Include="modules\images\home\index-3.png" />
     <Content Include="modules\images\home\index-4.png" />
@@ -229,11 +230,13 @@
     <Content Include="modules\images\home\index-kh2.png" />
     <Content Include="modules\images\home\shadow-line.png" />
     <Content Include="modules\images\ico-home.png" />
+    <Content Include="modules\images\qrcode_for_gh_4dda5c475611_344.jpg" />
     <Content Include="modules\images\services\service-br.png" />
     <Content Include="modules\images\services\service-bt.png" />
     <Content Include="modules\images\services\service-ico1.png" />
     <Content Include="modules\images\services\service-ico2.png" />
     <Content Include="modules\images\services\service-ico3.png" />
+    <Content Include="modules\images\wechat.jpg" />
     <Content Include="modules\plug\carousel\css\8dc3a597.css" />
     <Content Include="modules\plug\carousel\img\5a30b78c.png" />
     <Content Include="modules\plug\carousel\img\62371027.png" />

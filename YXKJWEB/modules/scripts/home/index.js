@@ -2,13 +2,13 @@
     var ObjectJS = {};
     ObjectJS.init = function () {
         ObjectJS.bindEvent();
-        ObjectJS.getHeight();
+        ObjectJS.getWidthSize();
     }
 
     ObjectJS.bindEvent = function () {        
 
         $(window).resize(function(){
-            ObjectJS.getHeight();
+            ObjectJS.getWidthSize();
         });
 
         $(".sove-img div").click(function () {
@@ -55,12 +55,12 @@
         $(".applicable-industry img").hover(function () {
             var _this = $(this).parent();            
             _this.find("div:first").hide();
-            _this.find("div:last").parent().slideDown();                          
+            _this.find("div:last").parent().fadeIn();                          
         });
 
         $(".education-floating,.garment-floating").mouseleave(function () {
             $(".education,.garment").show();
-            $(".education-floating,.garment-floating").slideUp();
+            $(".education-floating,.garment-floating").fadeOut();
         })
     }
 
@@ -70,9 +70,11 @@
         }                
     }
 
-    ObjectJS.getHeight = function () {
+    ObjectJS.getWidthSize = function () {        
         $("#playBox").height($(window).height());
         $(".imm img").height($(window).height());
+        $("#playBox .oUlplay li img").height($(window).height());
+        $("#playBox .oUlplay li").width($(window).width());       
         
         $(".customer-bevel").css("border-left", ""+$(window).width()+"px solid #008DDD");
         $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");

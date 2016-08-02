@@ -7,14 +7,13 @@
 .head-information { position:relative;}
 .information {position:absolute;top:0;left:0;z-index:111;text-align:center;width:100%;height:100%; }
 .information div{color:#FEFEFF;margin-bottom:30px;line-height:1.6;text-shadow: 2px 2px 3px #333;}
-.information div:last-child{border:1px dashed #fff;width:240px;margin:auto;margin-top:20px;padding:5px;}
 /*产品定价*/
 .service-pricing { height:650px;background-color:#F3F2F0;margin-top:-3px;}
 .pricing-details { text-align:center;width:800px;margin:auto;margin-top:50px;}
 .pricing-details ul { background-color:#fff;width:250px;height:475px;float:left;}
 .pricing-details ul li:first-child{margin-bottom: 20px;padding-top:30px;font-size:22px;color:#61605B;}
 .pricing-details ul .btn-click-login{background-color:#fff !important;color:#008AE1 !important;}
-.pricing-details ul .btn-click-login a:hover{color:#4a98e7 !important;}
+.pricing-details ul .btn-click-login a{color:#4a98e7 !important;}
 .pricing-details ul .btn-click{ border: 1px solid #008AE1;padding: 5px 10px; width: 100px;
                                 background-color: #008AE1;margin: 15px auto;border-radius: 3px;cursor:pointer;}
 .pricing-details ul .login-trial a{color:#fff;}

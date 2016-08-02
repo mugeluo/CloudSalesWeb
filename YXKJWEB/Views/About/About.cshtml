@@ -1,6 +1,5 @@
 ﻿@{
     ViewBag.Title = "云销科技 | 关于";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +10,7 @@
 
     <script src="/modules/plug/jquery-horizon-line-switch/js/modernizr.js"></script>
     <script src="/modules/plug/jquery-horizon-line-switch/js/main.js"></script>
+    @* 地图 *@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gDx9WNPeuFj4EgNvullqmzhF"></script>    
 </head>
 <div class="head-information">
@@ -23,8 +23,8 @@
 @* 关于云销 *@
 <div class="cloud-pin">
     <h3 class="host-timeline">企业介绍</h3>
-    <div>上海云销信息科技有限公司，成立于2015年3月。云销科技是一家技术创新型企业，公司以信息技术为核心，凭借多年不同行业的业务经验积累，精心打造了核心产品“二当家”。云销科技自成立以来，一直以优质的客户体验为己任、建立营销行业新时代为目标，励志打造成为国内一流的营销行业软件应用平台。</div>
-    <div>公司产品“二当家”是一款面向中小型企业，以客户、进销存管理为基础，分销管理为核心的企业级SaaS平台应用，旨在让营销行云流水，大数据的可视化给用户带来全新的视觉体验，使企业管理变得简单</div>      
+    <div>上海云销信息科技有限公司，成立于2015年3月，我们是一家技术创新型企业，公司以信息技术为核心，凭着多年的业务经验积累，精心打造了核心产品“二当家”。云销科技自成立以来，一直以优质的客户体验为己任、建立营销行业新时代为目标，励志打造成为国内一流的营销行业软件应用平台。</div>
+    <div>公司产品“二当家”是一款面向中小型企业，以客户、进销存管理为基础，分销管理为核心的企业级SaaS平台应用；可视化的大数据，为用户带来了全新的视觉体验，使企业管理变得简单，我们的宗旨是：让营销行云流水。</div>      
 </div>
 @* 发展历程 *@
 <section class="cd-horizontal-timeline">
@@ -51,7 +51,7 @@
 	<div class="events-content">
 		<ol>
 			<li class="selected" data-date="15/03/2015">
-				<h2>公司成立</h2>
+				<h2>云销科技成立</h2>
 				<em>2015.03.15</em>
 				<p>	
 					上海云销信息科技有限公司，成立于2015年3月，致力于服务各类中小型企业
@@ -59,7 +59,7 @@
 			</li>
 
 			<li data-date="15/01/2016">
-				<h2>"二当家"上架明道应用市场</h2>
+				<h2>"二当家"上线,并在明道应用市场上架</h2>
 				<em>2016.1</em>
 				<p>	
 					早在“云销科技”成立之前，公司产品“二当家”一直处于设计和研发阶段，历时两年多，终于于2016年1月上架明道应用市场线上推广使用，“二当家”至6月份已积累200+家企业用户 
@@ -84,7 +84,7 @@
 		</ol>
 	</div> <!-- .events-content -->
 </section>
-<div class="time-img">
+<div class="time-img hide">
     <img style="width:100%" src="/modules/images/about/about_02.png"/>
 </div>
 
@@ -92,7 +92,7 @@
 <div class="join-teamwork">
     <div class="join">
         <div class="title-join-teamwork">加入我们</div>
-        <div class="center mTop50 mBottom50">
+        <div class="center mTop40 mBottom30">
             <img src="/modules/images/about/about-ico2.png" />
         </div>
         <div class="txt-join-teamwork">我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.</div>
@@ -100,7 +100,7 @@
     </div>
     <div class="teamwork">
         <div class="title-join-teamwork">合作伙伴</div>
-        <div class="center mTop50 mBottom50">
+        <div class="center mTop40 mBottom30">
             <img src="/modules/images/about/about-ico1.png" />
         </div>
         <div class="txt-join-teamwork">我们不断思索,尝试.通过改变传统软件模式,帮助商家降低运营成本并创造更多销售及业务拓展机会.</div>
@@ -117,10 +117,8 @@
         <div>邮箱：customer@yunxiaokeji.com</div>
         <div>地址：上海市长宁区中山西路 1279弄6号国峰科技大厦 6楼</div>
         <div>邮编：200050</div>
-    </div>
-    <div>
-        <img />
-    </div>
+    </div>   
+    <div class="bg-img"></div> 
 </div>
 <div class="map" id="map"></div>
 
@@ -136,12 +134,12 @@
             map = new BMap.Map("map");
             map.centerAndZoom(new BMap.Point(121.426032, 31.197214), 18);
         }
-        //function setMapEvent() {
-        //    map.enableScrollWheelZoom();
-        //    map.enableKeyboard();
-        //    map.enableDragging();
-        //    map.enableDoubleClickZoom()
-        //}
+        function setMapEvent() {
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+        }
         function addClickHandler(target, window) {
             target.addEventListener("click", function () {
                 target.openInfoWindow(window);

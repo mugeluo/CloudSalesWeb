@@ -64,16 +64,17 @@ window.onload = function () {
         //}
         var _self = $(".smalltitle li").eq(now);
         var title = _self.data("title"),
-            title2 = _self.data("title2"),
-            txt = _self.data("txt"),
-            txt2 = _self.data("txt2");
+            txt = _self.data("txt");            
         $(".title1").html(title);
-        $(".title2").html(title2);
         $(".txt").html(txt);
-        $(".txt2").html(txt2);
         
+        var width = $(window).width();
+        $(window).resize(function () {           
+            startMove(oUlBig, 'left', -(now * $(window).width()))
+        });
+
         aLiSmall[now].className = 'thistitle'
-        startMove(oUlBig, 'left', -(now * aBigLi[0].offsetWidth))
+        startMove(oUlBig, 'left', -(now * width))
     }
 
     var now = 0;
@@ -98,12 +99,12 @@ window.onload = function () {
         }
         tab();
     }
-    var timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+    var timer = setInterval(oNext.onclick, 500000) //滚动间隔时间设置
     oDiv.onmouseover = function () {
         clearInterval(timer)
     }
     oDiv.onmouseout = function () {
-        timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+        timer = setInterval(oNext.onclick, 500000) //滚动间隔时间设置
     }
 }
 

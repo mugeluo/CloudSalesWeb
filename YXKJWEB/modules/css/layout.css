@@ -49,10 +49,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner{padding:0;border:non
 .site-footer .links{margin-top:20px;margin-left:120px;}
 .site-footer .menu-footer{margin-right:25px;float:left;}
 .site-footer .menu-footer li:first-child{color:#CCCAC4;font-size:16px;cursor:inherit;}
-.site-footer .menu-footer li:not(first-child){color:#938D88;font-size:12px;margin-top:10px;cursor:pointer;}
-.site-footer .party-footer {margin-top:30px;margin-right:120px;}
+.site-footer .menu-footer li:not(first-child){font-size:12px;margin-top:10px;cursor:pointer;}
+.site-footer .menu-footer li:not(first-child) a{color:#938D88;}
+.site-footer .party-footer {margin-top:30px;margin-right:120px;position:relative;}
+.site-footer .party-footer .wx-public{position:absolute;z-index:222;top:-180px;width:258px;height:258px;display:none;}
 .party-footer .icon-party li { float:left;margin-left:30px;}
-.party-footer .address-footer { float:left;margin-top:60px;}
+.party-footer .address-footer { float:left;margin-top:10px;}
 .party-footer .address-footer span {color:#938D88 !important;font-size:12px; }
 .party-footer .address-footer div {color:#938D88 !important;font-size:12px; }
 .party-footer .address-footer a {color:#938D88 !important;font-size:12px; }
