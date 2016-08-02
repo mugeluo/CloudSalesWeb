@@ -275,6 +275,8 @@
     <Content Include="modules\plug\jquery-horizon-line-switch\js\modernizr.js" />
     <Content Include="modules\plug\js-img-switching\index-img-switching.css" />
     <Content Include="modules\plug\js-img-switching\index-img-switching.js" />
+    <Content Include="modules\plug\js-img-switching\l.png" />
+    <Content Include="modules\plug\js-img-switching\r.png" />
     <Content Include="modules\scripts\case\case.js" />
     <Content Include="modules\scripts\global.js" />
     <Content Include="modules\scripts\home\index.js" />

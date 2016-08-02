@@ -1,97 +1,110 @@
-﻿
-var tt = null;
-var kkk;
-var n = 0;
-var timer = 0;
-window.onload = function () {    
-    var li = document.getElementById("btn").getElementsByTagName("li");
-    kkk = document.getElementById("imm").getElementsByTagName("a");
-    for (var i = 0; i < kkk.length; i++) {
-        if (i != 0) {
-            kkk[i].style.opacity = 0;
-        }
+﻿function getStyle(obj, name) {
+    if (obj.currentStyle) {
+        return obj.currentStyle[name]
     }
-    for (var j = 0; j < li.length; j++) {
-        li[j].onmouseover = function () {
-            var that = this;
-            tt = setTimeout(function () {
-                var index = that.getAttribute("data-id") - 1,
-
-                    title = that.getAttribute("data-title"),
-                    title2 = that.getAttribute("data-title2"),
-                    txt = that.getAttribute("data-txt"),
-                    txt2 = that.getAttribute("data-txt2");
-                $(".title1").html(title);
-                $(".title2").html(title2);
-                $(".txt").html(txt);
-                $(".txt2").html(txt2);
-
-                n = index;
-                if (index < kkk.length) {
-                    for (var o = 0; o < li.length; o++) {
-                        li[o].className = "";
-                        kkk[o].style.opacity = 0;
-                        kkk[o].style.zIndex = 9998;
-                    }
-                    that.className = "on";
-                    kkk[index].style.opacity = 1;
-                    kkk[index].style.zIndex = 9999;
-                    kkk[index].style.transition = "opacity 0.8s";
-                    leftf(-300, 0, kkk[index]);
-                }
-            }, 100);
-        };
-        li[j].onmouseout = function () {
-            clearTimeout(tt)
-        }
-    }
-
-    var left = document.getElementById("left");
-    var right = document.getElementById("right");
-    var jiao = document.getElementById("jiao");
-    var body = document.getElementById("img-head");
-
-    timer = setInterval("autoplay()", 5000);
-    body.onmouseover = function () {
-        jiao.style.display = "block";
-        //clearInterval(timer);
-    };
-    //body.onmouseout = function () {
-    //    jiao.style.display = "none";
-    //    timer = setInterval("autoplay()", 5000);
-    //};
-    
-    left.onclick = function () {
-        if (n > 0) {
-            n--
-        } else if (n == 0) {
-            n = kkk.length - 1;
-        }
-        var li = document.getElementById("btn").getElementsByTagName("li");
-        li[n].onmouseover()
-    };
-    right.onclick = function () {
-        n = n >= (kkk.length - 1) ? 0 : ++n;
-        var li = document.getElementById("btn").getElementsByTagName("li");
-        li[n].onmouseover()
+    else {
+        return getComputedStyle(obj, false)[name]
     }
 }
 
-function leftf(start, end, ele) {
-    
-    var tt = setInterval(function () {
-        start += 10;
-        ele.style.left = start + "px";
-        if (start == end) {
-            clearInterval(tt)
+function getByClass(oParent, nClass) {
+    var eLe = oParent.getElementsByTagName('*');
+    var aRrent = [];
+    for (var i = 0; i < eLe.length; i++) {
+        if (eLe[i].className == nClass) {
+            aRrent.push(eLe[i]);
         }
-    }, 20)
+    }
+    return aRrent;
 }
 
-function autoplay() {
-    n = n >= (kkk.length - 1) ? 0 : ++n;
-    var li = document.getElementById("btn").getElementsByTagName("li");
-    li[n].onmouseover()
-};
+function startMove(obj, att, add) {
+    clearInterval(obj.timer)
+    obj.timer = setInterval(function () {
+        var cutt = 0;
+        if (att == 'opacity') {
+            cutt = Math.round(parseFloat(getStyle(obj, att)));
+        }
+        else {
+            cutt = Math.round(parseInt(getStyle(obj, att)));
+        }
+        var speed = (add - cutt) / 4;
+        speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+        if (cutt == add) {
+            clearInterval(obj.timer)
+        }
+        else {
+            if (att == 'opacity') {
+                obj.style.opacity = (cutt + speed) / 100;
+                obj.style.filter = 'alpha(opacity:' + (cutt + speed) + ')';
+            }
+            else {
+                obj.style[att] = cutt + speed + 'px';
+            }
+        }
+
+    }, 30)
+}
+
+window.onload = function () {
+    var oDiv = document.getElementById('playBox');
+    var oPre = getByClass(oDiv, 'pre')[0];
+    var oNext = getByClass(oDiv, 'next')[0];
+    var oUlBig = getByClass(oDiv, 'oUlplay')[0];
+    var aBigLi = oUlBig.getElementsByTagName('li');
+    var oDivSmall = getByClass(oDiv, 'smalltitle')[0]
+    var aLiSmall = oDivSmall.getElementsByTagName('li');
+
+    function tab() {        
+        for (var i = 0; i < aLiSmall.length; i++) {
+            aLiSmall[i].className = '';
+        }
+        //if (now == 3) {
+        //    now = 2;
+        //}
+        var _self = $(".smalltitle li").eq(now);
+        var title = _self.data("title"),
+            title2 = _self.data("title2"),
+            txt = _self.data("txt"),
+            txt2 = _self.data("txt2");
+        $(".title1").html(title);
+        $(".title2").html(title2);
+        $(".txt").html(txt);
+        $(".txt2").html(txt2);
+        
+        aLiSmall[now].className = 'thistitle'
+        startMove(oUlBig, 'left', -(now * aBigLi[0].offsetWidth))
+    }
+
+    var now = 0;
+    for (var i = 0; i < aLiSmall.length; i++) {        
+        aLiSmall[i].index = i;
+        aLiSmall[i].onclick = function () {
+            now = this.index;          
+            tab();
+        }
+    }
+    oPre.onclick = function () {
+        now--
+        if (now == -1) {
+            now = aBigLi.length-1;
+        }
+        tab();
+    }
+    oNext.onclick = function () {
+        now++
+        if (now == aBigLi.length) {
+            now = 0;
+        }
+        tab();
+    }
+    var timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+    oDiv.onmouseover = function () {
+        clearInterval(timer)
+    }
+    oDiv.onmouseout = function () {
+        timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+    }
+}
 
 
