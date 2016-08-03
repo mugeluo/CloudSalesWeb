@@ -24,7 +24,7 @@ define(function (require, exports, module) {
 
         //窗体滚动 置顶头部
         $(window).scroll(function () {
-            if ($(window).scrollTop()>500){ 
+            if ($(document).scrollTop()>450){ 
                 $(".getback-FH").fadeIn(500);
                 $(".header-menu").css("background", "rgba(55,55,55,0.4)");
             }  
