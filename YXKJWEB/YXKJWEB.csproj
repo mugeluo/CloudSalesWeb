@@ -204,7 +204,6 @@
     <Content Include="modules\images\about\about_08.png" />
     <Content Include="modules\images\case\case-br.png" />
     <Content Include="modules\images\case\case-js1.png" />
-    <Content Include="modules\images\customer.png" />
     <Content Include="modules\images\home\br-0.png" />
     <Content Include="modules\images\home\br-1.png" />
     <Content Include="modules\images\home\br-3.png" />
@@ -220,6 +219,8 @@
     <Content Include="modules\images\home\index-7.png" />
     <Content Include="modules\images\home\index-8.png" />
     <Content Include="modules\images\home\index-9.png" />
+    <Content Include="modules\images\home\index-br0-cloud-left.png" />
+    <Content Include="modules\images\home\index-br0-cloud-right.png" />
     <Content Include="modules\images\home\index-dls0.png" />
     <Content Include="modules\images\home\index-dls1.png" />
     <Content Include="modules\images\home\index-dls2.png" />
@@ -229,6 +230,7 @@
     <Content Include="modules\images\home\index-kh0.png" />
     <Content Include="modules\images\home\index-kh1.png" />
     <Content Include="modules\images\home\index-kh2.png" />
+    <Content Include="modules\images\home\index-_03.png" />
     <Content Include="modules\images\home\shadow-line.png" />
     <Content Include="modules\images\ico-home.png" />
     <Content Include="modules\images\qrcode_for_gh_4dda5c475611_344.jpg" />
@@ -246,7 +248,6 @@
     <Content Include="modules\plug\jquery-horizon-line-switch\fonts\icomoon.eot" />
     <Content Include="modules\plug\jquery-horizon-line-switch\fonts\icomoon.ttf" />
     <Content Include="modules\plug\jquery-horizon-line-switch\fonts\icomoon.woff" />
-    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="modules\css\base.css" />
     <Content Include="modules\css\iconfont\demo.css" />
     <Content Include="modules\css\iconfont\demo.html" />
@@ -254,7 +255,6 @@
     <Content Include="modules\css\iconfont\iconfont.svg" />
     <Content Include="modules\css\layout.css" />
     <Content Include="modules\css\services.css" />
-    <Content Include="modules\images\aa - 副本 %286%29.png" />
     <Content Include="modules\images\case\anlile-1.png" />
     <Content Include="modules\images\case\anlile-2.png" />
     <Content Include="modules\images\case\anlile-3.png" />
@@ -289,21 +289,8 @@
     <Content Include="Scripts\jquery-1.11.1.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery-ui-1.8.20.js" />
-    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.1.0.debug.js" />
-    <Content Include="Scripts\knockout-2.1.0.js" />
-    <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\sea-config.js" />
     <Content Include="Scripts\sea.js" />
-    <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

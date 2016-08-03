@@ -16,7 +16,7 @@
 .join-teamwork .title-join-teamwork{color:#FFFEFD;font-size:24px;text-align:center;margin-top:40px;}
 .join-teamwork .txt-join-teamwork{color:#fff;max-width:400px;margin:10px auto;line-height:24px;}
 /*联系我们*/
-.contant-us {height:250px;}
+.contant-us {height:250px;width:1250px;margin:auto;}
 .contant-us .information{margin-left:10%;margin-top:50px;margin-bottom:50px;float:left}
 .contant-us .information div{margin-bottom:10px;color:#555;}
 .contant-us .bg-img{float:right;background: url(/modules/images/about/about_08.png)no-repeat right #fff;margin-right:100px;
