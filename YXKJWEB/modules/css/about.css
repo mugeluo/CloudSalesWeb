@@ -16,11 +16,10 @@
 .join-teamwork .title-join-teamwork{color:#FFFEFD;font-size:24px;text-align:center;margin-top:40px;}
 .join-teamwork .txt-join-teamwork{color:#fff;max-width:400px;margin:10px auto;line-height:24px;}
 /*联系我们*/
-.contant-us {height:250px;width:1250px;margin:auto;}
-.contant-us .information{margin-left:10%;margin-top:50px;margin-bottom:50px;float:left}
+.contant-us {height:250px;width:1080px;margin:auto;}
+.contant-us .information{margin-top:50px;margin-bottom:50px;float:left}
 .contant-us .information div{margin-bottom:10px;color:#555;}
-.contant-us .bg-img{float:right;background: url(/modules/images/about/about_08.png)no-repeat right #fff;
-                    height:200px;width:675px;}
+.contant-us .bg-img{float:right;background: url(/modules/images/about/about_08.png)no-repeat right #fff; height:170px;width:500px;}
 .map{width:100%;height:400px;}
 .site-footer .menu-footer li:not(first-child) { margin-top:15px;}
 .site-footer .statement .line{background-color:#938D88;width:2px;height:13px;margin-top:0;}
