@@ -9,7 +9,7 @@
 
         $(window).resize(function(){
             ObjectJS.getWidthSize();
-        });
+        });        
 
         $(".sove-img div").click(function () {
             var _this = $(this), ask = _this.data("ask"), answer = _this.data("answer");
@@ -35,17 +35,17 @@
         $(".repertory-details li").hover(function () {            
             var _this = $(this), url = _this.data("url");
             if ($(".jxc-img img").attr("src") != url) {
-                $(".jxc-img img").fadeOut(function () {
+                $(".jxc-img img").fadeOut(500,function () {
                     $(this).fadeIn().attr("src", url);
                 })
-            }            
+            }           
             ObjectJS.clickBind(this);
         });
 
         $(".agent-details li").hover(function () {
             var _this = $(this), url = _this.data("url");
             if ($(".agent-img img").attr("src")!=url) {
-                $(".agent-img img").fadeOut(function () {
+                $(".agent-img img").fadeOut(500,function () {
                     $(this).fadeIn().attr("src", url);
                 })
             }            
@@ -61,7 +61,9 @@
         $(".education-floating,.garment-floating").mouseleave(function () {
             $(".education,.garment").show();
             $(".education-floating,.garment-floating").fadeOut();
-        })
+        });
+
+        $(".sove-img div:first").click();
     }
 
     ObjectJS.clickBind = function (thisclick) {        
