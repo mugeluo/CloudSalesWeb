@@ -3,7 +3,7 @@
 #playBox{ width:100%; height:652px; background:#333; position:relative; overflow:hidden;}
 #playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
 #playBox .oUlplay li{ float:left;}
-/*#playBox .oUlplay li img{ width:100%;height:100%}*/
+#playBox .oUlplay li img{ width:100%;height:100%}
 #playBox .pre{ cursor:pointer; width:45px; height:45px; background:url(/modules/plug/js-img-switching/l.png) no-repeat; 
                 position:absolute; top:49%; left:10px; z-index:111110;}
 #playBox .next{ cursor:pointer; width:45px; height:45px; background:url(/modules/plug/js-img-switching/r.png) no-repeat;        
