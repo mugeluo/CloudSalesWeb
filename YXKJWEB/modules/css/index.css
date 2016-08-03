@@ -97,11 +97,11 @@
 .applicable-industry .img2{position:relative;width:50%;float:right;}
 .applicable-industry .img .education{position: absolute;bottom: 10px;left: 10px;color: #fff;font-size:18px;}
 .applicable-industry .img .education-floating{position:absolute;z-index:333;background: rgba(55,55,55,0.6);
-                                              width: 100%;height: 300px;top: 0;display:none;}
+                                              width: 100%;height: 270px;top: 0;display:none;}
 .img .education-floating div {color: #fff;text-align:center;margin-top:100px; }
 .applicable-industry .img2 .garment{position: absolute;bottom: 10px;left: 10px;color: #fff;font-size:18px;}
 .applicable-industry .img2 .garment-floating{position:absolute;z-index:333;background: rgba(55,55,55,0.6);
-                                              width: 100%;height: 300px;top: 0;display:none;}
+                                              width: 100%;height: 270px;top: 0;display:none;}
 .img2 .garment-floating div {color: #fff;text-align:center;margin-top:100px; }
 /*试用*/
 .probation { height:400px;background-color:#E2E0DB;}
