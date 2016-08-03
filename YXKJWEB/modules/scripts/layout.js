@@ -2,8 +2,7 @@
 *布局页JS
 */
 define(function (require, exports, module) {
-    var $ = require("jquery"),
-        doT = require("dot"),
+    var doT = require("dot"),
         Global = require("global")      
 
     var LayoutObject = {};
@@ -15,12 +14,13 @@ define(function (require, exports, module) {
     //绑定事件
     LayoutObject.bindEvent = function () {
         var _self = this;
-        
         var arr = window.location.href.split("/");
-        var name = arr[arr.length - 1];        
-        if(name !="Index") {
-            $("." + name).addClass("hover").find("a").css("Opacity", "1").siblings().removeClass("hover");
-        }  
+        if (arr.length > 0) {
+            var name = arr[arr.length - 1];
+            if (name!='' && name != "Index") {
+                $("." + name).addClass("hover").find("a").css("Opacity", "1").siblings().removeClass("hover");
+            }
+        }
 
         //窗体滚动 置顶头部
         $(window).scroll(function () {

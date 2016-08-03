@@ -6,7 +6,7 @@ seajs.config({
         
     },
     alias: {
-        "jquery": "/Scripts/jquery-1.11.1.js",
+        "jquery": "/Scripts/jquery-1.7.1.js",
         "global": "scripts/global.js",
         "dot": "plug/doT.js"
     },

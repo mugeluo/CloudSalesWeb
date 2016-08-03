@@ -1,21 +1,19 @@
 ﻿@{
     ViewBag.Title = "云销科技 | 首页";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section css{
     <link href="/modules/css/index.css" rel="stylesheet" />
     <link href="/modules/plug/js-img-switching/index-img-switching.css" rel="stylesheet" />
     <link href="/modules/plug/carousel/css/8dc3a597.css" rel="stylesheet" />
 }
-@section scripts{    
+@section scripts{
+    <script src="/modules/plug/js-img-switching/index-img-switching.js"></script> 
+    <script src="/modules/plug/carousel/js/6d510e95.js"></script>
     <script type="text/javascript">
         seajs.use(["scripts/home/index"], function (ObjectJS) {
             ObjectJS.init();
         })        
     </script>
-    <script src="/modules/plug/js-img-switching/index-img-switching.js"></script> 
-    @* 旋转木马 *@   
-    <script src="/modules/plug/carousel/js/6d510e95.js"></script>
 }
 
 <!-- 代码 开始 -->
