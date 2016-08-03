@@ -1,5 +1,4 @@
-﻿.title-main {text-align:center;font-size:24px;padding-top:50px; }
-.title-repertory-agent {text-align:center;font-size:24px;}
+﻿.title-main {text-align:center;font-size:24px;}
 .title-descripition { text-align:center;margin: 40px auto;font-size:16px;}
 .title-head { font-size:16px;}
 .img-head .floating{position:absolute;top:20%;left:0;z-index:10000;width:100%;}
@@ -11,9 +10,9 @@
 .title { width:180px;margin:auto;color:#3DA3E3;border:1px solid #3DA3E3;border-radius:3px;margin-bottom:30px;
          padding:10px 15px;text-align:center;cursor:pointer;font-size:14px;}
 .title:hover{color:#fff;background-color:#4a98e7;}
-.title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;margin-bottom: -20px;}
-.solve { height:480px;}
-.solve .sove-img{position:relative;margin-left:250px;}
+.title-line{width:420px;margin:auto;border-bottom:3px solid #F0EFEE;height:2px;margin-bottom: 30px;}
+.solve { height:480px;width:950px;margin:auto;}
+.solve .sove-img{position:relative;}
 .solve img{float:left;margin-top:30px;width:340px;}
 .solve .solve-top{ position: absolute; width: 71px;height: 71px;top: 30px;left: 153px;border-radius: 50%;cursor:pointer;}
 .solve .solve-right{ position: absolute; width: 72px;height: 72px;top: 178px;left: 263px;border-radius: 50%;cursor:pointer;}
@@ -37,7 +36,7 @@
 /*客户*/
 .customer { height:640px;background-color:#008DDD;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
-.customer .customer-details{margin:auto 150px;height:100px;}
+.customer .customer-details{margin:auto;width:1020px;}
 .customer .customer-details li{float:left;width:280px;margin-left:30px;padding:5px 10px;cursor:pointer;height:58px;
                                border:1px solid #008DDD;}
 .customer .customer-details li.hover { border:1px solid #95CAF2;border-radius:3px;
@@ -53,7 +52,7 @@
                  border-left: 1349px solid #008DDD; }
 /*库存*/
 .repertory { height:650px;background-color:#F0EFEE;position:relative;}
-.repertory .repertory-details{float:left;margin-left:150px;}
+.repertory .repertory-details{float:left;}
 .repertory .repertory-details li{margin-top:30px;width:270px;padding:5px 15px;cursor:pointer;height:58px;border:1px solid #F0EFEE;}
 .repertory .repertory-details li.hover { border:1px solid #E5E4E0;border-radius:2px;
     /*背景渐变*/
@@ -64,16 +63,16 @@
     background: -ms-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
     background: linear-gradient(to bottom, #EEEEEE 0%,#DDDDDD 100%);}
 .repertory-details li div{margin-bottom:5px;}
-.repertory .jxc-img { float:right;width:50%;margin-right:150px;}
+.repertory .jxc-img { float:right;width:675px;}
 .repertory .jxc-img img{width:100%;}
 
 .repertory-bevel-down { position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;left:0;border-bottom:100px solid #fff;
                  border-right: 1349px solid #F0EFEE;}
 /*代理商*/
 .agent { height:510px;position:relative;background-color:#fff;}
-.agent .agent-img{ float:right;width:50%;}
+.agent .agent-img{ float:left;width:675px;}
 .agent .agent-img img{width:100%;}
-.agent .agent-details{float:right;width:450px;margin-left:50px;}
+.agent .agent-details{float:right;}
 .agent .agent-details li{cursor:pointer;width:220px;margin-top:70px;padding:5px 40px;height:58px;border:1px solid #fff;}
 .agent .agent-details li.hover {border:1px solid #1B95DF;border-radius:2px;
 /*背景渐变*/
@@ -86,9 +85,10 @@
 .agent-details li div{margin-bottom:5px;color:#1B95DF;}
 .look { width:120px;margin:auto;font-size:18px;border:1px solid #0094ff;text-align:center;color:#0094ff;border-radius:3px;
         padding:10px 30px;cursor:pointer;margin-top:100px;}
-.instructions { height:500px;margin-top:100px;margin-left:150px;background:url(/modules/images/home/index-3.png)no-repeat;}
+.instructions { height:500px;background:url(/modules/images/home/index-3.png)no-repeat;
+                width:950px;margin:auto;margin-top:50px;}
 .instructions .instructions-txt {width:300px; margin-left: 100px; padding-top: 80px;float:left; }
-.instructions img{width: 25%;margin-right: 250px;margin-top: 80px;float:right;}
+.instructions img{width:250px;margin-top: 80px;float:right;}
 .instructions-txt div:first-child{margin-bottom:40px;color:#000; }
 .instructions-txt div:last-child { width:300px;color:#ABAAA4;line-height:1.6;font-size:14px;}
 .applicable-industry {height:374px;margin-top:30px; }
@@ -105,7 +105,7 @@
 .img2 .garment-floating div {color: #fff;text-align:center;margin-top:100px; }
 /*试用*/
 .probation { height:400px;background-color:#E2E0DB;}
-.probation img{width:25%;float:left;margin:auto 250px;padding-top:30px;}
+.probation img{width:340px;float:left;margin:auto 250px;padding-top:30px;}
 .probation .probation-txt{padding-top:120px;}
 .probation .probation-txt div{line-height:2.5;color:#555;font-size:14px;}
 .probation .probation-txt a{border:1px solid #555;padding:10px 45px;border-radius:3px;color:#666;font-size:16px;}
