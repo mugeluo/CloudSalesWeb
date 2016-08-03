@@ -8,7 +8,7 @@
                 position:absolute; top:49%; left:10px; z-index:111110;}
 #playBox .next{ cursor:pointer; width:45px; height:45px; background:url(/modules/plug/js-img-switching/r.png) no-repeat;        
                 position:absolute; top:49%; right:10px; z-index:111110;}
-#playBox .smalltitle {width:100%; height:10px; position:absolute; bottom:15px; z-index:10}
+#playBox .smalltitle {width:100%; height:10px; position:absolute; bottom:15px; z-index:222222;}
 #playBox .smalltitle ul{ width:80px; margin:0 auto;}
 #playBox .smalltitle ul li{cursor:pointer; width:12px; height:12px; margin:0 7px; border-radius:50%; background:#69aaec; float:left; overflow:hidden;*display:inline;*zoom:1;}
 #playBox .smalltitle .thistitle{ background:#ffffff;}

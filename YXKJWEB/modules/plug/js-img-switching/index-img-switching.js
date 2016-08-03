@@ -59,15 +59,17 @@ window.onload = function () {
         for (var i = 0; i < aLiSmall.length; i++) {
             aLiSmall[i].className = '';
         }
-        //if (now == 3) {
-        //    now = 2;
-        //}
+       
         var _self = $(".smalltitle li").eq(now);
         var title = _self.data("title"),
             txt = _self.data("txt");            
         $(".title1").html(title);
         $(".txt").html(txt);
-        
+        if (now==0) {
+            $(".img-index-details").show();
+        } else {
+            $(".img-index-details").hide();
+        }
         var width = $(window).width();
         $(window).resize(function () {           
             startMove(oUlBig, 'left', -(now * $(window).width()))

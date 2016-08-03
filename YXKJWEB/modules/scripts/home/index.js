@@ -77,9 +77,11 @@
 
     ObjectJS.getWidthSize = function () {        
         $("#playBox").height($(window).height());
+        $("#img-head").height($(window).height());
+        $("#playBox .oUlplay li").width($(window).width());
         $(".index-br").height($(window).height());
-        $("#playBox .oUlplay li").width($(window).width());       
         $(".index-br .cloud-left img").height($(window).height());
+       
         $(".customer-bevel").css("border-left", ""+$(window).width()+"px solid #008DDD");
         $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");
     }
