@@ -48,7 +48,7 @@
 .customer { height:640px;background-color:#008DDD;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
 .customer .customer-details{margin:auto;width:1020px;}
-.customer .customer-details li{float:left;width:280px;margin-left:30px;padding:5px 10px;cursor:pointer;height:58px;
+.customer .customer-details li{float:left;width:280px;margin-left:30px;padding:5px 10px;cursor:pointer;height:68px;
                                border:1px solid #008DDD;}
 .customer .customer-details li.hover { border:1px solid #95CAF2;border-radius:3px;
      /*背景渐变*/
@@ -64,7 +64,7 @@
 /*库存*/
 .repertory { height:650px;background-color:#F0EFEE;position:relative;}
 .repertory .repertory-details{float:left;}
-.repertory .repertory-details li{margin-top:30px;width:270px;padding:5px 15px;cursor:pointer;height:58px;border:1px solid #F0EFEE;}
+.repertory .repertory-details li{margin-top:30px;width:270px;padding:5px 15px;cursor:pointer;height:68px;border:1px solid #F0EFEE;}
 .repertory .repertory-details li.hover { border:1px solid #E5E4E0;border-radius:2px;
     /*背景渐变*/
     background: -moz-linear-gradient(top, #EEEEEE 0%, #DDDDDD 100%);
@@ -73,7 +73,7 @@
     background: -o-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
     background: -ms-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
     background: linear-gradient(to bottom, #EEEEEE 0%,#DDDDDD 100%);}
-.repertory-details li div{margin-bottom:5px;}
+.repertory-details li div{margin-bottom:5px;color:#666;}
 .repertory .jxc-img { float:right;width:675px;}
 .repertory .jxc-img img{width:100%;}
 
@@ -84,7 +84,7 @@
 .agent .agent-img{ float:left;width:675px;}
 .agent .agent-img img{width:100%;}
 .agent .agent-details{float:right;}
-.agent .agent-details li{cursor:pointer;width:220px;margin-top:70px;padding:5px 40px;height:58px;border:1px solid #fff;}
+.agent .agent-details li{cursor:pointer;width:220px;margin-top:70px;padding:5px 40px;height:68px;border:1px solid #fff;}
 .agent .agent-details li.hover {border:1px solid #1B95DF;border-radius:2px;
 /*背景渐变*/
     background: -moz-linear-gradient(top, #DFE9F2 0%, #BBDAF4 100%);
