@@ -2,7 +2,7 @@
     var ObjectJS = {};
     ObjectJS.init = function () {
         ObjectJS.bindEvent();
-        //ObjectJS.getWidthSize();
+        ObjectJS.getWidthSize();
     }
 
     ObjectJS.bindEvent = function () {        
@@ -75,13 +75,13 @@
         }                
     }
 
-    ObjectJS.getWidthSize = function () {        
-        $("#playBox").height($(window).height());
+    ObjectJS.getWidthSize = function () {   
+        $(".index-br").height($(window).height()); 
+        $(".oUlplay .oUlplay-img img").width($(window).width()).height($(window).height());;
+       
+        $(".cloud-left").width($(window).width());
         $("#img-head").height($(window).height());
-        $("#playBox .oUlplay li").width($(window).width());
-
-        $(".index-br").height($(window).height());
-        $(".index-br .cloud-left img").height($(window).height());
+        $("#playBox").height($(window).height());
         
         $(".customer-bevel").css("border-left", ""+$(window).width()+"px solid #008DDD");
         $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");

@@ -2,8 +2,7 @@
 .title-descripition { text-align:center;margin: 40px auto;font-size:16px;}
 .title-head { font-size:16px;}
 
-.index-br {width:100%;height:652px;
-            background: -moz-linear-gradient(top, #307ed8 0%, #4198e7 100%);
+.index-br { width:100%;height:100%;background: -moz-linear-gradient(top, #307ed8 0%, #4198e7 100%);
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#307ed8), color-stop(100%,#4198e7));
             background: -webkit-linear-gradient(top, #307ed8 0%,#4198e7 100%);
             background: -o-linear-gradient(top, #307ed8 0%,#4198e7 100%);
