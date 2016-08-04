@@ -91,9 +91,13 @@
 
 
 <div class="customer">
-    <div class="title-main" style="padding-top:30px;" >CRM(客户管理)</div>
+<<<<<<< HEAD
     @*<div class="title-main" style="padding-top:20px;" >CRM(客户管理)</div>
     <div class="title-descripition" style="margin-bottom:0;">协助您搭建销售体系，提升团队效率和销售业绩</div>*@
+=======
+    <div class="title-main" style="padding-top:30px;" >CRM(客户管理)</div>
+    <div class="title-descripition" style="margin-bottom:0;">协助您搭建销售体系，提升团队效率和销售业绩</div>
+>>>>>>> 152d7b57a68fb83bb83d38f425d3d8d2efe094d1
     <div id="dg-container" class="dg-container inner">
         <div class="dg-wrapper folded">                
             <a data-index="0" class="outbound previous1">
