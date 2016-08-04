@@ -62,6 +62,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner{padding:0;border:non
 .site-footer .statement{border-top:1px solid #938D88;padding:15px 0 40px 0;margin-top:30px;}
 .site-footer .statement span{font-size:14px;}
 .site-footer .statement .left div{color:#938D88;margin-right:15px;float:left;}
+.site-footer .statement .left div a{color:#938D88;}
 .site-footer .statement .line{background-color:#938D88;width:2px;height:12px;margin-top:3px;}
 /*返回顶部*/
 .getback-FH { position:fixed;z-index:11112;color:#666;right:3%;bottom:8%;display:none;}

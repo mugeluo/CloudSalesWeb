@@ -315,6 +315,7 @@ Main Components
 .cd-horizontal-timeline .events-content em {
   display: block;
   margin: 10px auto;
+  font-style:normal;
 }
 .cd-horizontal-timeline .events-content em::before {
   content: '- ';
