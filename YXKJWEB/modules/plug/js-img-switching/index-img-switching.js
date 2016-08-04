@@ -71,7 +71,7 @@ window.onload = function () {
         } else {
             $(".img-index-details").hide();
         }
-        debugger
+        
         var width = $(window).width();
         //$(window).resize(function () {           
         //    startMove(oUlBig, 'left', -(now * $(window).width()))
