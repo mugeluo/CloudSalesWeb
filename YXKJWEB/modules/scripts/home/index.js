@@ -24,15 +24,15 @@
             $(".answer").html(txt.answer);
         });
 
+        $(".customer-details li").hover(function () {            
+            var _self = $(this);
+            $(".dg-wrapper [data-index=" + _self.data("index") + "] ").click();
+            ObjectJS.clickBind(this);
+        });
+
         $(".dg-wrapper .outbound").click(function () {
             var _this = $(this);
             ObjectJS.clickBind($(".customer-details li").eq(_this.data("index")));
-        });
-
-        $(".customer-details li").hover(function () {
-            var _self = $(this);
-            $(".dg-wrapper .outbound").eq(_self.data("index")).click();
-            ObjectJS.clickBind(this);
         });
 
         $(".repertory-details li").hover(function () {            
@@ -45,20 +45,20 @@
             ObjectJS.clickBind(this);
         });
 
-        $(".agent-details li").hover(function () {
-            var _this = $(this), url = _this.data("url");
-            if ($(".agent-img img").attr("src")!=url) {
-                $(".agent-img img").fadeOut(500,function () {
-                    $(this).fadeIn().attr("src", url);
-                })
-            }            
-            ObjectJS.clickBind(this);
-        });
+        //$(".agent-details li").hover(function () {
+        //    var _this = $(this), url = _this.data("url");
+        //    if ($(".agent-img img").attr("src")!=url) {
+        //        $(".agent-img img").fadeOut(500,function () {
+        //            $(this).fadeIn().attr("src", url);
+        //        })
+        //    }            
+        //    ObjectJS.clickBind(this);
+        //});
         
         $(".applicable-industry img").hover(function () {
             var _this = $(this).parent();            
             _this.find("div:first").hide();
-            _this.find("div:last").parent().fadeIn();                          
+            _this.find("div:last").parent().fadeIn();           
         });
 
         $(".education-floating,.garment-floating").mouseleave(function () {
@@ -75,13 +75,21 @@
         }                
     }
 
-    ObjectJS.getWidthSize = function () {   
-        $(".index-br").height($(window).height()); 
-        $(".oUlplay .oUlplay-img img").width($(window).width()).height($(window).height());;
-       
-        $(".cloud-left").width($(window).width());
-        $("#img-head").height($(window).height());
-        $("#playBox").height($(window).height());
+    ObjectJS.getWidthSize = function () {
+        if ($(window).height()>=768) {
+            $(".index-br").height(768);
+            $("#img-head").height(768);
+            $("#playBox").height(768);
+            $(".oUlplay .oUlplay-img img").height(768);
+        } else {
+            $(".index-br").height($(window).height());
+            $("#img-head").height($(window).height());
+            $("#playBox").height($(window).height());
+            $(".oUlplay .oUlplay-img img").height($(window).height());
+        }
+
+        $(".oUlplay .oUlplay-img img").width($(window).width());
+        $(".cloud-left").width($(window).width());       
         
         $(".customer-bevel").css("border-left", ""+$(window).width()+"px solid #008DDD");
         $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");
