@@ -2,7 +2,7 @@
     var ObjectJS = {};
     ObjectJS.init = function () {
         ObjectJS.bindEvent();
-        //ObjectJS.getWidthSize();
+        ObjectJS.getWidthSize();
     }
 
     ObjectJS.bindEvent = function () {        
