@@ -1,6 +1,18 @@
 ﻿
 *{ margin:0; padding:0; list-style:none;}
 #divSmallBox{overflow:hidden;*display:inline;*zoom:1;width:10px;height:10px;margin:0 5px;border-radius:10px;background:#ffffff;}
+<<<<<<< HEAD
+#playBox{ width:100%; height:768px; background:#307ed8; position:relative; overflow:hidden;}
+#playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
+#playBox .oUlplay li{ float:left;}
+.oUlplay li img{ width:100%;height:100%}
+#playBox .pre{ cursor:pointer; width:45px; height:45px; background:url(/modules/plug/js-img-switching/l.png) no-repeat; 
+                position:absolute; top:49%; left:10px; z-index:11110;}
+#playBox .next{ cursor:pointer; width:45px; height:45px; background:url(/modules/plug/js-img-switching/r.png) no-repeat;        
+                position:absolute; top:49%; right:10px; z-index:11110;}
+#playBox .smalltitle {width:100%; height:10px; position:absolute; bottom:15px; z-index:222222;}
+#playBox .smalltitle ul{ width:80px; margin:0 auto;}
+=======
 #playBox{ width:100%; height:768px; background:#333; position:relative; overflow:hidden;}
 #playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
 #playBox .oUlplay li{ float:left;}
@@ -8,6 +20,7 @@
 #playBox .next{ cursor:pointer; width:45px; height:45px; background:url(/modules/plug/js-img-switching/r.png) no-repeat; position:absolute; top:50%; right:10px; z-index:200;}
 #playBox .smalltitle {width:100%; height:10px; position:absolute; bottom:15px; z-index:200}
 #playBox .smalltitle ul{ width:120px; margin:0 auto;}
+>>>>>>> 80f29f6271b5b97a1aaadf798174cecc43607e6f
 #playBox .smalltitle ul li{cursor:pointer; width:12px; height:12px; margin:0 7px; border-radius:50%; background:#ccc; float:left; overflow:hidden;*display:inline;*zoom:1;}
 #playBox .smalltitle .thistitle{ background:#fff;}
 

@@ -60,26 +60,9 @@ window.onload = function () {
         for (var i = 0; i < aLiSmall.length; i++) {
             aLiSmall[i].className = '';
         }
-       
-        var _self = $(".smalltitle li").eq(now);
-        var title = _self.data("title"),
-            txt = _self.data("txt");            
-        $(".title1").html(title);
-        $(".txt").html(txt);
-        if (now==0) {
-            $(".img-index-details").show();
-        } else {
-            $(".img-index-details").hide();
-        }
-        var width = $(window).width();
-        $(window).resize(function () {           
-            startMove(oUlBig, 'left', -(now * $(window).width()))
-        });
-
         aLiSmall[now].className = 'thistitle'
         startMove(oUlBig, 'left', -(now * aBigLi[0].offsetWidth))
     }
-
     var now = 0;
     for (var i = 0; i < aLiSmall.length; i++) {
         aLiSmall[i].index = i;
@@ -102,13 +85,19 @@ window.onload = function () {
         }
         tab();
     }
-    var timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+<<<<<<< HEAD
+    var timer = setInterval(oNext.onclick, 500000) //滚动间隔时间设置
+=======
+    var timer = setInterval(oNext.onclick, 3000) //滚动间隔时间设置
+>>>>>>> 80f29f6271b5b97a1aaadf798174cecc43607e6f
     oDiv.onmouseover = function () {
         clearInterval(timer)
     }
     oDiv.onmouseout = function () {
-        timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+<<<<<<< HEAD
+        timer = setInterval(oNext.onclick, 500000) //滚动间隔时间设置
+=======
+        timer = setInterval(oNext.onclick, 3000) //滚动间隔时间设置
+>>>>>>> 80f29f6271b5b97a1aaadf798174cecc43607e6f
     }
 }
-
-
