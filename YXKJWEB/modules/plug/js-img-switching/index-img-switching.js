@@ -60,7 +60,7 @@ window.onload = function () {
         for (var i = 0; i < aLiSmall.length; i++) {
             aLiSmall[i].className = '';
         }
-       
+        debugger
         var _self = $(".smalltitle li").eq(now);
         var title = _self.data("title"),
             txt = _self.data("txt");            
@@ -81,17 +81,17 @@ window.onload = function () {
     }
 
     var now = 0;
-    for (var i = 0; i < aLiSmall.length; i++) {
+    for (var i = 0; i < aLiSmall.length-1; i++) {
         aLiSmall[i].index = i;
         aLiSmall[i].onclick = function () {
             now = this.index;
             tab();
         }
     }
-    oPre.onclick = function () {
+    oPre.onclick = function () {        
         now--
         if (now == -1) {
-            now = aBigLi.length;
+            now = aBigLi.length-1;
         }
         tab();
     }
