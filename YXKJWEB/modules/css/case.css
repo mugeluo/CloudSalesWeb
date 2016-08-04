@@ -29,7 +29,7 @@
 .example .seaced-state { height:380px;width:1000px;margin:auto;margin-top:50px;}
 .example .seaced-state img{float:left;margin-right:20px;}
 .example .end-txt { width:1050px;margin:auto;}
-.fontcolor { color:#73736F;font-size:14px;line-height:30px;}
+.fontcolor { color:#73736F;font-size:14px;line-height:30px;text-indent:2em;}
 
 @media only screen and (max-width:1024px){
     .example .example-img { height:723px;}

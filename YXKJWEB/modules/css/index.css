@@ -58,7 +58,7 @@
 .solve .ask-answer .answer-pointer{position: absolute;bottom: 30px;left: 5px; border-right: 25px solid #4a98e7;
                                    border-bottom: 25px solid #fff;}
 /*客户*/
-.customer { height:760px;background-color:#4a91e3;position:relative;}
+.customer { height:640px;background-color:#4a91e3;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
 .customer .customer-details{margin:auto;width:980px;}
 .customer .customer-details li{float:left;width:280px;padding:5px 10px;cursor:pointer;height:68px;
