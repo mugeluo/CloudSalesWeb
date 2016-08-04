@@ -1,6 +1,6 @@
 ﻿
 .nav li.hover { padding-bottom:5px;}
-.head-information { position:relative;height:500px;background-color:#50B0EC}
+.head-information { position:relative;height:400px;background-color:#50B0EC}
 .head-information .information {position:absolute;top:0;left:0;z-index:111;text-align:center;width:100%;height:100%; }
 .head-information .information div{color:#FEFEFF;margin-bottom:40px;line-height:1.6;text-shadow: 2px 3px 2px #333;font-size:14px;}
 /*关于云销*/
@@ -17,8 +17,8 @@
 .join-teamwork .txt-join-teamwork{color:#fff;max-width:350px;margin:10px auto;line-height:24px;}
 /*联系我们*/
 .contant-us {height:250px;width:1080px;margin:auto;}
-.contant-us .information{margin-top:50px;margin-bottom:50px;float:left}
-.contant-us .information div{margin-bottom:10px;color:#555;}
+.contant-us .information{margin-top:30px;margin-bottom:50px;float:left}
+.contant-us .information div{margin-bottom:10px;color:#555;line-height:20px;}
 .contant-us .bg-img{float:right;background: url(/modules/images/about/about_08.png)no-repeat right #fff; height:170px;width:500px;}
 .map{width:100%;height:400px;}
 .site-footer .menu-footer li:not(first-child) { margin-top:15px;}

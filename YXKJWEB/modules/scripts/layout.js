@@ -7,26 +7,19 @@ define(function (require, exports, module) {
 
     var LayoutObject = {};
     //初始化数据
-    LayoutObject.init = function () {  
-        LayoutObject.bindEvent();
+    LayoutObject.init = function (name) {  
+        LayoutObject.bindEvent(name);
         LayoutObject.placeholderSupport();        
     }
     //绑定事件
-    LayoutObject.bindEvent = function () {
-        var _self = this;
-        var arr = window.location.href.split("/");
-        if (arr.length > 0) {
-            var name = arr[arr.length - 1];
-            if (name!='' && name != "Index") {
-                $("." + name).addClass("hover").find("a").css("Opacity", "1").siblings().removeClass("hover");
-            }
-        }
-
+    LayoutObject.bindEvent = function (name) {
+        $(".site-header ." + name).addClass("hover").find("a").css("Opacity", "1");
+         
         //窗体滚动 置顶头部
         $(window).scroll(function () {
             if ($(document).scrollTop()>450){ 
                 $(".getback-FH").fadeIn(500);
-                $(".header-menu").css("background", "rgba(55,55,55,0.4)");
+                $(".header-menu").css("background", "rgba(0,0,0,0.7)");
             }  
             else {                  
                 $(".getback-FH").fadeOut(1000);
