@@ -76,11 +76,11 @@
     }
 
     ObjectJS.getWidthSize = function () {
-        if ($(window).height()>=768) {
-            $(".index-br").height(768);
-            $("#img-head").height(768);
-            $("#playBox").height(768);
-            $(".oUlplay .oUlplay-img img").height(768);
+        if ($(window).height()>=1200) {
+            $(".index-br").height(1200);
+            $("#img-head").height(1200);
+            $("#playBox").height(1200);
+            $(".oUlplay .oUlplay-img img").height(1200);
         } else {
             $(".index-br").height($(window).height());
             $("#img-head").height($(window).height());
