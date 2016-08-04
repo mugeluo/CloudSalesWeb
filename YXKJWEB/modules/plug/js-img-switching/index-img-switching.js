@@ -1,4 +1,5 @@
-﻿function getStyle(obj, name) {
+﻿// 懒人图库 搜集整理 www.lanrentuku.com
+function getStyle(obj, name) {
     if (obj.currentStyle) {
         return obj.currentStyle[name]
     }
@@ -55,42 +56,25 @@ window.onload = function () {
     var oDivSmall = getByClass(oDiv, 'smalltitle')[0]
     var aLiSmall = oDivSmall.getElementsByTagName('li');
 
-    function tab() {        
+    function tab() {
         for (var i = 0; i < aLiSmall.length; i++) {
             aLiSmall[i].className = '';
         }
-       
-        var _self = $(".smalltitle li").eq(now);
-        var title = _self.data("title"),
-            txt = _self.data("txt");            
-        $(".title1").html(title);
-        $(".txt").html(txt);
-        if (now==0) {
-            $(".img-index-details").show();
-        } else {
-            $(".img-index-details").hide();
-        }
-        var width = $(window).width();
-        $(window).resize(function () {           
-            startMove(oUlBig, 'left', -(now * $(window).width()))
-        });
-
         aLiSmall[now].className = 'thistitle'
-        startMove(oUlBig, 'left', -(now * width))
+        startMove(oUlBig, 'left', -(now * aBigLi[0].offsetWidth))
     }
-
     var now = 0;
-    for (var i = 0; i < aLiSmall.length; i++) {        
+    for (var i = 0; i < aLiSmall.length; i++) {
         aLiSmall[i].index = i;
         aLiSmall[i].onclick = function () {
-            now = this.index;          
+            now = this.index;
             tab();
         }
     }
     oPre.onclick = function () {
         now--
         if (now == -1) {
-            now = aBigLi.length-1;
+            now = aBigLi.length;
         }
         tab();
     }
@@ -101,13 +85,11 @@ window.onload = function () {
         }
         tab();
     }
-    var timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+    var timer = setInterval(oNext.onclick, 3000) //滚动间隔时间设置
     oDiv.onmouseover = function () {
         clearInterval(timer)
     }
     oDiv.onmouseout = function () {
-        timer = setInterval(oNext.onclick, 5000) //滚动间隔时间设置
+        timer = setInterval(oNext.onclick, 3000) //滚动间隔时间设置
     }
 }
-
-
