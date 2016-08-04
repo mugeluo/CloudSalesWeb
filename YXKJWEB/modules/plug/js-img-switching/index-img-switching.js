@@ -60,7 +60,7 @@ window.onload = function () {
         for (var i = 0; i < aLiSmall.length; i++) {
             aLiSmall[i].className = '';
         }
-        debugger
+        
         var _self = $(".smalltitle li").eq(now);
         var title = _self.data("title"),
             txt = _self.data("txt");            
@@ -71,10 +71,11 @@ window.onload = function () {
         } else {
             $(".img-index-details").hide();
         }
+        debugger
         var width = $(window).width();
-        $(window).resize(function () {           
-            startMove(oUlBig, 'left', -(now * $(window).width()))
-        });
+        //$(window).resize(function () {           
+        //    startMove(oUlBig, 'left', -(now * $(window).width()))
+        //});
 
         aLiSmall[now].className = 'thistitle'
         startMove(oUlBig, 'left', -(now * aBigLi[0].offsetWidth))
