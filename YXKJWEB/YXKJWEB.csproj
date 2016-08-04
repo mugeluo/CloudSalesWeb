@@ -230,10 +230,10 @@
     <Content Include="modules\images\home\index-jxc0.png" />
     <Content Include="modules\images\home\index-jxc1.png" />
     <Content Include="modules\images\home\index-jxc2.png" />
-    <Content Include="modules\images\home\index-kh0.png" />
-    <Content Include="modules\images\home\index-kh1.png" />
-    <Content Include="modules\images\home\index-kh2.png" />
     <Content Include="modules\images\home\index-_03.png" />
+    <Content Include="modules\images\home\kh-1.png" />
+    <Content Include="modules\images\home\kh-2.png" />
+    <Content Include="modules\images\home\kh3.png" />
     <Content Include="modules\images\home\shadow-line.png" />
     <Content Include="modules\images\ico-home.png" />
     <Content Include="modules\images\qrcode_for_gh_4dda5c475611_344.jpg" />

@@ -76,20 +76,20 @@
     }
 
     ObjectJS.getWidthSize = function () {
-        if ($(window).height()>=1200) {
-            $(".index-br").height(1200);
-            $("#img-head").height(1200);
-            $("#playBox").height(1200);
-            $(".oUlplay .oUlplay-img img").height(1200);
-        } else {
-            $(".index-br").height($(window).height());
-            $("#img-head").height($(window).height());
-            $("#playBox").height($(window).height());
-            $(".oUlplay .oUlplay-img img").height($(window).height());
-        }
+        //if ($(window).height()>=1200) {
+        //    $(".index-br").height(1200);
+        //    $("#img-head").height(1200);
+        //    $("#playBox").height(1200);
+        //    $(".oUlplay .oUlplay-img img").height(1200);
+        //} else {
+        //    $(".index-br").height($(window).height());
+        //    $("#img-head").height($(window).height());
+        //    $("#playBox").height($(window).height());
+        //    $(".oUlplay .oUlplay-img img").height($(window).height());
+        //}
 
-        $(".oUlplay .oUlplay-img img").width($(window).width());
-        $(".cloud-left").width($(window).width());       
+        //$(".oUlplay .oUlplay-img img").width($(window).width());
+        //$(".cloud-left").width($(window).width());       
         
         $(".customer-bevel").css("border-left", "" + $(window).width() + "px solid #4a91e3");
         $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");
