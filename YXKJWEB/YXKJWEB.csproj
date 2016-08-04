@@ -203,7 +203,6 @@
     <Content Include="modules\images\about\about_03.png" />
     <Content Include="modules\images\about\about_08.png" />
     <Content Include="modules\images\case\case-br.png" />
-    <Content Include="modules\images\case\case-js1.png" />
     <Content Include="modules\images\case\index-12.png" />
     <Content Include="modules\images\case\js-a.png" />
     <Content Include="modules\images\case\js-b.png" />
