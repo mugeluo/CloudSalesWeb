@@ -45,7 +45,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner{padding:0;border:non
 .site-header div .register:hover{background-color:#66aaf0;border:1px solid #66aaf0;}
 .main-content { background-color:#fff;}
 /*footer样式*/
-.site-footer {width:100%;bottom:0;left:0;background-color:#434443;}
+.site-footer {width:100%;background-color:#434443;}
 .site-footer .links{margin-top:20px;}
 .site-footer .menu-footer{margin-right:25px;float:left;}
 .site-footer .menu-footer li:first-child{color:#CCCAC4;font-size:16px;cursor:inherit;}
@@ -59,9 +59,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner{padding:0;border:non
 .party-footer .address-footer div {color:#938D88 !important; }
 .party-footer .address-footer a {color:#938D88 !important; }
 .party-footer .address-footer a:hover {color:#4a98e7 !important; }
-.site-footer .statement{border-top:1px solid #938D88;padding:15px 0 60px 0;margin-top:30px;}
-.site-footer .statement span{margin-right:50px;font-size:14px;margin-left:120px;}
-.site-footer .statement div{color:#938D88;margin-right:15px;float:left;}
+.site-footer .statement{border-top:1px solid #938D88;padding:15px 0 40px 0;margin-top:30px;}
+.site-footer .statement span{font-size:14px;}
+.site-footer .statement .left div{color:#938D88;margin-right:15px;float:left;}
 .site-footer .statement .line{background-color:#938D88;width:2px;height:12px;margin-top:3px;}
 /*返回顶部*/
 .getback-FH { position:fixed;z-index:11112;color:#666;right:3%;bottom:8%;display:none;}

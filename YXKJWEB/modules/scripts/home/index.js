@@ -24,7 +24,7 @@
             $(".answer").html(txt.answer);
         });
 
-        $(".customer-details li").hover(function () {            
+        $(".customer-details li").hover(function () {
             var _self = $(this);
             $(".dg-wrapper [data-index=" + _self.data("index") + "] ").click();
             ObjectJS.clickBind(this);
@@ -91,7 +91,7 @@
         $(".oUlplay .oUlplay-img img").width($(window).width());
         $(".cloud-left").width($(window).width());       
         
-        $(".customer-bevel").css("border-left", ""+$(window).width()+"px solid #008DDD");
+        $(".customer-bevel").css("border-left", "" + $(window).width() + "px solid #4a91e3");
         $(".repertory-bevel-down").css("border-right", "" + $(window).width() + "px solid #F0EFEE");
     }
 
