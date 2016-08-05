@@ -12,14 +12,15 @@
 .img-head .center-img{width:880px;margin:auto;margin-top:100px;}
 .img-head .floating{float:left;margin-top:120px;min-width:250px;}
 .floating div{color:#F0F5FC;}
-.floating .register .register-a:hover { background-color:#66aaf0;border:1px solid #66aaf0;color:#fff;}
-.floating .details a:hover {background-color:#ccc;border:1px solid #ccc;}
+.floating .register .register-a:hover { background-color:#ccc;border:1px solid #ccc;color:#fff;}
+
 .img-head .floating .title1{font-size:30px;margin-top:30px;}
 .img-head .floating .colortxt {opacity:0.7; font-size:20px;margin-top:30px;}
 .img-head .floating .register{margin-top:50px;float:left;margin-right:20px;}
 .floating .register .register-a {padding:7px 17px;border:1px solid #ddd;border-radius:5px;font-size:16px;
                         background-color:#fff;color:#4a98e7;}
 .floating .details { margin-top:50px;}
+.floating .details a:hover {background-color:#66aaf0;border:1px solid #66aaf0;}
 .floating .details a { padding:7px 17px;border:1px solid #fff;border-radius:5px;font-size:16px;color:#fff;}
 .title { width:180px;margin:auto;color:#3DA3E3;border:1px solid #3DA3E3;border-radius:3px;margin-bottom:30px;
          padding:10px 15px;text-align:center;cursor:pointer;font-size:14px;}
@@ -87,8 +88,8 @@
 .probation img{width:340px;float:left;padding-top:50px;}
 .probation .probation-txt{padding-top:120px;width:220px;float:right;}
 .probation .probation-txt div{line-height:2.5;color:#555;font-size:14px;}
-.probation .probation-txt a{border:1px solid #555;padding:10px 45px;border-radius:3px;color:#666;font-size:16px;}
-
+.probation .probation-txt a{border:1px solid #888;padding:10px 45px;border-radius:3px;color:#666;font-size:16px;}
+.probation .probation-txt a:hover{background-color:#888;color:#fff;}
 .goodness-box {
     height:280px;
     width:950px;
