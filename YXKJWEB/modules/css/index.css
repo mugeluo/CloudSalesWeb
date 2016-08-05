@@ -1,6 +1,6 @@
 ﻿.title-main {text-align:center;font-size:26px;}
-.title-descripition { text-align:center;margin: 40px auto;font-size:16px;}
-.title-head { font-size:16px;}
+.title-descripition { text-align:center;margin: 40px auto;font-size:18px;}
+.title-head { font-size:16px;padding-bottom:5px;}
 .index-br { width:100%;height:768px;background: -moz-linear-gradient(top, #307ed8 0%, #4198e7 100%);
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#307ed8), color-stop(100%,#4198e7));
             background: -webkit-linear-gradient(top, #307ed8 0%,#4198e7 100%);
@@ -31,9 +31,9 @@
 .customer { height:640px;background-color:#4a91e3;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
 .customer .customer-details{margin:auto;width:1060px;}
-.customer .customer-details li{float:left;width:290px;padding:5px 10px;cursor:pointer;height:68px;
+.customer-details li{float:left;width:280px;padding:5px 15px 10px 15px;cursor:pointer;height:68px;
                                border:1px solid #4a91e3;margin-right:53px;}
-.customer .customer-details li.hover { border:1px solid #95CAF2;border-radius:3px;
+.customer-details li.hover { border:1px solid #95CAF2;border-radius:3px;
      /*背景渐变*/
     background: -moz-linear-gradient(top, #5FADE9 0%, #70B6EA 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5FADE9), color-stop(100%,#70B6EA));
@@ -48,7 +48,7 @@
 /*库存*/
 .repertory { height:650px;background-color:#efefef;position:relative;}
 .repertory .repertory-details{float:left;}
-.repertory .repertory-details li{margin-top:30px;width:270px;padding:5px 15px;cursor:pointer;height:68px;border:1px solid #F0EFEE;}
+.repertory .repertory-details li{margin-top:30px;width:270px;padding:5px 15px 10px 15px;cursor:pointer;height:68px;border:1px solid #F0EFEE;}
 .repertory .repertory-details li.hover { border:1px solid #E5E4E0;border-radius:3px;
     /*背景渐变*/
     background: -moz-linear-gradient(top, #EEEEEE 0%, #DDDDDD 100%);
@@ -58,6 +58,7 @@
     background: -ms-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
     background: linear-gradient(to bottom, #EEEEEE 0%,#DDDDDD 100%);}
 .repertory-details li div{margin-bottom:5px;color:#444;}
+.repertory-details .title-head {color:#222;}
 .repertory .jxc-img { float:right;width:675px;}
 .repertory .jxc-img img{width:100%;}
 
