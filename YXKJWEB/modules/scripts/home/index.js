@@ -7,9 +7,9 @@
 
     ObjectJS.bindEvent = function () {        
 
-        //$(window).resize(function(){
-        //    ObjectJS.getWidthSize();
-        //});        
+        $(window).resize(function(){
+            ObjectJS.getWidthSize();
+        });        
 
         var array = [{ ask: "问：二当家帮助企业解决了哪些问题？<div class='ask-line'></div>", answer: "<div>答：有些企业需要同时购买CRM、进销存、分销等应用，来支撑企业运营，现在一个二当家就够了</div>" }, { ask: "问：二当家解决了企业哪些问题？<div class='ask-line'></div>", answer: "<div>答：第一，二当家提供CRM（客户管理）</div><div>第二，二当家还提供进销存管理</div><div>第三，二当家同时也提供了会员管理</div><div>一个应用解决了企业运营管理需求，实现企业多元化发展战略</div>" }, { ask: "问：使用二当家有哪些好处？<div class='ask-line'></div>", answer: "<div>答：第一，企业无需花费高额的研发费用定制软件，只需支出少量成本即可享受功能全面的二当家</div><div>第二，无需安装客户端，任何能网络良好的环境下都可登录二当家，实时查看和使用</div><div>第三，二当家还提供移动app，手机也能使用二当家</div>" }, { ask: "问：客户管理不便捷，用五当家怎么处理？<div class='ask-line'></div>", answer: "<div>答：可以使用五当家的CRM模块来管理客户信息，自定义客户阶段，随时随地处理跟进</div>" }];
 
