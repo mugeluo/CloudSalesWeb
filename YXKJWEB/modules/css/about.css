@@ -5,7 +5,7 @@
 .head-information .information div{color:#FEFEFF;margin-bottom:40px;line-height:1.6;text-shadow: 2px 3px 2px #333;}
 /*关于云销*/
 .cloud-pin {height:350px; background:url(/modules/images/about/about_03.png) no-repeat bottom center #f8f8f8;}
-.cloud-pin div{max-width:800px;margin:20px auto;font-size:14px; line-height:24px;color:#555;}
+.cloud-pin div{max-width:800px;margin:auto;font-size:14px; line-height:24px;color:#555;margin-bottom:40px;}
 
 
 /*加入--合作*/
