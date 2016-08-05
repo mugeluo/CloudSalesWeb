@@ -177,24 +177,4 @@
     padding-bottom:45px;
     }
 }
-/*@media only screen and (max-width:1200px) {
-    .customer div:first-child img { width:40%;}
-    .customer-bevel {border-left: 600px solid #008DDD;}
-    .repertory-bevel {border-right: 570px solid #F0EFEE; }
-    .repertory-bevel-down { border-right: 570px solid #F0EFEE;}
-    .agent-bevel { border-right: 600px solid #F0EFEE;}
-    .party-footer .icon-party { margin-left:850px;}
-}
-@media only screen and (max-width:1024px) {
-    .customer { height: 350px; }
-    .customer div:first-child img { width: 30%; }
-    .customer-bevel { border-left: 500px solid #008DDD; }
-    .repertory { height:480px;}
-    .repertory-bevel { border-right: 505px solid #F0EFEE; }
-    .repertory-bevel-down { border-right: 505px solid #F0EFEE; }
-    .repertory .repertory-details li { margin-top:20px;}
-    .agent .agent-details li { margin-top:20px;}
-    .agent-bevel { border-right: 500px solid #F0EFEE;}
-    .party-footer .icon-party { margin-left:750px;}
-}*/
 
