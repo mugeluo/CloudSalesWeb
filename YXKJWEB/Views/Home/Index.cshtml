@@ -4,32 +4,54 @@
 }
 @section css{
     <link href="/modules/css/index.css" rel="stylesheet" />
-    <link href="/modules/plug/js-img-switching/index-img-switching.css" rel="stylesheet" />
     <link href="/modules/plug/carousel/css/8dc3a597.css" rel="stylesheet" />
+    <link href="/modules/plug/flexslider/css/flexslider.css" rel="stylesheet" />
 }
 @section scripts{
     <script src="/Scripts/jquery-1.11.1.js"></script>
-    <script src="/modules/plug/js-img-switching/index-img-switching.js"></script> 
     <script src="/modules/plug/carousel/js/6d510e95.js"></script>
+    @*<script src="/modules/plug/flexslider/js/flexslider.js"></script>*@
     <script type="text/javascript">
         seajs.use(["scripts/home/index"], function (ObjectJS) {
             ObjectJS.init();
-        })        
+        });
+
+        //$(function () {
+        //    var bannerSlider = new Slider($('#banner_tabs'), {
+        //        time: 5000,
+        //        delay: 3000,
+        //        event: 'hover',
+        //        auto: true,
+        //        mode: 'fade',
+        //        controller: $('#bannerCtrl'),
+        //        activeControllerCls: 'active'
+        //    });
+        //    $('#banner_tabs .flex-prev').click(function () {
+        //        bannerSlider.prev()
+        //    });
+        //    $('#banner_tabs .flex-next').click(function () {
+        //        bannerSlider.next()
+        //    });
+        //});
     </script>
 }
 
 <!-- 代码 开始 -->
-    <div id="playBox">
+@*    <div id="playBox">
     <div class="pre"></div>
     <div class="next"></div>
     <div class="smalltitle">
       <ul>
         <li data-title="CRM+进销存 = 二当家" data-txt="让营销行云流水" class="thistitle"></li>
-        <li data-title="a" data-title2="2" data-txt="aa" data-txt2="22" ></li>
       </ul>
     </div>
     <ul class="oUlplay">
-       @*<li class="oUlplay-img">
+
+      <li class="oUlplay-img"><img style="width:1000px;height:100%;" src="/modules/images/home/br-3.png" /></li>   
+    </ul>
+  </div>*@
+
+           @*<li class="oUlplay-img">
            <div class="index-br">
               <div class="cloud-left">
                    <img src="/modules/images/home/cloud-left.png" /> 
@@ -37,12 +59,31 @@
                </div> 
            </div>
        </li>*@
-        <li class="oUlplay-img"><img src="/modules/images/home/br-4.png" /></li>         
-      <li class="oUlplay-img"><img src="/modules/images/home/br-3.png" /></li>   
-    </ul>
-  </div>
 <!-- 代码 结束 -->
-
+<!-- 轮播广告 -->
+<div id="banner_tabs" class="flexslider">
+	<ul class="slides">
+		<li>
+			<a title="" target="_blank" href="#">
+				<img   class="left" style="width:50%;" src="/modules/images/home/cloud-left.png">
+                <img  class="right"   style="width:50%;" src="/modules/images/home/cloud-right.png">
+			</a>
+		</li>
+	@*	<li>
+			<a title="" href="#">
+                <img  alt="" src="/modules/images/home/br-4.png">
+			</a>
+		</li>*@
+	</ul>
+	@*<ul class="flex-direction-nav">
+		<li><a class="flex-prev" href="javascript:;">Previous</a></li>
+		<li><a class="flex-next" href="javascript:;">Next</a></li>
+	</ul>
+	<ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+		<li><a>1</a></li>
+		<li><a>2</a></li>
+	</ol>*@
+</div>
 <div class="img-head" id="img-head">  
     <div class="center-img">
         <div class="floating">

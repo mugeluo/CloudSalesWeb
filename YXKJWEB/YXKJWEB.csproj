@@ -251,6 +251,11 @@
     <Content Include="modules\plug\carousel\img\62371027.png" />
     <Content Include="modules\plug\carousel\img\b8cb3910.png" />
     <Content Include="modules\plug\carousel\js\6d510e95.js" />
+    <Content Include="modules\plug\flexslider\css\flexslider.css" />
+    <Content Include="modules\plug\flexslider\images\ad_ctr.png" />
+    <Content Include="modules\plug\flexslider\images\alpha.png" />
+    <Content Include="modules\plug\flexslider\images\dot.png" />
+    <Content Include="modules\plug\flexslider\js\flexslider.js" />
     <Content Include="modules\plug\jquery-horizon-line-switch\fonts\icomoon.eot" />
     <Content Include="modules\plug\jquery-horizon-line-switch\fonts\icomoon.ttf" />
     <Content Include="modules\plug\jquery-horizon-line-switch\fonts\icomoon.woff" />
@@ -283,10 +288,6 @@
     <Content Include="modules\plug\jquery-horizon-line-switch\js\jquery.mobile.custom.min.js" />
     <Content Include="modules\plug\jquery-horizon-line-switch\js\main.js" />
     <Content Include="modules\plug\jquery-horizon-line-switch\js\modernizr.js" />
-    <Content Include="modules\plug\js-img-switching\index-img-switching.css" />
-    <Content Include="modules\plug\js-img-switching\index-img-switching.js" />
-    <Content Include="modules\plug\js-img-switching\l.png" />
-    <Content Include="modules\plug\js-img-switching\r.png" />
     <Content Include="modules\scripts\case\case.js" />
     <Content Include="modules\scripts\global.js" />
     <Content Include="modules\scripts\home\index.js" />

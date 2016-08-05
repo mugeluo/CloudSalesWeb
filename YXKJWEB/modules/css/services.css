@@ -4,7 +4,7 @@
 .bgcolor-title { background-color:#F3F2F0;}
 .bgcolor-price { background-color:#EDF5FF;}
 
-.head-information { position:relative;background-color:#50B0EC;height:400px;}
+.head-information { position:relative;background-color:#4a91e3;height:400px;}
 .information {position:absolute;top:0;left:0;z-index:111;text-align:center;width:100%;height:100%; }
 .information div{color:#FEFEFF;margin-bottom:30px;line-height:1.6;text-shadow: 2px 2px 3px #333;}
 /*产品定价*/
