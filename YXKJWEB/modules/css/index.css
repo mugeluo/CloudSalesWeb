@@ -84,7 +84,7 @@
 .img2 .garment-floating div {color: #fff;text-align:center;margin-top:100px; }
 /*试用*/
 .probation { height:400px;background-color:#E2E0DB;}
-.probation img{width:340px;float:left;padding-top:30px;}
+.probation img{width:340px;float:left;padding-top:50px;}
 .probation .probation-txt{padding-top:120px;width:220px;float:right;}
 .probation .probation-txt div{line-height:2.5;color:#555;font-size:14px;}
 .probation .probation-txt a{border:1px solid #555;padding:10px 45px;border-radius:3px;color:#666;font-size:16px;}

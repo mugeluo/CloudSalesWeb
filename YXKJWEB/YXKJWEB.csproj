@@ -203,6 +203,8 @@
     <Content Include="modules\images\about\about_03.png" />
     <Content Include="modules\images\about\about_08.png" />
     <Content Include="modules\images\case\anli-a.jpg" />
+    <Content Include="modules\images\case\anlile-3.png" />
+    <Content Include="modules\images\case\anlile-4.png" />
     <Content Include="modules\images\case\case-br.png" />
     <Content Include="modules\images\case\index-12.png" />
     <Content Include="modules\images\case\js-a.png" />
@@ -268,6 +270,7 @@
     <Content Include="modules\plug\jquery-horizon-line-switch\js\jquery.mobile.custom.min.js" />
     <Content Include="modules\plug\jquery-horizon-line-switch\js\main.js" />
     <Content Include="modules\plug\jquery-horizon-line-switch\js\modernizr.js" />
+    <Content Include="modules\scripts\about\baidumap.js" />
     <Content Include="modules\scripts\case\case.js" />
     <Content Include="modules\scripts\global.js" />
     <Content Include="modules\scripts\home\index.js" />
