@@ -5,13 +5,13 @@
 @section css{
     <link href="/modules/css/services.css" rel="stylesheet" />
 }
-@section scripts{
+@*@section scripts{
     <script type="text/javascript">
         seajs.use(["scripts/services/services"], function (ObjectJS) {
             ObjectJS.init();
         });
     </script>
-}
+}*@
 <div class="head-information">
     <img style="width:100%;height:100%;" src="/modules/images/services/service-br.png" />
     <div class="information">
@@ -19,11 +19,11 @@
         <div class="desc">您的每一个需求和建议，都是我们进步的原动力</div>        
     </div>
 </div>
-@* 产品定价 *@
+
 <div class="service-pricing">
-    <div class="center font24 clocr-title pTop30">产品定价</div>
+    <div class="host-timeline">产品定价</div>
     <div class="pricing-details">
-        <ul class="mRight25">
+        <ul>
             <li>免费版</li>
             <li class="font22 mBottom10">￥0</li>
             <li class="color-pricing ">适用于个人或微型团队</li>
@@ -35,7 +35,7 @@
             <li class="details-function">有效添加产品总数<=<a>100</a>个</li>
             <li class="details-function">含基础报表统计</li>
         </ul>
-        <ul class="mRight25">
+        <ul>
             <li>专业版</li>
             <li class="font22 mBottom10">￥2,000+</li>
             <li class="color-pricing ">适用于小型团队</li>
@@ -45,7 +45,7 @@
             <li class="details-function" style="margin:0;text-align:center;margin-bottom:20px;">数据指标不设限制</li>
             <li class="details-function" style="margin:0;text-align:center;margin-bottom:20px;">所有报表统计功能</li>            
         </ul>
-        <ul>
+        <ul style="margin-right:0;">
             <li>定制服务</li>
             <li class="font22 mBottom10">￥？？？</li>
             <li class="color-pricing ">适用于各规模团队与企业</li>
@@ -57,9 +57,9 @@
         </ul>
     </div>
 </div>
-@* 价格表 *@
+
 <div class="price-list">
-    <div class="center font24 clocr-title pTop30 mBottom40">价格表</div>
+    <div class="host-timeline">价格表</div>
     <table>
         <tr class="bgcolor-title">
             <td></td>
@@ -101,6 +101,7 @@
     <div class="reminder">此价格仅供参考,具体收费以实际为准</div>
     <div class="price-line"></div>
 </div>
+
 @* 费用估算 *@
 @*<div class="estimate">
     <div class="center font24 clocr-title pTop30 mBottom40">费用估算</div>
@@ -160,7 +161,7 @@
         </div>
     </div>
 </div>*@
-@* 技术支持 *@
+
 <div class="technical-support">   
     <div class="details">        
         <ul class="mRight50">
