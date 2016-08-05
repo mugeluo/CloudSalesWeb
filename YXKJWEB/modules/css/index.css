@@ -12,13 +12,12 @@
 .img-head .center-img{width:880px;margin:auto;margin-top:100px;}
 .img-head .floating{float:left;margin-top:120px;min-width:250px;}
 .floating div{color:#F0F5FC;}
-.floating .register .register-a:hover { background-color:#ccc;border:1px solid #ccc;color:#fff;}
-
 .img-head .floating .title1{font-size:30px;margin-top:30px;}
 .img-head .floating .colortxt {opacity:0.7; font-size:20px;margin-top:30px;}
 .img-head .floating .register{margin-top:50px;float:left;margin-right:20px;}
 .floating .register .register-a {padding:7px 17px;border:1px solid #ddd;border-radius:5px;font-size:16px;
                         background-color:#fff;color:#4a98e7;}
+.floating .register .register-a:hover { background-color:#ccc;border:1px solid #ccc;color:#fff;}
 .floating .details { margin-top:50px;}
 .floating .details a:hover {background-color:#66aaf0;border:1px solid #66aaf0;}
 .floating .details a { padding:7px 17px;border:1px solid #fff;border-radius:5px;font-size:16px;color:#fff;}
@@ -42,7 +41,7 @@
     background: -ms-linear-gradient(top, #5FADE9 0%,#70B6EA 100%);
     background: linear-gradient(to bottom, #5FADE9 0%,#70B6EA 100%);}
 .customer-details li div { color:#fff;margin-bottom:5px;}
-.customer-bevel {position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;right:0;border-bottom:100px solid #F0EFEE;
+.customer-bevel {position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;right:0;border-bottom:101px solid #F0EFEE;
                  border-left: 1349px solid #4a91e3; }
 
 /*库存*/
@@ -61,7 +60,7 @@
 .repertory .jxc-img { float:right;width:675px;}
 .repertory .jxc-img img{width:100%;}
 
-.repertory-bevel-down { position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;left:0;border-bottom:100px solid #fff;
+.repertory-bevel-down { position:absolute;z-index:111;background-color:#F0EFEE;bottom:0;left:0;border-bottom:101px solid #fff;
                  border-right: 1349px solid #F0EFEE;}
 
 /*会员*/
