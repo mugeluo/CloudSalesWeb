@@ -1,7 +1,4 @@
 ﻿.case-title { line-height:40px;font-weight:bold;}
-.head-information { position:relative;height:400px;background-color:#4a91e3;}
-.information {position:absolute;top:0;left:0;z-index:111;text-align:center;width:100%;height:100%; }
-.information div{color:#FEFEFF;margin-bottom:40px;text-shadow:2px 2px 3px #333;}
 .main-content { background-color:#fff;}
 .anli {background-color:#F3F2F0;height:150px; }
 .case-industry { color:#0C090D;font-size:22px;margin-bottom:20px;padding-top:30px;margin-top:-3px;}

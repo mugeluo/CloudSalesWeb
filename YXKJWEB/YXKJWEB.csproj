@@ -228,6 +228,7 @@
     <Content Include="modules\images\home\kh3.png" />
     <Content Include="modules\images\home\shadow-line.png" />
     <Content Include="modules\images\ico-home.png" />
+    <Content Include="modules\images\logo_login.png" />
     <Content Include="modules\images\qrcode_for_gh_4dda5c475611_344.jpg" />
     <Content Include="modules\images\services\service-br.png" />
     <Content Include="modules\images\services\service-ico1.png" />

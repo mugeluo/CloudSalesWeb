@@ -160,82 +160,82 @@
         //});
     };    
 
-    ObjectJS.estimateCost = function (number, years, discount) {        
-        var money = "";
-        if (number =="") {
-            alert("请输入人数");
-            var countMoney = 0;
-            return ;
-        }
+    //ObjectJS.estimateCost = function (number, years, discount) {        
+    //    var money = "";
+    //    if (number =="") {
+    //        alert("请输入人数");
+    //        var countMoney = 0;
+    //        return ;
+    //    }
         
-        if (discount==""||discount=="0") {
-            discount = 10;
-        }       
-        var year = Number(years);        
-        var number = Number(number);
+    //    if (discount==""||discount=="0") {
+    //        discount = 10;
+    //    }       
+    //    var year = Number(years);        
+    //    var number = Number(number);
         
-        if (1>=year) {
-            if (5>= number) {
-                money = 1200;
-            } else if (10>=number) {
-                money = 2400;
-            } else if (20>=number) {
-                money = 4600;
-            } else if (50 >=number) {
-                money = 10800;
-            } else if(100>=number){
-                money = 19800;
-            } else {
-                money = 19800;
-            }
-        } else if (2>=year) {
-            if (5 >= number) {
-                money = 2400;
-            } else if (10 >= number) {
-                money = 4200;
-            } else if (20 >= number) {
-                money = 8200;
-            } else if (50 >= number) {
-                money = 19200;
-            } else if (100 >= number) {
-                money = 35600;
-            } else {
-                money = 35600;
-            }
-        } else {
-            if (5 >= number) {
-                money = 3600;
-            } else if (10 >= number) {
-                money = 5600;
-            } else if (20 >= number) {
-                money = 10800;
-            } else if (50 >= number) {
-                money = 25600;
-            } else if (100 >= number) {
-                money = 46800;
-            } else {
-                money = 46800;
-            }
-        }
-        $(".price-list table td").find("span").remove();
-        $(".price-list table td").each(function () {            
-            var val = $(this).data("number");
-            if (val == money) {
-                if ($(this).data("time")==year) {
-                    $(this).append('<span class="iconfont">&#xe613;</span>');
-                }                
-            }
-        });
+    //    if (1>=year) {
+    //        if (5>= number) {
+    //            money = 1200;
+    //        } else if (10>=number) {
+    //            money = 2400;
+    //        } else if (20>=number) {
+    //            money = 4600;
+    //        } else if (50 >=number) {
+    //            money = 10800;
+    //        } else if(100>=number){
+    //            money = 19800;
+    //        } else {
+    //            money = 19800;
+    //        }
+    //    } else if (2>=year) {
+    //        if (5 >= number) {
+    //            money = 2400;
+    //        } else if (10 >= number) {
+    //            money = 4200;
+    //        } else if (20 >= number) {
+    //            money = 8200;
+    //        } else if (50 >= number) {
+    //            money = 19200;
+    //        } else if (100 >= number) {
+    //            money = 35600;
+    //        } else {
+    //            money = 35600;
+    //        }
+    //    } else {
+    //        if (5 >= number) {
+    //            money = 3600;
+    //        } else if (10 >= number) {
+    //            money = 5600;
+    //        } else if (20 >= number) {
+    //            money = 10800;
+    //        } else if (50 >= number) {
+    //            money = 25600;
+    //        } else if (100 >= number) {
+    //            money = 46800;
+    //        } else {
+    //            money = 46800;
+    //        }
+    //    }
+    //    $(".price-list table td").find("span").remove();
+    //    $(".price-list table td").each(function () {            
+    //        var val = $(this).data("number");
+    //        if (val == money) {
+    //            if ($(this).data("time")==year) {
+    //                $(this).append('<span class="iconfont">&#xe613;</span>');
+    //            }                
+    //        }
+    //    });
         
-        var countMoney = money * discount / 10;
-        if ($(".cost .check-box:first").hasClass("hover")) {
-            countMoney += 1000;
-        }
-        if ($(".cost .check-box:last").hasClass("hover")) {
-            countMoney += 4000;
-        }
-        $(".cost .count span").html(countMoney.toFixed(2));
-    }
+    //    var countMoney = money * discount / 10;
+    //    if ($(".cost .check-box:first").hasClass("hover")) {
+    //        countMoney += 1000;
+    //    }
+    //    if ($(".cost .check-box:last").hasClass("hover")) {
+    //        countMoney += 4000;
+    //    }
+    //    $(".cost .count span").html(countMoney.toFixed(2));
+    //}
 
     module.exports = ObjectJS;
 })
