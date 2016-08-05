@@ -168,11 +168,11 @@
     margin-top:30px;
     color:#555;
 }
-@media only screen and (max-width:200px) {
+@media only screen and (max-width:1800px) {
     .industry-box {
     width:1200px;
-    height:500px;
     margin:auto;
+    padding-bottom:45px;
     }
 }
 /*@media only screen and (max-width:1200px) {
