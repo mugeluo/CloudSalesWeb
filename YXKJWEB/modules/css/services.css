@@ -34,7 +34,7 @@ table td span{position:absolute;color: #1eb452;right:20px;}
 .price-list .reminder { max-width:800px;margin:auto;}
 .price-list .price-line { height: 1px;border-bottom: 1px solid #ccc;width: 850px;margin: 30px auto;}
 /*费用估算*/
-.estimate .estimate-price {width:800px;margin:auto;margin-bottom:20px;height:300px; }
+/*.estimate .estimate-price {width:800px;margin:auto;margin-bottom:20px;height:300px; }
 .estimate-price ul li { width:400px;margin-bottom:20px;}
 .estimate .estimate-price .use-line,.time-line,.discount-line { width: 300px;height: 15px;border: 1px solid #ccc;border-radius: 15px;
                                                               float: left;margin-right:30px;position:relative;cursor:pointer;}
@@ -54,19 +54,12 @@ table td span{position:absolute;color: #1eb452;right:20px;}
 .cost div span { font-size:17px;}
 .estimate-price .cost .count { border: 0;border-top: 3px solid #ccc;width: 300px;color: #0689E0;
                                padding-top: 10px;font-size: 18px;}
-.cost .count span { color:#0689E0;}
+.cost .count span { color:#0689E0;}*/
 /*技术支持*/
 .technical-support { height:500px;background-color:#F3F2F0;}
 .technical-support .details{width:850px;margin:auto;height:400px;}
 .technical-support ul{width:250px;background-color:#008AE1;height:300px;margin:auto;float:left;margin-top:100px;}
-.technical-support ul li{color:#FBFBFC;text-align:center;margin:20px 20px 30px 20px;}
-.technical-support ul li a{color:#FBFBFC;text-align:center;margin:20px 20px 30px 20px;}
-/*合作伙伴优惠*/
-/*.MD-teamwork { position:relative;height:400px;}
-.MD-teamwork img{height:400px;width:100%; }
-.MD-teamwork .MD-teamwork-mask{position:absolute;top:0;left:0;width:100%;height:400px;}
-.MD-teamwork .MD-teamwork-mask div:first-child{color:#fff;text-align:center;margin-top:180px;font-size:20px;}
-.MD-teamwork .MD-teamwork-mask div:last-child{text-align:center;margin-top:20px;font-size:18px;color:#94BBDC;}*/
+.technical-support ul li,.technical-support ul li a{color:#FBFBFC;text-align:center;margin:20px 20px 30px 20px;}
 
 
 

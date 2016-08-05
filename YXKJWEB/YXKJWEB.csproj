@@ -202,34 +202,22 @@
     <Content Include="modules\images\about\about_02.png" />
     <Content Include="modules\images\about\about_03.png" />
     <Content Include="modules\images\about\about_08.png" />
+    <Content Include="modules\images\case\anli-a.jpg" />
     <Content Include="modules\images\case\case-br.png" />
     <Content Include="modules\images\case\index-12.png" />
     <Content Include="modules\images\case\js-a.png" />
     <Content Include="modules\images\case\js-b.png" />
     <Content Include="modules\images\case\js-c.png" />
-    <Content Include="modules\images\home\br-0.png" />
-    <Content Include="modules\images\home\br-1.png" />
-    <Content Include="modules\images\home\br-3.png" />
-    <Content Include="modules\images\home\br-4.png" />
     <Content Include="modules\images\home\cloud-left.png" />
     <Content Include="modules\images\home\cloud-right.png" />
     <Content Include="modules\images\home\goodness-resource.png" />
     <Content Include="modules\images\home\goodness-safe.png" />
     <Content Include="modules\images\home\goodness-task.png" />
-    <Content Include="modules\images\home\index-10.png" />
     <Content Include="modules\images\home\index-11.png" />
     <Content Include="modules\images\home\index-12.png" />
-    <Content Include="modules\images\home\index-2.png" />
     <Content Include="modules\images\home\index-3.png" />
-    <Content Include="modules\images\home\index-4.png" />
-    <Content Include="modules\images\home\index-5.png" />
-    <Content Include="modules\images\home\index-6.png" />
-    <Content Include="modules\images\home\index-7.png" />
-    <Content Include="modules\images\home\index-8.png" />
     <Content Include="modules\images\home\index-9.png" />
     <Content Include="modules\images\home\index-dls0.png" />
-    <Content Include="modules\images\home\index-dls1.png" />
-    <Content Include="modules\images\home\index-dls2.png" />
     <Content Include="modules\images\home\index-jxc0.png" />
     <Content Include="modules\images\home\index-jxc1.png" />
     <Content Include="modules\images\home\index-jxc2.png" />
@@ -242,7 +230,6 @@
     <Content Include="modules\images\ico-home.png" />
     <Content Include="modules\images\qrcode_for_gh_4dda5c475611_344.jpg" />
     <Content Include="modules\images\services\service-br.png" />
-    <Content Include="modules\images\services\service-bt.png" />
     <Content Include="modules\images\services\service-ico1.png" />
     <Content Include="modules\images\services\service-ico2.png" />
     <Content Include="modules\images\services\service-ico3.png" />
@@ -267,10 +254,6 @@
     <Content Include="modules\css\iconfont\iconfont.svg" />
     <Content Include="modules\css\layout.css" />
     <Content Include="modules\css\services.css" />
-    <Content Include="modules\images\case\anlile-1.png" />
-    <Content Include="modules\images\case\anlile-2.png" />
-    <Content Include="modules\images\case\anlile-3.png" />
-    <Content Include="modules\images\case\anlile-4.png" />
     <Content Include="modules\images\case\anlile-5.png" />
     <Content Include="modules\images\case\anlile-6.png" />
     <Content Include="modules\images\case\anlile-7.png" />
@@ -318,7 +301,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="modules\scripts\about\" />
     <Folder Include="modules\template\" />
   </ItemGroup>
   <ItemGroup>
