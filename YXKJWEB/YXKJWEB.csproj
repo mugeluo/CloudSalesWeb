@@ -233,6 +233,7 @@
     <Content Include="modules\images\home\index-jxc0.png" />
     <Content Include="modules\images\home\index-jxc1.png" />
     <Content Include="modules\images\home\index-jxc2.png" />
+    <Content Include="modules\images\home\index-jxc3.png" />
     <Content Include="modules\images\home\index-_03.png" />
     <Content Include="modules\images\home\kh-1.png" />
     <Content Include="modules\images\home\kh-2.png" />
@@ -273,7 +274,6 @@
     <Content Include="modules\images\case\anlile-5.png" />
     <Content Include="modules\images\case\anlile-6.png" />
     <Content Include="modules\images\case\anlile-7.png" />
-    <Content Include="modules\images\logo_login.png" />
     <Content Include="modules\images\sns1.png" />
     <Content Include="modules\images\sns2.png" />
     <Content Include="modules\images\sns3.png" />
