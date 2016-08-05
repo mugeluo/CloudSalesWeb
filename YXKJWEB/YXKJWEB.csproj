@@ -234,11 +234,8 @@
     <Content Include="modules\images\services\service-ico2.png" />
     <Content Include="modules\images\services\service-ico3.png" />
     <Content Include="modules\images\wechat.jpg" />
-    <Content Include="modules\plug\carousel\css\8dc3a597.css" />
-    <Content Include="modules\plug\carousel\img\5a30b78c.png" />
-    <Content Include="modules\plug\carousel\img\62371027.png" />
-    <Content Include="modules\plug\carousel\img\b8cb3910.png" />
-    <Content Include="modules\plug\carousel\js\6d510e95.js" />
+    <Content Include="modules\plug\carousel\css\carousel-index.css" />
+    <Content Include="modules\plug\carousel\js\carousel-index.js" />
     <Content Include="modules\plug\flexslider\css\flexslider.css" />
     <Content Include="modules\plug\flexslider\images\ad_ctr.png" />
     <Content Include="modules\plug\flexslider\images\alpha.png" />
