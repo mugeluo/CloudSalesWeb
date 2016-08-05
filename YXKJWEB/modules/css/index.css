@@ -1,4 +1,4 @@
-﻿.title-main {text-align:center;font-size:24px;}
+﻿.title-main {text-align:center;font-size:26px;}
 .title-descripition { text-align:center;margin: 40px auto;font-size:16px;}
 .title-head { font-size:16px;}
 
@@ -64,9 +64,9 @@
 /*客户*/
 .customer { height:640px;background-color:#4a91e3;position:relative;}
 .customer img{width:48%;margin: auto 350px;}
-.customer .customer-details{margin:auto;width:980px;}
-.customer .customer-details li{float:left;width:280px;padding:5px 10px;cursor:pointer;height:68px;
-                               border:1px solid #4a91e3;}
+.customer .customer-details{margin:auto;width:1060px;}
+.customer .customer-details li{float:left;width:290px;padding:5px 10px;cursor:pointer;height:68px;
+                               border:1px solid #4a91e3;margin-right:53px;}
 .customer .customer-details li.hover { border:1px solid #95CAF2;border-radius:3px;
      /*背景渐变*/
     background: -moz-linear-gradient(top, #5FADE9 0%, #70B6EA 100%);
@@ -90,7 +90,7 @@
     background: -o-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
     background: -ms-linear-gradient(top, #EEEEEE 0%,#DDDDDD 100%);
     background: linear-gradient(to bottom, #EEEEEE 0%,#DDDDDD 100%);}
-.repertory-details li div{margin-bottom:5px;color:#666;}
+.repertory-details li div{margin-bottom:5px;color:#444;}
 .repertory .jxc-img { float:right;width:675px;}
 .repertory .jxc-img img{width:100%;}
 
@@ -100,7 +100,7 @@
 .agent { height:480px;position:relative;background-color:#fff;}
 .agent .agent-img{ float:left;width:675px;}
 .agent .agent-img img{width:100%;}
-.agent .agent-details{float:right;}
+.agent .agent-details{float:left;margin-left:100px;}
 .agent .agent-details li{width:300px;margin-top:20px;}
 /*.agent .agent-details li.hover {border:1px solid #1B95DF;border-radius:2px;
 /*背景渐变
@@ -139,20 +139,21 @@
 
 
 .goodness-box {
-    height:290px;
-    width:980px;
+    height:280px;
+    width:950px;
     margin:auto;
-    background:url('/modules/images/home/index-3.png') no-repeat center top;
+    
 }
 .goodness-content {
     text-align:center;
-    padding-top:50px;
+    padding-top:30px;
+    background:url('/modules/images/home/index-3.png') no-repeat left top;
 }
 .goodness-item {
     width:225px;
     text-align:center;
     float:left;
-    margin-right:150px;
+    margin-right:135px;
 }
 .goodness-item .goodness-icon img{
     max-width:100px;
@@ -168,6 +169,7 @@
     margin-top:30px;
     color:#555;
 }
+
 @media only screen and (max-width:1800px) {
     .industry-box {
     width:1200px;
