@@ -8,13 +8,12 @@
     <link href="/modules/plug/flexslider/css/flexslider.css" rel="stylesheet" />
 }
 @section scripts{
-    <script src="/Scripts/jquery-1.11.1.js"></script>
-    <script src="/modules/plug/carousel/js/carousel-index.js"></script>
+    <script src="/Scripts/jquery-1.11.1.js"></script>    
     @*<script src="/modules/plug/flexslider/js/flexslider.js"></script>*@
     <script type="text/javascript">
         seajs.use(["scripts/home/index"], function (ObjectJS) {
             ObjectJS.init();
-        });
+        });      
 
         //$(function () {
         //    var bannerSlider = new Slider($('#banner_tabs'), {
@@ -32,7 +31,8 @@
         //    $('#banner_tabs .flex-next').click(function () {
         //        bannerSlider.next()
         //    });
-        //});
+        //});        
+
     </script>
 }
 
@@ -41,8 +41,8 @@
 	<ul class="slides">
 		<li>
 			<a title="" target="_blank" href="#">
-				<img   class="left" style="width:50%;" src="/modules/images/home/cloud-left.png">
-                <img  class="right"   style="width:50%;" src="/modules/images/home/cloud-right.png">
+				<img class="left" style="width:50%;" src="/modules/images/home/cloud-left.png">
+                <img class="right"  style="width:50%;" src="/modules/images/home/cloud-right.png">
 			</a>
 		</li>
 	@*	<li>
@@ -80,21 +80,21 @@
     <div class="goodness-content">
         <div class="goodness-item">
             <div class="goodness-icon">
-                <img  src="/modules/images/home/goodness-safe.png" />
+                <img class="img-lazy-load" data-src="/modules/images/home/goodness-safe.png" />
             </div>
             <div class="goodness-title">全面防护</div>
             <div class="goodness-des">阿里巴巴高配服务器，实时监控，保障您的数据安全</div>
         </div>
         <div class="goodness-item">
             <div class="goodness-icon">
-                <img  src="/modules/images/home/goodness-task.png" />
+                <img class="img-lazy-load" data-src="/modules/images/home/goodness-task.png" />
             </div>
           <div class="goodness-title">跨平台协作</div>
             <div class="goodness-des">一键分享到明道，跨平台协作，沟通无阻</div>
         </div>
         <div class="goodness-item" style="margin-right:0;">
             <div class="goodness-icon">
-                <img  src="/modules/images/home/goodness-resource.png" />
+                <img class="img-lazy-load" data-src="/modules/images/home/goodness-resource.png" />
             </div>
             <div class="goodness-title">企业多元化管理</div>
             <div class="goodness-des">一个应用，解决多方面需求，降低企业成本</div>
@@ -110,13 +110,13 @@
     <div id="dg-container" class="dg-container inner">
         <div class="dg-wrapper folded">                
             <a data-index="0" class="outbound previous1">
-                <img src="/modules/images/home/kh-1.png" />                  
+                <img class="img-lazy-load" data-src="/modules/images/home/kh-1.png" />                  
             </a>
             <a data-index="1" class="outbound dg-center">
-                <img src="/modules/images/home/kh-2.png">                
+                <img class="img-lazy-load" data-src="/modules/images/home/kh-2.png"/>                
             </a>
             <a data-index="2" class="outbound next1">
-                <img src="/modules/images/home/kh3.png">                
+                <img class="img-lazy-load" data-src="/modules/images/home/kh3.png"/>                
             </a>               
         </div>
         <i class="iconfont dg-prev"></i>
@@ -160,7 +160,7 @@
             <div class="clear"></div>
         </ul>
         <div class="jxc-img">        
-            <img src="/modules/images/home/index-jxc1.png" />       
+            <img class="img-lazy-load" data-src="/modules/images/home/index-jxc1.png" />       
         </div>
         <div class="clear"></div>
     </div>    
@@ -170,7 +170,7 @@
 <div class="member">
      <div class="module-box">
         <div class="member-img">
-            <img src="/modules/images/home/index-dls0.png" />
+            <img class="img-lazy-load" data-src="/modules/images/home/index-dls0.png"/>
         </div>  
         <ul class="member-details">
             <li data-url="/modules/images/home/index-dls0.png">
@@ -186,7 +186,7 @@
     <div class="title-main">超过300家企业使用二当家</div>
     <div  class="industry-box">
         <div class="img left">
-            <img style="width:100%;height:100%;" src="/modules/images/home/index-9.png" />        
+            <img style="width:100%;height:100%;" class="img-lazy-load" data-src="/modules/images/home/index-9.png"/>        
             <div class="education">服装</div>
             <a href="/Case/Case?clothing">
                 <div class="education-floating">
@@ -195,7 +195,7 @@
             </a>       
         </div>
         <div class="img2">
-            <img style="width:100%;height:100%;" src="/modules/images/home/index-12.png" />
+            <img style="width:100%;height:100%;" class="img-lazy-load" data-src="/modules/images/home/index-12.png"/>
             <div class="garment">酒水</div>
             <a href="/Case/Case?drinks">
                 <div class="garment-floating">
@@ -209,7 +209,7 @@
 
 <div class="probation">
     <div style="width:800px;margin:auto">
-        <img src="/modules/images/home/index-11.png" />
+        <img class="img-lazy-load" data-src="/modules/images/home/index-11.png"/>
         <div class="probation-txt">
             <div>让工作变得简单，从现在开始使用</div>
             <div class="mBottom40">现在注册，可享受60天免费试用</div>
@@ -218,4 +218,16 @@
         <div class="clear"></div>
     </div>    
 </div>
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "/modules/plug/carousel/js/carousel-index.js";
+        document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+</script>
 

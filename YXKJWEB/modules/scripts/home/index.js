@@ -3,6 +3,7 @@
     ObjectJS.init = function () {
         ObjectJS.bindEvent();
         ObjectJS.getWidthSize();
+        ObjectJS.imgLazyLoad();
     };
 
     ObjectJS.bindEvent = function () {
@@ -25,7 +26,7 @@
         $(".repertory-details li").hover(function () {
             var _this = $(this), url = _this.data("url");
             if ($(".jxc-img img").attr("src") != url) {
-                $(".jxc-img img").fadeOut(500, function () {
+                $(".jxc-img img").fadeOut(400, function () {
                     $(this).fadeIn().attr("src", url);
                 })
             }
@@ -65,6 +66,14 @@
         var width = $(window).width();
         $(".customer-bevel").css("border-left", "" + width + "px solid #4a91e3");
         $(".repertory-bevel-down").css("border-right", "" + width + "px solid #F0EFEE");
+    };
+
+    ObjectJS.imgLazyLoad = function () {
+        setTimeout(function () {
+            $(".img-lazy-load").each(function () {
+                $(this).attr("src", $(this).data("src"));
+            });
+        }, 1000);
     };
 
     module.exports = ObjectJS;
