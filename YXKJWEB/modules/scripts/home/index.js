@@ -11,7 +11,7 @@
             ObjectJS.getWidthSize();
         });
 
-        //
+        /*客户3D旋转效果点击事件*/
         $(".dg-wrapper .outbound").click(function () {
             var _this = $(this);
             ObjectJS.bindItemHover($(".customer-details li").eq(_this.data("index")));
